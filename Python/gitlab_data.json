@@ -1,0 +1,1946 @@
+{
+    "id": 1794617,
+    "name": "GitLab Docs",
+    "contributors": [
+        {
+            "name": "Edward Angert",
+            "email": "19517898-eangert-ext@users.noreply.gitlab.com"
+        },
+        {
+            "name": "Michael Friedrich",
+            "email": "mfriedrich@gitlab.com"
+        },
+        {
+            "name": "Martin \u010cavoj",
+            "email": "mcavoj@gitlab.com"
+        },
+        {
+            "name": "Nate Rosandich",
+            "email": "nrosandich@gitlab.com"
+        },
+        {
+            "name": "Ian Baum",
+            "email": "ibaum@gitlab.com"
+        },
+        {
+            "name": "Arpit Gogia",
+            "email": "12347103-arpitgogia@users.noreply.gitlab.com"
+        },
+        {
+            "name": "Imre Farkas",
+            "email": "ifarkas@gitlab.com"
+        },
+        {
+            "name": "Vladimir Shushlin",
+            "email": "vshushlin@gitlab.com"
+        },
+        {
+            "name": "Miko\u0142aj Wawrzyniak",
+            "email": "mwawrzyniak@gitlab.com"
+        },
+        {
+            "name": "Sean Carroll",
+            "email": "scarroll@gitlab.com"
+        },
+        {
+            "name": "maddievn",
+            "email": "mvanniekerk@gitlab.com"
+        },
+        {
+            "name": "Andy Soiron",
+            "email": "asoiron@gitlab.com"
+        },
+        {
+            "name": "David Fernandez",
+            "email": "dfernandez@gitlab.com"
+        },
+        {
+            "name": "Kos Palchyk",
+            "email": "kpalchyk@gitlab.com"
+        },
+        {
+            "name": "Miguel Rincon",
+            "email": "mrincon@gitlab.com"
+        },
+        {
+            "name": "Siddharth Mathur",
+            "email": "smathur@gitlab.com"
+        },
+        {
+            "name": "Paul Slaughter",
+            "email": "pslaughter@gitlab.com"
+        },
+        {
+            "name": "Michael Leopard",
+            "email": "mleopard@gitlab.com"
+        },
+        {
+            "name": "Kate Grechishkina",
+            "email": "khrechyshkina@gitlab.com"
+        },
+        {
+            "name": "Adam Hegyi",
+            "email": "ahegyi@gitlab.com"
+        }
+    ],
+    "contents": {
+        "meta": {
+            "folders_count": 70,
+            "files_count": 300
+        },
+        "folders": [
+            {
+                "folder_name": ".gitlab",
+                "folder_path": ".gitlab",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "ci",
+                "folder_path": ".gitlab/ci",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "issue_templates",
+                "folder_path": ".gitlab/issue_templates",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "merge_request_templates",
+                "folder_path": ".gitlab/merge_request_templates",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "bin",
+                "folder_path": "bin",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "config",
+                "folder_path": "config",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "search",
+                "folder_path": "config/search",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "google",
+                "folder_path": "config/search/google",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "content",
+                "folder_path": "content",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "_data",
+                "folder_path": "content/_data",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "archives",
+                "folder_path": "content/archives",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "assets",
+                "folder_path": "content/assets",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "fonts",
+                "folder_path": "content/assets/fonts",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "images",
+                "folder_path": "content/assets/images",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "javascripts",
+                "folder_path": "content/assets/javascripts",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "manifests",
+                "folder_path": "content/assets/manifests",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "stylesheets",
+                "folder_path": "content/assets/stylesheets",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "mixins",
+                "folder_path": "content/assets/stylesheets/mixins",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "frontend",
+                "folder_path": "content/frontend",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "404",
+                "folder_path": "content/frontend/404",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "archives",
+                "folder_path": "content/frontend/archives",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "default",
+                "folder_path": "content/frontend/default",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "components",
+                "folder_path": "content/frontend/default/components",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "directives",
+                "folder_path": "content/frontend/default/directives",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "deprecations",
+                "folder_path": "content/frontend/deprecations",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "components",
+                "folder_path": "content/frontend/deprecations/components",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "header",
+                "folder_path": "content/frontend/header",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "landing",
+                "folder_path": "content/frontend/landing",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "navigation",
+                "folder_path": "content/frontend/navigation",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "search",
+                "folder_path": "content/frontend/search",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "components",
+                "folder_path": "content/frontend/search/components",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "services",
+                "folder_path": "content/frontend/services",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "shared",
+                "folder_path": "content/frontend/shared",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "components",
+                "folder_path": "content/frontend/shared/components",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "toc",
+                "folder_path": "content/frontend/shared/toc",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "search",
+                "folder_path": "content/search",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "doc",
+                "folder_path": "doc",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "dockerfiles",
+                "folder_path": "dockerfiles",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "layouts",
+                "folder_path": "layouts",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "blueprints",
+                "folder_path": "layouts/blueprints",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "lib",
+                "folder_path": "lib",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "checks",
+                "folder_path": "lib/checks",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "filters",
+                "folder_path": "lib/filters",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "gitlab",
+                "folder_path": "lib/gitlab",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "docs",
+                "folder_path": "lib/gitlab/docs",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "navigation",
+                "folder_path": "lib/gitlab/navigation",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "helpers",
+                "folder_path": "lib/helpers",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "tasks",
+                "folder_path": "lib/tasks",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "scripts",
+                "folder_path": "scripts",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "lunr",
+                "folder_path": "scripts/lunr",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "spec",
+                "folder_path": "spec",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "frontend",
+                "folder_path": "spec/frontend",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "__mocks__",
+                "folder_path": "spec/frontend/__mocks__",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "default",
+                "folder_path": "spec/frontend/default",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "components",
+                "folder_path": "spec/frontend/default/components",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "__snapshots__",
+                "folder_path": "spec/frontend/default/components/__snapshots__",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "helpers",
+                "folder_path": "spec/frontend/default/components/helpers",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "deprecations",
+                "folder_path": "spec/frontend/deprecations",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "search",
+                "folder_path": "spec/frontend/search",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "shared",
+                "folder_path": "spec/frontend/shared",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "components",
+                "folder_path": "spec/frontend/shared/components",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "toc",
+                "folder_path": "spec/frontend/shared/toc",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "lib",
+                "folder_path": "spec/lib",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "filters",
+                "folder_path": "spec/lib/filters",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "fixtures",
+                "folder_path": "spec/lib/fixtures",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "gitlab",
+                "folder_path": "spec/lib/gitlab",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "docs",
+                "folder_path": "spec/lib/gitlab/docs",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "navigation",
+                "folder_path": "spec/lib/gitlab/navigation",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "helpers",
+                "folder_path": "spec/lib/helpers",
+                "folder_mode": "040000"
+            },
+            {
+                "folder_name": "tasks",
+                "folder_path": "tasks",
+                "folder_mode": "040000"
+            }
+        ],
+        "files": [
+            {
+                "files_name": ".devfile.yaml",
+                "files_path": ".devfile.yaml",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": ".dockerignore",
+                "files_path": ".dockerignore",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": ".editorconfig",
+                "files_path": ".editorconfig",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": ".eslintignore",
+                "files_path": ".eslintignore",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": ".eslintrc.yml",
+                "files_path": ".eslintrc.yml",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": ".gitattributes",
+                "files_path": ".gitattributes",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": ".gitignore",
+                "files_path": ".gitignore",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": ".gitlab-ci.yml",
+                "files_path": ".gitlab-ci.yml",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "build-and-deploy.gitlab-ci.yml",
+                "files_path": ".gitlab/ci/build-and-deploy.gitlab-ci.yml",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "docker-images.gitlab-ci.yml",
+                "files_path": ".gitlab/ci/docker-images.gitlab-ci.yml",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "rules.gitlab-ci.yml",
+                "files_path": ".gitlab/ci/rules.gitlab-ci.yml",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "security.gitlab-ci.yml",
+                "files_path": ".gitlab/ci/security.gitlab-ci.yml",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "test.gitlab-ci.yml",
+                "files_path": ".gitlab/ci/test.gitlab-ci.yml",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "Bug.md",
+                "files_path": ".gitlab/issue_templates/Bug.md",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "Default.md",
+                "files_path": ".gitlab/issue_templates/Default.md",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "Ruby Alpine versions bump.md",
+                "files_path": ".gitlab/issue_templates/Ruby Alpine versions bump.md",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "Survey banner request.md",
+                "files_path": ".gitlab/issue_templates/Survey banner request.md",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "html-lint-image-new-version.md",
+                "files_path": ".gitlab/issue_templates/html-lint-image-new-version.md",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "release.md",
+                "files_path": ".gitlab/issue_templates/release.md",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "Default.md",
+                "files_path": ".gitlab/merge_request_templates/Default.md",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "Navbar_item.md",
+                "files_path": ".gitlab/merge_request_templates/Navbar_item.md",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "route-map.yml",
+                "files_path": ".gitlab/route-map.yml",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": ".gitpod.Dockerfile",
+                "files_path": ".gitpod.Dockerfile",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": ".gitpod.yml",
+                "files_path": ".gitpod.yml",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": ".hadolint.yaml",
+                "files_path": ".hadolint.yaml",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": ".markdownlint.yml",
+                "files_path": ".markdownlint.yml",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": ".nvmrc",
+                "files_path": ".nvmrc",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": ".prettierignore",
+                "files_path": ".prettierignore",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": ".prettierrc",
+                "files_path": ".prettierrc",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": ".rspec",
+                "files_path": ".rspec",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": ".rubocop.yml",
+                "files_path": ".rubocop.yml",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": ".ruby-version",
+                "files_path": ".ruby-version",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": ".stylelintrc",
+                "files_path": ".stylelintrc",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": ".tool-versions",
+                "files_path": ".tool-versions",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": ".yamllint",
+                "files_path": ".yamllint",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": ".yarnrc.yml",
+                "files_path": ".yarnrc.yml",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "Brewfile",
+                "files_path": "Brewfile",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "CODEOWNERS",
+                "files_path": "CODEOWNERS",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "CONTRIBUTING.md",
+                "files_path": "CONTRIBUTING.md",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "Dangerfile",
+                "files_path": "Dangerfile",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "Gemfile",
+                "files_path": "Gemfile",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "Gemfile.lock",
+                "files_path": "Gemfile.lock",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "LICENSE",
+                "files_path": "LICENSE",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "Makefile",
+                "files_path": "Makefile",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "README.md",
+                "files_path": "README.md",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "Rakefile",
+                "files_path": "Rakefile",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "Rules",
+                "files_path": "Rules",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "babel.config.js",
+                "files_path": "babel.config.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "json_schemer",
+                "files_path": "bin/json_schemer",
+                "files_mode": "100755"
+            },
+            {
+                "files_name": "nanoc",
+                "files_path": "bin/nanoc",
+                "files_mode": "100755"
+            },
+            {
+                "files_name": "rake",
+                "files_path": "bin/rake",
+                "files_mode": "100755"
+            },
+            {
+                "files_name": "annotations.xml",
+                "files_path": "config/search/google/annotations.xml",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "context.xml",
+                "files_path": "config/search/google/context.xml",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "promotions.xml",
+                "files_path": "config/search/google/promotions.xml",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "synonyms.xml",
+                "files_path": "config/search/google/synonyms.xml",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "404.html",
+                "files_path": "content/404.html",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "badges.yaml",
+                "files_path": "content/_data/badges.yaml",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "banner.yaml",
+                "files_path": "content/_data/banner.yaml",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "landing.yaml",
+                "files_path": "content/_data/landing.yaml",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "navigation.yaml",
+                "files_path": "content/_data/navigation.yaml",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "popular_topics.yaml",
+                "files_path": "content/_data/popular_topics.yaml",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "redirects.yaml",
+                "files_path": "content/_data/redirects.yaml",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "index.md",
+                "files_path": "content/archives/index.md",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "fontawesome-webfont.woff2",
+                "files_path": "content/assets/fonts/fontawesome-webfont.woff2",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "404.png",
+                "files_path": "content/assets/images/404.png",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "apple-touch-icon.png",
+                "files_path": "content/assets/images/apple-touch-icon.png",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "arrow-right.svg",
+                "files_path": "content/assets/images/arrow-right.svg",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "by-sa.svg",
+                "files_path": "content/assets/images/by-sa.svg",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "chevron-lg-right.svg",
+                "files_path": "content/assets/images/chevron-lg-right.svg",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "collapse.svg",
+                "files_path": "content/assets/images/collapse.svg",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "docs-charts.svg",
+                "files_path": "content/assets/images/docs-charts.svg",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "docs-omnibus.svg",
+                "files_path": "content/assets/images/docs-omnibus.svg",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "download.svg",
+                "files_path": "content/assets/images/download.svg",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "ellipsis_h.svg",
+                "files_path": "content/assets/images/ellipsis_h.svg",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "error-404.svg",
+                "files_path": "content/assets/images/error-404.svg",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "gitlab-logo-header.svg",
+                "files_path": "content/assets/images/gitlab-logo-header.svg",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "gitlab-logo.svg",
+                "files_path": "content/assets/images/gitlab-logo.svg",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "gradient.svg",
+                "files_path": "content/assets/images/gradient.svg",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "hero-bg-mobile.svg",
+                "files_path": "content/assets/images/hero-bg-mobile.svg",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "hero-bg.svg",
+                "files_path": "content/assets/images/hero-bg.svg",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "icon-192.png",
+                "files_path": "content/assets/images/icon-192.png",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "icon-512.png",
+                "files_path": "content/assets/images/icon-512.png",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "icon_anchor.svg",
+                "files_path": "content/assets/images/icon_anchor.svg",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "icon_search.svg",
+                "files_path": "content/assets/images/icon_search.svg",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "icon_search_white.svg",
+                "files_path": "content/assets/images/icon_search_white.svg",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "rectangle.svg",
+                "files_path": "content/assets/images/rectangle.svg",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "search-hero-bg.svg",
+                "files_path": "content/assets/images/search-hero-bg.svg",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "search.svg",
+                "files_path": "content/assets/images/search.svg",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "star.svg",
+                "files_path": "content/assets/images/star.svg",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "support-bg.svg",
+                "files_path": "content/assets/images/support-bg.svg",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "google_tagmanager.js",
+                "files_path": "content/assets/javascripts/google_tagmanager.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "gtag_analytics.js",
+                "files_path": "content/assets/javascripts/gtag_analytics.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "linkedin_analytics.js",
+                "files_path": "content/assets/javascripts/linkedin_analytics.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "marketo_analytics.js",
+                "files_path": "content/assets/javascripts/marketo_analytics.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "mermaid.js",
+                "files_path": "content/assets/javascripts/mermaid.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "site.webmanifest",
+                "files_path": "content/assets/manifests/site.webmanifest",
+                "files_mode": "100755"
+            },
+            {
+                "files_name": "_base.scss",
+                "files_path": "content/assets/stylesheets/_base.scss",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "_landing.scss",
+                "files_path": "content/assets/stylesheets/_landing.scss",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "_mixins.scss",
+                "files_path": "content/assets/stylesheets/_mixins.scss",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "_normalize.scss",
+                "files_path": "content/assets/stylesheets/_normalize.scss",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "_sidebar.scss",
+                "files_path": "content/assets/stylesheets/_sidebar.scss",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "_tables.scss",
+                "files_path": "content/assets/stylesheets/_tables.scss",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "_typography.scss",
+                "files_path": "content/assets/stylesheets/_typography.scss",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "_utilities.scss",
+                "files_path": "content/assets/stylesheets/_utilities.scss",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "_variables.scss",
+                "files_path": "content/assets/stylesheets/_variables.scss",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "font-awesome.min.css",
+                "files_path": "content/assets/stylesheets/font-awesome.min.css",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "footer.scss",
+                "files_path": "content/assets/stylesheets/footer.scss",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "help.scss",
+                "files_path": "content/assets/stylesheets/help.scss",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "highlight.scss",
+                "files_path": "content/assets/stylesheets/highlight.scss",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "labels.scss",
+                "files_path": "content/assets/stylesheets/labels.scss",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "_breakpoints.scss",
+                "files_path": "content/assets/stylesheets/mixins/_breakpoints.scss",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "_md-typography.scss",
+                "files_path": "content/assets/stylesheets/mixins/_md-typography.scss",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "_screen-reader.scss",
+                "files_path": "content/assets/stylesheets/mixins/_screen-reader.scss",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "_spacing.scss",
+                "files_path": "content/assets/stylesheets/mixins/_spacing.scss",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "stylesheet.scss",
+                "files_path": "content/assets/stylesheets/stylesheet.scss",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "toc.scss",
+                "files_path": "content/assets/stylesheets/toc.scss",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "favicon.ico",
+                "files_path": "content/favicon.ico",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "favicon.svg",
+                "files_path": "content/favicon.svg",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "archives_redirect.js",
+                "files_path": "content/frontend/404/archives_redirect.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "archives.js",
+                "files_path": "content/frontend/archives/archives.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "archives_page.vue",
+                "files_path": "content/frontend/archives/archives_page.vue",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "badges.js",
+                "files_path": "content/frontend/default/badges.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "docs_badges.vue",
+                "files_path": "content/frontend/default/components/docs_badges.vue",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "navigation_toggle.vue",
+                "files_path": "content/frontend/default/components/navigation_toggle.vue",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "table_of_contents.vue",
+                "files_path": "content/frontend/default/components/table_of_contents.vue",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "table_of_contents_list.vue",
+                "files_path": "content/frontend/default/components/table_of_contents_list.vue",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "tabs_section.vue",
+                "files_path": "content/frontend/default/components/tabs_section.vue",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "versions_menu.vue",
+                "files_path": "content/frontend/default/components/versions_menu.vue",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "default.js",
+                "files_path": "content/frontend/default/default.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "stick_to_footer.js",
+                "files_path": "content/frontend/default/directives/stick_to_footer.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "environment.js",
+                "files_path": "content/frontend/default/environment.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "feature_details.js",
+                "files_path": "content/frontend/default/feature_details.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "setup_table_of_contents.js",
+                "files_path": "content/frontend/default/setup_table_of_contents.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "deprecation_filters.vue",
+                "files_path": "content/frontend/deprecations/components/deprecation_filters.vue",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "deprecations.js",
+                "files_path": "content/frontend/deprecations/deprecations.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "index.js",
+                "files_path": "content/frontend/header/index.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "featured_sections.js",
+                "files_path": "content/frontend/landing/featured_sections.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "global_nav.js",
+                "files_path": "content/frontend/navigation/global_nav.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "google_results.vue",
+                "files_path": "content/frontend/search/components/google_results.vue",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "google_search_form.vue",
+                "files_path": "content/frontend/search/components/google_search_form.vue",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "lunr_results.vue",
+                "files_path": "content/frontend/search/components/lunr_results.vue",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "lunr_search_form.vue",
+                "files_path": "content/frontend/search/components/lunr_search_form.vue",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "search_filters.vue",
+                "files_path": "content/frontend/search/components/search_filters.vue",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "suggested_items.vue",
+                "files_path": "content/frontend/search/components/suggested_items.vue",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "version_search.vue",
+                "files_path": "content/frontend/search/components/version_search.vue",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "google.js",
+                "files_path": "content/frontend/search/google.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "google_results.js",
+                "files_path": "content/frontend/search/google_results.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "lunrsearch.js",
+                "files_path": "content/frontend/search/lunrsearch.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "recently_viewed.js",
+                "files_path": "content/frontend/search/recently_viewed.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "search_helpers.js",
+                "files_path": "content/frontend/search/search_helpers.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "fetch_versions.js",
+                "files_path": "content/frontend/services/fetch_versions.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "google_search_api.js",
+                "files_path": "content/frontend/services/google_search_api.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "clipboardjs.js",
+                "files_path": "content/frontend/shared/clipboardjs.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "docs_banner.vue",
+                "files_path": "content/frontend/shared/components/docs_banner.vue",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "header_permalink.vue",
+                "files_path": "content/frontend/shared/components/header_permalink.vue",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "cookies.js",
+                "files_path": "content/frontend/shared/cookies.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "dom.js",
+                "files_path": "content/frontend/shared/dom.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "sprite_icon.js",
+                "files_path": "content/frontend/shared/sprite_icon.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "flatten_items.js",
+                "files_path": "content/frontend/shared/toc/flatten_items.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "parse_toc.js",
+                "files_path": "content/frontend/shared/toc/parse_toc.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "index.erb",
+                "files_path": "content/index.erb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "robots.txt.erb",
+                "files_path": "content/robots.txt.erb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "index.md",
+                "files_path": "content/search/index.md",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "sitemap.xml.erb",
+                "files_path": "content/sitemap.xml.erb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "versions.json",
+                "files_path": "content/versions.json",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "advanced_setup.md",
+                "files_path": "doc/advanced_setup.md",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "analytics.md",
+                "files_path": "doc/analytics.md",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "architecture.md",
+                "files_path": "doc/architecture.md",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "development.md",
+                "files_path": "doc/development.md",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "index.md",
+                "files_path": "doc/index.md",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "infrastructure.md",
+                "files_path": "doc/infrastructure.md",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "maintenance.md",
+                "files_path": "doc/maintenance.md",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "raketasks.md",
+                "files_path": "doc/raketasks.md",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "releases.md",
+                "files_path": "doc/releases.md",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "search.md",
+                "files_path": "doc/search.md",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "setup.md",
+                "files_path": "doc/setup.md",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "testing.md",
+                "files_path": "doc/testing.md",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "troubleshooting.md",
+                "files_path": "doc/troubleshooting.md",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "README.md",
+                "files_path": "dockerfiles/README.md",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "archives.Dockerfile",
+                "files_path": "dockerfiles/archives.Dockerfile",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "gitlab-docs-base.Dockerfile",
+                "files_path": "dockerfiles/gitlab-docs-base.Dockerfile",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "gitlab-docs-lint-html.Dockerfile",
+                "files_path": "dockerfiles/gitlab-docs-lint-html.Dockerfile",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "gitlab-docs-lint-markdown.Dockerfile",
+                "files_path": "dockerfiles/gitlab-docs-lint-markdown.Dockerfile",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "gitlab-docs-workspace.Dockerfile",
+                "files_path": "dockerfiles/gitlab-docs-workspace.Dockerfile",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "nginx-overrides.conf",
+                "files_path": "dockerfiles/nginx-overrides.conf",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "single.Dockerfile",
+                "files_path": "dockerfiles/single.Dockerfile",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "jest.config.js",
+                "files_path": "jest.config.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "latest.Dockerfile",
+                "files_path": "latest.Dockerfile",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "404.html",
+                "files_path": "layouts/404.html",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "analytics.html",
+                "files_path": "layouts/analytics.html",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "banner.html",
+                "files_path": "layouts/banner.html",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "index.erb",
+                "files_path": "layouts/blueprints/index.erb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "table.erb",
+                "files_path": "layouts/blueprints/table.erb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "canonical_urls.html",
+                "files_path": "layouts/canonical_urls.html",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "csp.html",
+                "files_path": "layouts/csp.html",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "cta.html",
+                "files_path": "layouts/cta.html",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "cta_omnibus.html",
+                "files_path": "layouts/cta_omnibus.html",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "default.html",
+                "files_path": "layouts/default.html",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "feature_flags.html",
+                "files_path": "layouts/feature_flags.html",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "feature_flags_table.md.erb",
+                "files_path": "layouts/feature_flags_table.md.erb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "feedback.html",
+                "files_path": "layouts/feedback.html",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "footer.html",
+                "files_path": "layouts/footer.html",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "global_nav.html",
+                "files_path": "layouts/global_nav.html",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "head.html",
+                "files_path": "layouts/head.html",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "header.html",
+                "files_path": "layouts/header.html",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "home.html",
+                "files_path": "layouts/home.html",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "redirect.html",
+                "files_path": "layouts/redirect.html",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "schema-breadcrumblist.html",
+                "files_path": "layouts/schema-breadcrumblist.html",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "schema-microdata.html",
+                "files_path": "layouts/schema-microdata.html",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "search.html",
+                "files_path": "layouts/search.html",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "lefthook.yml",
+                "files_path": "lefthook.yml",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "anchors.rb",
+                "files_path": "lib/checks/anchors.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "admonition.rb",
+                "files_path": "lib/filters/admonition.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "badges.rb",
+                "files_path": "lib/filters/badges.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "convert_mermaid_html.rb",
+                "files_path": "lib/filters/convert_mermaid_html.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "gitlab_kramdown.rb",
+                "files_path": "lib/filters/gitlab_kramdown.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "icons.rb",
+                "files_path": "lib/filters/icons.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "introduced_in.rb",
+                "files_path": "lib/filters/introduced_in.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "markdown_to_html_ext.rb",
+                "files_path": "lib/filters/markdown_to_html_ext.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "tabs.rb",
+                "files_path": "lib/filters/tabs.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "docs.rb",
+                "files_path": "lib/gitlab/docs.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "document.rb",
+                "files_path": "lib/gitlab/docs/document.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "element.rb",
+                "files_path": "lib/gitlab/docs/element.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "link.rb",
+                "files_path": "lib/gitlab/docs/link.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "nanoc.rb",
+                "files_path": "lib/gitlab/docs/nanoc.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "page.rb",
+                "files_path": "lib/gitlab/docs/page.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "navigation.rb",
+                "files_path": "lib/gitlab/navigation.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "category.rb",
+                "files_path": "lib/gitlab/navigation/category.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "doc.rb",
+                "files_path": "lib/gitlab/navigation/doc.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "section.rb",
+                "files_path": "lib/gitlab/navigation/section.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "admonition.rb",
+                "files_path": "lib/helpers/admonition.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "blueprints.rb",
+                "files_path": "lib/helpers/blueprints.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "edit_on_gitlab.rb",
+                "files_path": "lib/helpers/edit_on_gitlab.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "generic.rb",
+                "files_path": "lib/helpers/generic.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "gitlab_kramdown.rb",
+                "files_path": "lib/helpers/gitlab_kramdown.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "icons_helper.rb",
+                "files_path": "lib/helpers/icons_helper.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "reading_time.rb",
+                "files_path": "lib/helpers/reading_time.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "versions.rb",
+                "files_path": "lib/helpers/versions.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "helpers_.rb",
+                "files_path": "lib/helpers_.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "build_site.rake",
+                "files_path": "lib/tasks/build_site.rake",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "redirects.rake",
+                "files_path": "lib/tasks/redirects.rake",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "release.rake",
+                "files_path": "lib/tasks/release.rake",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "task_helpers.rb",
+                "files_path": "lib/tasks/task_helpers.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "nanoc.yaml",
+                "files_path": "nanoc.yaml",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "package.json",
+                "files_path": "package.json",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "rollup.config.js",
+                "files_path": "rollup.config.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "check-danger.sh",
+                "files_path": "scripts/check-danger.sh",
+                "files_mode": "100755"
+            },
+            {
+                "files_name": "check-lunr-index.sh",
+                "files_path": "scripts/check-lunr-index.sh",
+                "files_mode": "100755"
+            },
+            {
+                "files_name": "check-navigation.sh",
+                "files_path": "scripts/check-navigation.sh",
+                "files_mode": "100755"
+            },
+            {
+                "files_name": "compress_images.sh",
+                "files_path": "scripts/compress_images.sh",
+                "files_mode": "100755"
+            },
+            {
+                "files_name": "create_issues.js",
+                "files_path": "scripts/create_issues.js",
+                "files_mode": "100755"
+            },
+            {
+                "files_name": "deploy-review-app.sh",
+                "files_path": "scripts/deploy-review-app.sh",
+                "files_mode": "100755"
+            },
+            {
+                "files_name": "preindex.js",
+                "files_path": "scripts/lunr/preindex.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "minify-assets.sh",
+                "files_path": "scripts/minify-assets.sh",
+                "files_mode": "100755"
+            },
+            {
+                "files_name": "normalize-links.sh",
+                "files_path": "scripts/normalize-links.sh",
+                "files_mode": "100755"
+            },
+            {
+                "files_name": "pages_not_in_nav.js",
+                "files_path": "scripts/pages_not_in_nav.js",
+                "files_mode": "100755"
+            },
+            {
+                "files_name": "review-replace-urls.sh",
+                "files_path": "scripts/review-replace-urls.sh",
+                "files_mode": "100755"
+            },
+            {
+                "files_name": "match_media_mock.js",
+                "files_path": "spec/frontend/__mocks__/match_media_mock.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "search_results_mock.js",
+                "files_path": "spec/frontend/__mocks__/search_results_mock.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "style_mock.js",
+                "files_path": "spec/frontend/__mocks__/style_mock.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "versions_mock.js",
+                "files_path": "spec/frontend/__mocks__/versions_mock.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "clean_html_element_serializer.js",
+                "files_path": "spec/frontend/clean_html_element_serializer.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "table_of_contents_list_spec.js.snap",
+                "files_path": "spec/frontend/default/components/__snapshots__/table_of_contents_list_spec.js.snap",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "table_of_contents_spec.js.snap",
+                "files_path": "spec/frontend/default/components/__snapshots__/table_of_contents_spec.js.snap",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "archives_page_spec.js",
+                "files_path": "spec/frontend/default/components/archives_page_spec.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "versions_helper.js",
+                "files_path": "spec/frontend/default/components/helpers/versions_helper.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "navigation_toggle_spec.js",
+                "files_path": "spec/frontend/default/components/navigation_toggle_spec.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "table_of_contents_list_spec.js",
+                "files_path": "spec/frontend/default/components/table_of_contents_list_spec.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "table_of_contents_spec.js",
+                "files_path": "spec/frontend/default/components/table_of_contents_spec.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "tabs_section_spec.js",
+                "files_path": "spec/frontend/default/components/tabs_section_spec.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "versions_spec.js",
+                "files_path": "spec/frontend/default/components/versions_spec.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "deprecation_filters_spec.js",
+                "files_path": "spec/frontend/deprecations/deprecation_filters_spec.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "html_string_serializer.js",
+                "files_path": "spec/frontend/html_string_serializer.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "jest.overrides.js",
+                "files_path": "spec/frontend/jest.overrides.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "google_search_spec.js",
+                "files_path": "spec/frontend/search/google_search_spec.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "lunr_search_spec.js",
+                "files_path": "spec/frontend/search/lunr_search_spec.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "search_helper_spec.js",
+                "files_path": "spec/frontend/search/search_helper_spec.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "docs_banner_spec.js",
+                "files_path": "spec/frontend/shared/components/docs_banner_spec.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "dom_spec.js",
+                "files_path": "spec/frontend/shared/dom_spec.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "flatten_items_spec.js",
+                "files_path": "spec/frontend/shared/toc/flatten_items_spec.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "parse_toc_spec.js",
+                "files_path": "spec/frontend/shared/toc/parse_toc_spec.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "toc_helper.js",
+                "files_path": "spec/frontend/shared/toc_helper.js",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "badges_spec.rb",
+                "files_path": "spec/lib/filters/badges_spec.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "tabs_spec.rb",
+                "files_path": "spec/lib/filters/tabs_spec.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "navigation-mock.yaml",
+                "files_path": "spec/lib/fixtures/navigation-mock.yaml",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "content_spec.rb",
+                "files_path": "spec/lib/gitlab/content_spec.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "link_spec.rb",
+                "files_path": "spec/lib/gitlab/docs/link_spec.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "page_spec.rb",
+                "files_path": "spec/lib/gitlab/docs/page_spec.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "category_spec.rb",
+                "files_path": "spec/lib/gitlab/navigation/category_spec.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "doc_spec.rb",
+                "files_path": "spec/lib/gitlab/navigation/doc_spec.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "navigation_schema.json",
+                "files_path": "spec/lib/gitlab/navigation/navigation_schema.json",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "section_spec.rb",
+                "files_path": "spec/lib/gitlab/navigation/section_spec.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "navigation_spec.rb",
+                "files_path": "spec/lib/gitlab/navigation_spec.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "edit_on_gitlab_spec.rb",
+                "files_path": "spec/lib/helpers/edit_on_gitlab_spec.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "generic_spec.rb",
+                "files_path": "spec/lib/helpers/generic_spec.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "task_helpers_spec.rb",
+                "files_path": "spec/lib/task_helpers_spec.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "spec_helper.rb",
+                "files_path": "spec/spec_helper.rb",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": ".markdownlint.yml",
+                "files_path": "tasks/.markdownlint.yml",
+                "files_mode": "100644"
+            },
+            {
+                "files_name": "unlinked-images.sh",
+                "files_path": "tasks/unlinked-images.sh",
+                "files_mode": "100755"
+            },
+            {
+                "files_name": "yarn.lock",
+                "files_path": "yarn.lock",
+                "files_mode": "100644"
+            }
+        ]
+    }
+}

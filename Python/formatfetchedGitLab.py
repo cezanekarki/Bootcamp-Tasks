@@ -141,6 +141,6 @@ data = c1.generate_data()
 print(data)
 
 
-with open('gitlab_data.json', 'w') as f:
+with open('Python/gitlab_data.json', 'w') as f:
     json.dump(data, f, indent=4)
     print('Data written to gitlab_data.json')
