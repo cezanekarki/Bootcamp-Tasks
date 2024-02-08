@@ -1,5 +1,16 @@
+#1 Convert "name:John,age:34, city: New York" string to dictionary using python. 
+ 
+string_data="name:John,age:34, city: New York"
+splitData=string_data.split(',')
+details_dict={}
+for data in splitData:
+    key,value=data.split(':')
+    details_dict[key]=value
+    
+print(details_dict)
 
-##1
+
+##2
 givenData="The Great Gatsby, F. Scott Fitzgerald, 1925 | To Kill a Mockingbird, Harper Lee, 1960 | 1984, George Orwell, 1949"
 pipeSplitData=givenData.split('|')
 # print(pipeSplitData)
@@ -15,7 +26,6 @@ for item in pipeSplitData:
  
 print(books_dict)
 
-#
 
 # 3
 names = ["Alice", "Bob", "Charlie"] 
@@ -50,3 +60,33 @@ print(people_list)
 
 #6
 
+text = "Hello! How are you? I hope you're enjoying your day. Have you seen my notebook? It's important. Thanks for your help!"
+ 
+ 
+sentences = []
+current_sentence = ''
+for char in text:
+    current_sentence += char
+    if char in '.!?':
+        sentences.append(current_sentence.strip())
+        current_sentence = ''
+if current_sentence:
+    sentences.append(current_sentence.strip())
+ 
+#print(sentences)
+questions = [sentence for sentence in sentences if sentence.endswith('?')]
+ 
+import string
+text_no_punctuation = ''.join(char for char in text if char not in string.punctuation)
+you_count = text.lower().count('you')
+first_sentence = sentences[0].split('!')[0]
+last_sentence = sentences[-1].split('!')[0] if sentences[-1].endswith('!') else sentences[-1]
+first_and_last_sentence = first_sentence + ' ' + last_sentence
+ 
+question_count = len(questions)
+ 
+#question_count, questions, text_no_punctuation, you_count, first_and_last_sentence
+ 
+ 
+concatenation_sentence = sentences[0].split('!')[0] +' '+ sentences[-1].split('!')[0]
+concatenation_sentence
