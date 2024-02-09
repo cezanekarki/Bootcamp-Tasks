@@ -140,18 +140,23 @@ text =  "Hello! How are you? I hope you're enjoying your day. Have you seen my n
 Thanks for your help!" 
 
 sentences = []
-current_sentence = ""
-
+current_sentence = ''
 for char in text:
     current_sentence += char
-    if char in ".!?":
+    if char in '.!?':
         sentences.append(current_sentence.strip())
         current_sentence = ''
 if current_sentence:
     sentences.append(current_sentence.strip())
-
+ 
+#print(sentences)
 questions = [sentence for sentence in sentences if sentence.endswith('?')]
-
+ 
+ 
+text_no_punctuation = ''.join(char for char in text if char not in string.punctuation)
+first_sentence = sentences[0].split('!')[0]
+last_sentence = sentences[-1].split('!')[0] if sentences[-1].endswith('!') else sentences[-1]
+first_and_last_sentence = first_sentence + ' ' + last_sentence
 print(f"The list of questions are:{questions}")
 print(sentences)
 
@@ -162,15 +167,11 @@ print(f"Total number of questions are: {text.count('?')}")
 print(f"Total number of questions are: {len(questions)}")
 
 # Text without punctuation
-text_without_punctuation = text.translate(str.maketrans("", "", string.punctuation)).lower()
-
-print("Text without punctuation:", text_without_punctuation)
+print("Text without punctuation:", text_no_punctuation)
 
 # Count the number of you in text
 print(f"The total number of you in text is:{text.count('you')}")
 
-first_sentence = sentences[0].split('!')[0]
-last_sentence = sentences[0].split('!')[0] if sentences[-1].endswith('!') else sentences[-1]
 first_last_sentences = first_sentence + last_sentence
 
 print(f"The concatinated sentences are: {first_last_sentences}")
