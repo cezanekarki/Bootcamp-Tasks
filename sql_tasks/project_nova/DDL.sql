@@ -1,0 +1,42 @@
+CREATE OR REPLACE TABLE MEMBER (
+  source_id STRING,
+  subscriber_id STRING,
+  first_name STRING,
+  middle_name STRING,
+  last_name STRING,
+  prefix_name STRING,
+  suffix_name STRING,
+  name STRING,
+  record_source STRING,
+  record_created_ts TIMESTAMP,
+  is_verified BOOLEAN,
+  addresses ARRAY<STRUCT<
+                  address_type: STRING, 
+                  address_line_1: STRING, 
+                  address_line_2: STRING, 
+                  city: STRING, 
+                  state_province: STRING,
+                  postal_code : STRING,
+                  zip_code_extension : STRING,
+                  country: STRING
+              >>,
+  phones STRUCT<
+              number: STRING, 
+              phone_type: STRING>,
+  email STRING,
+  privacy_preference BOOLEAN,
+  national_id STRING,
+  gender STRING,
+  marital_status STRING,
+  date_of_birth DATE,
+  year_of_birth STRING,
+  deceased_ind BOOLEAN,
+  deceased_age INT,
+  deceased_date DATE,
+  languages ARRAY<STRING>,
+  employment STRUCT<
+              employee_name: STRING, 
+              employee_role: STRING,
+              employee_status: STRING, 
+              employee_hiredate: DATE>
+);
