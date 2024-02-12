@@ -1,0 +1,32 @@
+Project: Contact Book Application 
+Objective: Create a Python program that allows users to manage their contacts. Users should be able to add, view, search for, and delete contacts. 
+
+Project Steps: 
+Initialize the Contact Book: 
+Create an empty list to represent the contact book. Each contact will be a dictionary with attributes like name, phone number, and email. 
+Create Functions: 
+Define functions for the following actions: 
+Add a contact. 
+View all contacts. 
+Search for a contact by name. 
+Delete a contact by name. 
+Main Menu: 
+Implement a loop that displays a menu of options for the user. 
+Options may include adding a contact, viewing contacts, searching for a contact, deleting a contact, or quitting the program. 
+User Input: 
+Depending on the user's choice from the menu, prompt them for the necessary input (e.g., name, phone number). 
+Perform Actions: 
+Based on the user's choice, call the corresponding function to perform the action. 
+Display the Updated Contact List: 
+After each action, display the updated contact list to the user. 
+
+Exit: 
+Allow the user to exit the program when they are done managing their contacts. 
+
+Hints: 
+Use a list to store the contact dictionaries. 
+Each contact can be represented as a dictionary with keys like "name," "phone," and "email." 
+Create functions for adding, viewing, searching, and deleting contacts. 
+Implement input validation to handle different user inputs. 
+Utilize a lambda function for searching contacts based on name. 
+Use *args and **kwargs in functions to handle variable numbers of arguments for contact attributes. 
