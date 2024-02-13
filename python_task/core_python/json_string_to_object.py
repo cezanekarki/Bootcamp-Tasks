@@ -13,10 +13,10 @@ string_data='{"name": "John Doe", "dob": "1990-01-01 00:00:00", "city": "Anytown
 json_load=json.loads(string_data)
 print(json_load)
 
-with open('python_task/string_data.json', 'w') as file:
+with open('python_task/core_python/string_data.json', 'w') as file:
     json.dump(json_load, file)
 
-with open('python_task/string_data.json', 'r') as file:
+with open('python_task/core_python/string_data.json', 'r') as file:
     json_data=json.load(file)
 
 json_data['dob']=datetime.strptime(json_data['dob'], '%Y-%m-%d %H:%M:%S')

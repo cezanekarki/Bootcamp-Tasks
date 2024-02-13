@@ -148,7 +148,7 @@ class GitLabExtractor:
         try:
             timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
             filename = f"repo-query-{timestamp}.json"
-            with open('python_task/'+filename, 'w') as json_file:
+            with open('python_task/core_python/'+filename, 'w') as json_file:
                 json.dump(data, json_file, indent=2)
             print(f"Data dumped to {filename}")
         except Exception as e:
