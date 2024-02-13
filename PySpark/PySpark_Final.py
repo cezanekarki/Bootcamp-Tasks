@@ -107,6 +107,38 @@ df_union = df_union.drop("count")
 # COMMAND ----------
 
 
+ 
+window = Window.partitionBy(df_union.columns).orderBy("id")
+#df_new= df_union.withColumn("row_number", F.row_number().over(window))
+#df_is_duplicate = df_new.withColumn("is_Duplicate", F.when(F.col("row_number") == 1, False).otherwise(True))
+df_is_duplicate = df_new.withColumn("is_Duplicate", F.row_number().over(window) != 1)
+
+#df1=df_is_duplicate.drop("row_number")
+ 
+df1.show()
+
+
+# COMMAND ----------
+
+
+
+window_spec = Window.partitionBy("department").orderBy("salary")
+
+df_with_row_number = df_union.withColumn("row_number", F.row_number().over(window_spec))
+
+df_with_comparison = df_with_row_number.withColumn(
+    "is_unique",
+    F.when(F.col("row_number") == 1, True.otherwise(False)
+)
+
+
+df_with_comparison.show()
+
+
+
+# COMMAND ----------
+
+
 df_union.show()
 
 
@@ -119,10 +151,11 @@ df_json.show()
 
 window_spec = Window.partitionBy("department")
 
-df_union.withColumn(
+a = df_union.withColumn(
     "mean_salary_department",
     F.mean("Salary").over(window_spec)
-).show()
+)
+a.show()
 
 
 # COMMAND ----------
@@ -131,9 +164,9 @@ df_union.withColumn(
 
 window_spec = Window.partitionBy("department")
 
-df_with_comparison = df_union.withColumn(
+df_with_comparison = a.withColumn(
     "is_higher_salary",
-    F.when(F.col("salary") >= F.max("salary").over(window_spec), True).otherwise(False)
+    F.when(F.col("salary") >= F.col("mean_salary_department"), True).otherwise(False)
 )
 
 df_with_comparison.show()
