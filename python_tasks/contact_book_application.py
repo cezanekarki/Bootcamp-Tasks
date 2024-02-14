@@ -9,11 +9,11 @@ Original file is located at
 
 contacts = []
 
-def add_contact():
-    name = input("Enter name: ")
-    phone = input("Enter phone number: ")
-    email = input("Enter email: ")
-    contact = {"name": name, "phone": phone, "email": email}
+def add_contact(*args, **kwargs):
+    contact = {}
+    for arg in args:
+        contact[arg] = input(f"Enter {arg}: ")
+    contact.update(kwargs)
     contacts.append(contact)
     print("Contact added successfully!")
 
@@ -51,7 +51,7 @@ def main_menu():
         choice = input("Enter your choice (1-5): ")
 
         if choice == '1':
-            add_contact()
+            add_contact("name", "phone", "email")
         elif choice == '2':
             view_contacts()
         elif choice == '3':
@@ -66,6 +66,3 @@ def main_menu():
 
 if __name__ == "__main__":
     main_menu()
-
-print(contacts)
-
