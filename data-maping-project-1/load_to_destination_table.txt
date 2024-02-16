@@ -1,0 +1,114 @@
+%python
+
+#Loading to our target table 
+
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import col ,to_date
+from pyspark.sql.types import IntegerType,StringType
+#initializing the spark session
+spark = SparkSession.builder.appName("SQLtoDF").getOrCreate()
+
+sql_query = """
+
+select 
+'nova' || dt.id as source_id,
+h.insurer_id as subscriber_id,  
+dt.first_name as first_name,
+coalesce(dt.middle_name, '-') as middle_name,
+dt.last_name as last_name,
+case 
+when upper(dt.gender)='F' and upper(dt.marital_status) IN ('MARRIED','WIDOWED') then 'Mrs.'
+when upper(dt.gender)='F' and upper(dt.marital_status) ='DIVORCED' then 'Ms.'
+when upper(dt.gender)='F' and (upper(dt.marital_status) ='SINGLE' or dt.marital_status is null) then 'Ms.'
+when upper(dt.gender)='M' then 'Mr.'
+when dt.gender is null then dt.marital_status
+when (dt.gender is null and dt.marital_status is null) then '-'
+end as prefix_name,
+  CASE
+        WHEN dt.job_role IN (SELECT it FROM job_role_master) THEN 'IT'
+        WHEN dt.job_role IN (SELECT media FROM job_role_master) THEN 'Media'
+        WHEN dt.job_role IN (SELECT mngt_lead FROM job_role_master) THEN 'Mgmt'
+        WHEN dt.job_role IN (SELECT geography FROM job_role_master) THEN 'Geo'
+        WHEN dt.job_role IN (SELECT rnd FROM job_role_master) THEN 'RnD'
+        WHEN dt.job_role IN (SELECT admin_sup FROM job_role_master) THEN 'Admin'
+        WHEN dt.job_role IN (SELECT healthcare FROM job_role_master) THEN 'Med.'
+        WHEN dt.job_role IN (SELECT acc_fin FROM job_role_master) THEN 'acc/fin'
+        WHEN dt.job_role IN (SELECT sales_market FROM job_role_master) THEN 'sales'
+        WHEN dt.job_role IN (SELECT engineering FROM job_role_master) THEN 'Er.'
+        ELSE 'Other'
+    END AS suffix_name,
+dt.last_name||' ' || coalesce(dt.middle_name,'-') ||' '|| dt.first_name as name,
+'NOVA' as record_source,
+CURRENT_TIMESTAMP()  as record_created_ts,
+'Y' as is_verified,
+--addresses column
+ '{address_type: "' || ad.address_type || '", ' ||
+  'address_line_1: "' || ad.address_line_1 || '", ' ||
+  'address_line_2: "' || coalesce(ad.address_line_2,'-')  || '", ' ||
+  'city: "' || ad.city || '", ' ||
+  'state_province: "' || ad.state || '", ' ||
+  'postal_code: "' || 
+  case 
+    when ad.zipcode LIKE '%-%' then substr(ad.zipcode, 1, instr(ad.zipcode, '-') - 1)
+    else ad.zipcode
+  end || '", ' ||
+  'zip_code_extension: "' ||  
+  case 
+    when ad.zipcode LIKE '%-%' then substr(ad.zipcode, instr(ad.zipcode, '-') + 1)
+    else '-'
+  end || '", ' ||
+  'country: "' || 'United States' || '"}' as addresses,
+--phones column
+'{
+  phone_type: "' || case when ci.phone like '(___)%' then substr(ci.phone,2,3)  when ci.phone is null then 'NaN' else ci.phone end || '",
+  number: "' || case when ci.phone like '(___)%' then substr(ci.phone,instr(ci.phone,')') + 1)  when ci.phone is null then 'NaN' else ci.phone end || '"
+}' as phones,
+case when dt.email like '%@%.%' then dt.email else 'invalid' end as email,
+'Y' as privacy_preference,
+replace(dt.ssn,'-','') as national_id,
+coalesce(dt.gender,'-') as gender,
+coalesce(dt.marital_status,'-') as marital_status,
+dt.date_of_birth as date_of_birth,
+extract(year from dt.date_of_birth) as year_of_birth, 
+case when dt.deceased_date is not null then 'Y' else 'N' END as deceased_ind,
+coalesce(round(MONTHS_BETWEEN(date_format(to_date(dt.deceased_date, 'M/d/yyyy'), 'yyyy-MM-dd'), dt.date_of_birth) / 12,0),'-') AS deceased_age,
+coalesce(date_format(to_date(deceased_date, 'M/d/yyyy'), 'yyyy-MM-dd'),'-') as deceased_date,
+dt.spoken_language_1 || "," || dt.spoken_language_1 as languages,
+--employment column
+ '{employer_name:"' || dt.company || '", ' ||
+    'employee_role:"' || dt.job_role || '", ' ||
+    'employee_status:"' || case when dt.deceased_date is null then 'Active' Else 'InActive' end || '", ' ||
+    'employee_hiredate:"' || dt.job_hiredate || 
+    '"}' as employment,
+    
+'Not Assigned' as additional_source_value
+-- dt.*,ad.*,ci.*,h.*
+from detail dt
+left join address ad
+on dt.id = ad.id
+left join contactinfo ci
+on dt.id = ci.id
+left join header h
+on dt.id = h.id
+"""
+result_df = spark.sql(sql_query)
+
+display(result_df)
+result_df.printSchema()
+
+# subscriber_id is a LongType, cast it to StringType
+result_df = result_df.withColumn("subscriber_id", col("subscriber_id").cast("string"))
+
+# year_of_birth is an IntegerType, cast it to StringType
+result_df = result_df.withColumn("year_of_birth", col("year_of_birth").cast("string"))
+
+# deceased_age is a StringType, cast it to IntegerType
+result_df = result_df.withColumn("deceased_age", col("deceased_age").cast("int"))
+
+#  'deceased_date' is in a stringtype ,cast it to date
+result_df = result_df.withColumn("deceased_date", to_date(col("deceased_date"), 'yyyy-MM-dd'))
+
+# Write the DataFrame to a table
+result_df.write.mode("overwrite").saveAsTable("active_eligs_member")
+
+

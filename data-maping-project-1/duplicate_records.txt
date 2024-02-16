@@ -1,0 +1,23 @@
+--check duplicate value based demographic of memeber
+select m.*,
+row_number() over (partition by m.first_name,m.middle_name,m.last_name,m.national_id,m.gender,m.date_of_birth order by m.national_id) as row_num
+from active_eligs_member m
+
+/
+
+-- as we can see from above query , we have duplicate record based on demographic
+with rank_cte as (
+select m.*,
+row_number() over (partition by m.first_name,m.middle_name,m.last_name,m.national_id,m.gender,m.date_of_birth order by m.national_id) as row_num
+from active_eligs_member m
+) select count(*) as duplication_record_count from rank_cte where row_num > 1
+
+/
+
+-- deleting duplicate record from active_eligs_member table
+with rank_cte as (
+select m.*,
+row_number() over (partition by m.first_name,m.middle_name,m.last_name,m.national_id,m.gender,m.date_of_birth order by m.national_id) as row_num
+from active_eligs_member m
+) delete from rank_cte where row_num > 1
+-- so in traditional sql this would have deleted the underlying table records (from active_eligs_member table) but in databrick i think it does not directly support DELETE statements to remove rows from a table.
