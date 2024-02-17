@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Submission Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Todo Manager</h1>
+    <button type="button" id="showInsertForm">Insert Todos</button>
+    <button type="button" id="getAllTasks">Get All Todos</button>
+    <button type="button" id="showDeleteUI">Delete Todo</button>
+
+<button type="button" id="showUpdateUI">Update Todo</button>
+
+<div id="updateTaskForm" style="display: none;">
+    <h2>Update Todo Status</h2>
+    <label for="updateId">ID of the todo to update:</label><br>
+    <input type="text" id="updateId" name="updateId"><br>
+    <label for="updateStatus">New Status:</label><br>
+    <select id="updateStatus" name="updateStatus">
+        <option value="Pending">Pending</option>
+        <option value="Done">Done</option>
+    </select><br><br>
+    <button type="button" id="updateTask">Update Todo</button>
+</div>
+
+    <div id="deleteTaskForm" style="display: none;">
+        <h2>Delete a Todo</h2>
+        <label for="deleteId">ID of the todo to delete:</label><br>
+        <input type="text" id="deleteId" name="deleteId"><br><br>
+        <button type="button" id="deleteTask">Delete Todo</button>
+    </div>
+
+<div id="tasksDisplay"></div>
+    <div id="taskFormContainer" style="display: none;">
+        <h2>Add a New Todo</h2>
+        <form id="taskForm">
+            <label for="id">ID:</label><br>
+            <input type="text" id="id" name="id"><br>
+            <label for="todo">Todo:</label><br>
+            <input type="text" id="todo" name="todo"><br>
+            <label for="status">Status:</label><br>
+            <select name="status" id="status">
+                <option value="Pending">Pending</option>
+                <option value="Done">Done</option>
+            </select><br><br>
+            <button type="submit">Add Todo</button>
+        </form>
+    </div>
+    <div id="tasksDisplay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
