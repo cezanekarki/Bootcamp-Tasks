@@ -1,0 +1,7 @@
+{"id": 1, "name": "John", "dob": "1992-05-12", "age": 30, "salary": 70000, "department": "IT"}
+{"id": 2, "name": "Alice", "dob": "1997-02-28", "age": 25, "salary": 60000, "department": "HR"}
+{"id": 3, "name": "Bob", "dob": null, "age": null, "salary": 80000, "department": "IT"}
+{"id": 4, "name": "Emily", "dob": "1994-11-22", "age": 28, "salary": 65000, "department": "Finance"}
+{"id": 5, "name": "David", "dob": "1981-12-18", "age": 41, "salary": 90000, "department": "HR"}
+{"id": 6, "name": "Susan", "dob": "1989-07-05", "age": 33, "salary": 75000, "department": "Finance"}
+{"id": 7, "name": "Mike", "dob": "1976-03-15", "age": 46, "salary": 95000, "department": "IT"}
