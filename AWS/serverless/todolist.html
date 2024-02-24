@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+</head>
+<body>
+    <h1>Todo App</h1>
+
+    <!-- Form to add a new task -->
+    <form id="addTaskForm">
+        <label for="task">Task:</label>
+        <input type="text" id="task" name="task" required>
+        <label for="status">Status:</label>
+        <input type="text" id="status" name="status" required>
+        <button type="button" onclick="addTask()">Add Task</button>
+    </form>
+
+    <!-- Display tasks -->
+    <h2>Tasks</h2>
+    <ul id="tasksList"></ul>
+
+    <!-- Form to update a task -->
+    <form id="updateTaskForm">
+        <label for="taskId">Task ID:</label>
+        <input type="text" id="taskId" name="taskId" required>
+        <label for="updateKey">Update Key:</label>
+        <input type="text" id="updateKey" name="updateKey" required>
+        <label for="updateValue">New Value:</label>
+        <input type="text" id="updateValue" name="updateValue" required>
+        <button type="button" onclick="updateTask()">Update Task</button>
+    </form>
+
+    <!-- Form to delete a task -->
+    <form id="deleteTaskForm">
+        <label for="deleteTaskId">Task ID:</label>
+        <input type="text" id="deleteTaskId" name="deleteTaskId" required>
+        <button type="button" onclick="deleteTask()">Delete Task</button>
+    </form>
+
+    <script>
+        const apiEndpoint = 'https://1mtvlunr70.execute-api.us-east-1.amazonaws.com/task2Serverless/task2serverless';  
+
+        async function addTask() {
+            const task = document.getElementById('task').value;
+            const status = document.getElementById('status').value;
+
+            const response = await fetch(apiEndpoint, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ id: Date.now().toString(), task, status }),
+            });
+
+            if (response.ok) {
+                // Success, refresh the tasks list
+                getTasks();
+            } else {
+                // Handle error
+                console.error('Error adding task:', response.statusText);
+            }
+        }
+
+        async function getTasks() {
+            const response = await fetch(apiEndpoint, {
+                method: 'GET',
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                displayTasks(data.data);
+            } else {
+                console.error('Error getting tasks:', response.statusText);
+            }
+        }
+
+        function displayTasks(tasks) {
+            const tasksList = document.getElementById('tasksList');
+            tasksList.innerHTML = '';
+
+            tasks.forEach(task => {
+                const li = document.createElement('li');
+                li.textContent = `ID: ${task.id}, Task: ${task.task}, Status: ${task.status}`;
+                tasksList.appendChild(li);
+            });
+        }
+
+        async function updateTask() {
+            const taskId = document.getElementById('taskId').value;
+            const updateKey = document.getElementById('updateKey').value;
+            const updateValue = document.getElementById('updateValue').value;
+
+            const response = await fetch(apiEndpoint, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ id: taskId, key: updateKey, new_value: updateValue }),
+            });
+
+            if (response.ok) {
+                // Success, refresh the tasks list
+                getTasks();
+            } else {
+                // Handle error
+                console.error('Error updating task:', response.statusText);
+            }
+        }
+
+        async function deleteTask() {
+            const taskId = document.getElementById('deleteTaskId').value;
+
+            const response = await fetch(apiEndpoint, {
+                method: 'DELETE',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ id: taskId }),
+            });
+
+            if (response.ok) {
+                // Success, refresh the tasks list
+                getTasks();
+            } else {
+                // Handle error
+                console.error('Error deleting task:', response.statusText);
+            }
+        }
+
+        // Initial load of tasks
+        getTasks();
+    </script>
+</body>
+</html>
