@@ -1,9 +1,9 @@
-CREATE  TABLE  euro_teams (
+CREATE  TABLE  #euro_teams (
   team VARCHAR(255) PRIMARY KEY,
   group_name VARCHAR(2) NOT NULL,
 );
 
-INSERT INTO euro_teams (team, group_name)
+INSERT INTO #euro_teams (team, group_name)
 VALUES
   ('Germany', 'A'),
   ('Scotland', 'A'),
@@ -42,7 +42,7 @@ CREATE TABLE matches (
  team2_group VARCHAR(255)
 );
 
-select * from table matches;
+select * from  matches;
 
 
 INSERT INTO matches (group_name, team1, gf1, team2, gf2, stage)
@@ -54,9 +54,9 @@ SELECT
     NULL AS gf2,
     'GroupStage' AS stage  -- Insert 'GroupStage' as the value for the stage column
 FROM
-    euro_teams t1
+    #euro_teams t1
 CROSS JOIN
-    euro_teams t2
+    #euro_teams t2
 WHERE
     t1.group_name = t2.group_name -- Match teams within the same group
     AND t1.team < t2.team -- Avoid duplicate pairs (A vs B is the same as B vs A)
@@ -82,12 +82,13 @@ select * from matches  where gf1=gf2 and stage='GroupStage'
 
 -----work for the group stage------
 -- generate random goals for the matches
+
 CREATE OR ALTER PROCEDURE UpdateGoalsMatches
     @stage VARCHAR(255) -- Add a new parameter for the stage
 AS
 BEGIN
     DECLARE @counter INT = 1;
-
+ 
     BEGIN
         -- Update the matches table with random numbers for gf1 and gf2 based on the stage
         UPDATE matches
@@ -97,15 +98,20 @@ BEGIN
         WHERE
             stage = @stage; -- Use the stage parameter as a condition
 
-        -- Check if gf1 is equal to gf2, and increment gf2 by 1 if they are equal
-        UPDATE matches
-        SET
-            gf2 = gf2 + 1
-        WHERE
-            stage = @stage
-            AND gf1 = gf2;
+        -- Check if the stage is not equal to 'GroupStage', then execute the additional update
+        IF @stage <> 'GroupStage'
+        BEGIN
+            UPDATE matches
+            SET
+                gf2 = gf2 + 1
+            WHERE
+                stage = @stage
+                AND gf1 = gf2;
+        END;
     END;
 END;
+
+
 
 
 -- Execute the stored procedure with a specific stage parameter
