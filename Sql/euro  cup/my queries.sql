@@ -31,7 +31,7 @@ VALUES
   ('Finland', 'F');
 
 CREATE TABLE matches (
- id VARCHAR(20);
+ id VARCHAR(20) primary key,
  group_name varchar(255),
  team1 VARCHAR(255),
  gf1  int,
@@ -42,24 +42,27 @@ CREATE TABLE matches (
  team2_group VARCHAR(255)
 );
 
-select * from  matches;
-
-
-INSERT INTO matches (group_name, team1, gf1, team2, gf2, stage)
+CREATE SEQUENCE match_id_seq START WITH 1 INCREMENT BY 1;
+ 
+-- Insert data into matches table with generated IDs
+INSERT INTO matches (id, group_name, team1, gf1, team2, gf2, stage, team1_group, team2_group)
 SELECT
+    'M' + CAST(ROW_NUMBER() OVER (ORDER BY t1.group_name, t1.team, t2.team) AS VARCHAR(10)) AS id,
     t1.group_name,
     t1.team AS team1,
     NULL AS gf1,
     t2.team AS team2,
     NULL AS gf2,
-    'GroupStage' AS stage  -- Insert 'GroupStage' as the value for the stage column
+    'GroupStage' AS stage,
+    t1.group_name AS team1_group,
+    t2.group_name AS team2_group
 FROM
-    #euro_teams t1
+    euro_teams t1
 CROSS JOIN
-    #euro_teams t2
+    euro_teams t2
 WHERE
-    t1.group_name = t2.group_name -- Match teams within the same group
-    AND t1.team < t2.team -- Avoid duplicate pairs (A vs B is the same as B vs A)
+    t1.group_name = t2.group_name
+    AND t1.team < t2.team
 ORDER BY
     group_name, team1, team2;
 
