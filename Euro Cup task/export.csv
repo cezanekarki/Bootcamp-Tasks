@@ -1,17 +1,17 @@
 L_Grp/Pos,L_Country,L_MP,L_W,L-D,L_L,L-GF,L_GA,L_GD,L_Pts,L_R16_Teams,L_R16_Score,L_QF_Teams,L_QF_Score,L_SF_Teams,L_SF_Score,L_Fin_Teams,L_Fin_Score,TournamentWinner,R_Fin_Score,R_Fin_Teams,R_SF_Score,R_SF_Teams,R_QF_Score,R_QF_Teams,R_R16_Score,R_R16_Teams,R_Grp/Pos,R_Country,R_MP,R_W,R-D,R_L,R-GF,R_GA,R_GD,R_Pts
-A1,Germany,3,2,1,0,14,7,7,7,,,,,,,,,,,,,,,,,,D1,Netherlands,3,2,0,1,11,8,3,6
-A2,Hungary,3,2,0,1,12,14,-2,6,Spain,2,,,,,,,,,,,,,,4,Ukraine,D2,Austria,3,1,1,1,14,13,1,4
-A3,Switzerland,3,1,1,1,7,8,-1,4,Portugal,3,,,,,,,,,,,,,,1,England,D3,France,3,1,1,1,12,11,1,4
-A4,Scotland,3,0,0,3,10,14,-4,0,,,,,,,,,,,,,,,,,,D4,Poland,3,1,0,2,8,13,-5,3
-,,,,,,,,,,,,Portugal,3,,,,,,,,,,1,Ukraine,,,,,,,,,,,,
-,,,,,,,,,,Germany,2,Germany,2,,,,,,,,,,2,Czech Republic,1,Netherlands,,,,,,,,,,
-B1,Spain,3,3,0,0,13,1,12,9,Serbia,1,,,Portugal,5,,,,,,0,Czech Republic,,,4,Czech Republic,E1,Ukraine,3,3,0,0,15,5,10,9
-B2,Italy,3,2,0,1,9,7,2,6,,,,,,,,,Portugal,,,,,,,,,E2,Slovakia,3,2,0,1,13,9,4,6
-B3,Albania,3,0,1,2,6,12,-6,1,,,,,,,Portugal,2,,1,Denmark,,,,,,,E3,Romania,3,1,0,2,9,14,-5,3
-B4,Croatia,3,0,1,2,4,12,-8,1,Turkey,2,,,Turkey,3,,,,,,5,Denmark,,,5,Denmark,E4,Belgium,3,0,0,3,5,14,-9,0
-,,,,,,,,,,Switzerland,0,Turkey,4,,,,,,,,,,3,Denmark,4,France,,,,,,,,,,
-,,,,,,,,,,,,Slovakia,1,,,,,,,,,,0,Hungary,,,,,,,,,,,,
-C1,Denmark,3,2,0,1,12,5,7,6,,,,,,,,,,,,,,,,,,F1,Turkey,3,2,1,0,14,10,4,7
-C2,Serbia,3,2,0,1,6,5,1,6,Austria,0,,,,,,,,,,,,,,2,Hungary,F2,Czech Republic,3,1,2,0,8,6,2,5
-C3,England,3,1,0,2,8,10,-2,3,Slovakia,2,,,,,,,,,,,,,,0,Italy,F3,Portugal,3,1,1,1,10,10,0,4
-C4,Slovenia,3,1,0,2,7,13,-6,3,,,,,,,,,,,,,,,,,,F4,Greece,3,0,0,3,5,11,-6,0
+A1,Hungary,3,3,0,0,7,0,7,9,,,,,,,,,,,,,,,,,,D1,Austria,3,2,1,0,13,8,5,7
+A2,Switzerland,3,2,0,1,7,7,0,6,Spain,4,,,,,,,,,,,,,,3,Romania,D2,France,3,2,0,1,10,8,2,6
+A3,Scotland,3,1,0,2,4,7,-3,3,Portugal,4,,,,,,,,,,,,,,3,Netherlands,D3,Netherlands,3,1,1,1,10,9,1,4
+A4,Germany,3,0,0,3,5,9,-4,0,,,,,,,,,,,,,,,,,,D4,Poland,3,0,0,3,7,15,-8,0
+,,,,,,,,,,,,Portugal,1,,,,,,,,,,4,Netherlands,,,,,,,,,,,,
+,,,,,,,,,,Hungary,3,Denmark,3,,,,,,,,,,3,Austria,3,Austria,,,,,,,,,,
+B1,Spain,3,3,0,0,7,4,3,9,Denmark,5,,,Denmark,3,,,,,,5,Netherlands,,,0,Greece,E1,Romania,3,2,0,1,15,10,5,6
+B2,Croatia,3,2,0,1,7,4,3,6,,,,,,,,,England,,,,,,,,,E2,Ukraine,3,1,1,1,12,11,1,4
+B3,Italy,3,1,0,2,4,5,-1,3,,,,,,,Denmark,1,,5,England,,,,,,,E3,Slovakia,3,1,1,1,9,10,-1,4
+B4,Albania,3,0,0,3,4,9,-5,0,Turkey,0,,,France,2,,,,,,5,England,,,6,England,E4,Belgium,3,1,0,2,9,14,-5,3
+,,,,,,,,,,Italy,5,Italy,1,,,,,,,,,,4,England,2,Slovakia,,,,,,,,,,
+,,,,,,,,,,,,France,4,,,,,,,,,,1,Switzerland,,,,,,,,,,,,
+C1,England,3,2,0,1,11,7,4,6,,,,,,,,,,,,,,,,,,F1,Turkey,3,2,1,0,10,7,3,7
+C2,Denmark,3,2,0,1,9,6,3,6,France,2,,,,,,,,,,,,,,3,Switzerland,F2,Greece,3,2,0,1,9,7,2,6
+C3,Serbia,3,1,0,2,9,12,-3,3,Ukraine,1,,,,,,,,,,,,,,1,Croatia,F3,Portugal,3,1,1,1,10,6,4,4
+C4,Slovenia,3,1,0,2,6,10,-4,3,,,,,,,,,,,,,,,,,,F4,Czech Republic,3,0,0,3,3,12,-9,0
