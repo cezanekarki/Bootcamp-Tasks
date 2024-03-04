@@ -1,8 +1,13 @@
-CREATE  TABLE  #euro_teams (
-  team VARCHAR(255) PRIMARY KEY,
-  group_name VARCHAR(2) NOT NULL,
+Go
+IF OBJECT_ID('tempdb..#euro_teams', 'U') IS NOT NULL
+    DROP TABLE #euro_teams;
+
+CREATE TABLE #euro_teams (
+    team VARCHAR(255) PRIMARY KEY,
+    group_name VARCHAR(2) NOT NULL
 );
 
+Go
 INSERT INTO #euro_teams (team, group_name)
 VALUES
   ('Germany', 'A'),
@@ -29,20 +34,23 @@ VALUES
   ('Portugal', 'F'),
   ('Czechia', 'F'),
   ('Finland', 'F');
+  Go
+  --creating table matches
+IF OBJECT_ID('dbo.matches', 'U') IS NOT NULL
+    DROP TABLE dbo.matches;
 
-CREATE TABLE matches (
- id VARCHAR(20) primary key,
- group_name varchar(255),
- team1 VARCHAR(255),
- gf1  int,
- team2 varchar(255),
- gf2 int,
- stage varchar(255),
- team1_group VARCHAR(255),
- team2_group VARCHAR(255)
+CREATE TABLE dbo.matches (
+    id VARCHAR(20) PRIMARY KEY,
+    group_name VARCHAR(255),
+    team1 VARCHAR(255),
+    gf1 INT,
+    team2 VARCHAR(255),
+    gf2 INT,
+    stage VARCHAR(255),
+    team1_group VARCHAR(255),
+    team2_group VARCHAR(255)
 );
-
-CREATE SEQUENCE match_id_seq START WITH 1 INCREMENT BY 1;
+GO
  
 -- Insert data into matches table with generated IDs
 INSERT INTO matches (id, group_name, team1, gf1, team2, gf2, stage, team1_group, team2_group)
@@ -67,41 +75,24 @@ ORDER BY
     group_name, team1, team2;
 
 
-	-- update the match id 
-WITH CTE AS (
-    SELECT 
-        id,
-        ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) AS RowNum
-    FROM matches
-)
-
-UPDATE CTE
-SET id = 'M' + CAST(RowNum AS VARCHAR(2));
-
-select * from matches  where gf1=gf2 and stage='GroupStage'
-
---select * from matches order by group_name;
+--select * from matches where  stage='GroupStage'
 
 
 -----work for the group stage------
 -- generate random goals for the matches
-
+Go
 CREATE OR ALTER PROCEDURE UpdateGoalsMatches
     @stage VARCHAR(255) -- Add a new parameter for the stage
 AS
 BEGIN
     DECLARE @counter INT = 1;
- 
     BEGIN
-        -- Update the matches table with random numbers for gf1 and gf2 based on the stage
         UPDATE matches
         SET
             gf1 = CAST((RAND(CHECKSUM(NEWID())) * 6) AS INT),
             gf2 = CAST((RAND(CHECKSUM(NEWID())) * 6) AS INT)
         WHERE
             stage = @stage; -- Use the stage parameter as a condition
-
-        -- Check if the stage is not equal to 'GroupStage', then execute the additional update
         IF @stage <> 'GroupStage'
         BEGIN
             UPDATE matches
@@ -114,14 +105,13 @@ BEGIN
     END;
 END;
 
-
-
-
--- Execute the stored procedure with a specific stage parameter
+Go 
 EXEC UpdateGoalsMatches @stage = 'GroupStage';
+Go
 
 
 --group stage view---
+Go
 IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.VIEWS WHERE TABLE_NAME = 'group_stage_view')
     DROP VIEW group_stage_view;
 GO
@@ -138,7 +128,6 @@ SELECT
     CONVERT(VARCHAR(10), SUM(CONVERT(INT, GD))) AS GD,
     CONVERT(VARCHAR(10), SUM(CONVERT(INT, PTS))) AS PTS
 FROM (
-    -- Subquery for team1
     SELECT
         group_name,
         team1 AS team,
@@ -154,10 +143,7 @@ FROM (
         matches
     GROUP BY
         group_name, team1
-
     UNION ALL
-
-    -- Subquery for team2
     SELECT
         group_name,
         team2 AS team,
@@ -176,18 +162,13 @@ FROM (
 ) AS TeamStats
 GROUP BY
     group_name, team;
+Go
 
-
-
-SELECT * FROM group_stage_view
-ORDER BY group_name, PTS DESC, GD DESC, GF DESC, GA DESC, W DESC, L DESC, D DESC;
-
-
-select * from matches
-
+--SELECT * FROM group_stage_view ORDER BY group_name, PTS DESC, GD DESC, GF DESC, GA DESC, W DESC, L DESC, D DESC;
 
 ------round of 16 preparation -----
 --creating the third place view
+Go
 IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.VIEWS WHERE TABLE_NAME = 'group_stage_third_placement_view')
     DROP VIEW group_stage_third_placement_view;
 GO
@@ -203,8 +184,10 @@ FROM (
 ) AS GroupRanking
 WHERE
     RowNum = 3;
+Go
 
 --creating the top 2 winners place 
+Go
 IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.VIEWS WHERE TABLE_NAME = 'grp_stage_top2_view')
     DROP VIEW grp_stage_top2_view;
 GO
@@ -220,53 +203,96 @@ FROM (
 ) AS GroupRanking
 WHERE
     RowNum in (1,2);
+Go
 
---select Top 4 * from group_stage_third_placement_view order by PTS DESC, GD DESC, GF DESC, GA DESC, W DESC, L DESC, D DESC;
 --select * from grp_stage_top2_view order by group_name,PTS DESC, GD DESC, GF DESC, GA DESC, W DESC, L DESC, D DESC;
+--select * from group_stage_third_placement_view;
 
-
-
----prep for round of 16 ---
 
 -- temporary table for third placement
-CREATE  TABLE #third_placement (
- group_name varchar(255),
- team VARCHAR(255),
+Go
+IF OBJECT_ID('tempdb..#round16_combination', 'U') IS NOT NULL
+    DROP TABLE #round16_combination;
+create  table #round16_combination (
+	third_place_combination varchar(255) primary key,
+	B1 varchar(20) not null,
+	C1 varchar(20) not null,
+	E1 varchar(20) not null,
+	F1 varchar(20) not null
 );
-truncate table #third_placement;
+ GO
+insert into #round16_combination
+values ('ABCD', 'A3', 'D3', 'B3', 'C3'),
+	   ('ABCE', 'A3', 'E3', 'B3', 'C3'),
+	   ('ABCF', 'A3', 'F3', 'B3', 'C3'),
+	   ('ABDE', 'D3', 'E3', 'A3', 'B3'),
+	   ('ABDF', 'D3', 'F3', 'A3', 'B3'),
+	   ('ABEF', 'E3', 'F3', 'B3', 'A3'),
+	   ('ACDE', 'E3', 'D3', 'C3', 'A3'),
+	   ('ACDF', 'F3', 'D3', 'C3', 'A3'),
+	   ('ACEF', 'E3', 'F3', 'C3', 'A3'),
+	   ('ADEF', 'E3', 'F3', 'D3', 'A3'),
+	   ('BCDE', 'E3', 'D3', 'B3', 'C3'),
+	   ('BCDF', 'F3', 'D3', 'C3', 'B3'),
+	   ('BCEF', 'F3', 'E3', 'C3', 'B3'),
+	   ('BDEF', 'F3', 'E3', 'D3', 'B3'),
+	   ('CDEF', 'F3', 'E3', 'D3', 'C3');
 
-insert into #third_placement (group_name,team) 
-select top 4 group_name,team from group_stage_third_placement_view 
-order by PTS DESC, GD DESC, GF DESC, GA DESC, W DESC, L DESC, D DESC;
+Go
+IF OBJECT_ID('tempdb..#third_placement', 'U') IS NOT NULL
+    DROP TABLE #third_placement;
+create table #third_placement(
+B1 varchar(2),
+C1 varchar(2),
+E1 varchar(2),
+F1 varchar(2)
+)
 
+--select * from #round16_combination;
 
---select * from #third_placement;
+Go
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.VIEWS WHERE TABLE_NAME = 'third_place_cmbn_grp_view')
+    DROP VIEW third_place_cmbn_grp_view;
+GO
+create view third_place_cmbn_grp_view as
+SELECT STRING_AGG(value, '') WITHIN GROUP (ORDER BY value) AS third_place_cmbn_grp
+FROM (
+    SELECT TOP 4 group_name AS value
+    FROM group_stage_third_placement_view
+    ORDER BY PTS DESC, GD DESC, GF DESC, GA DESC, W DESC, L DESC, D DESC
+) AS top_groups;
+Go
+select * from  third_place_cmbn_grp_view;
+--select * from #round16_combination a inner join  third_place_cmbn_grp_view b on a.third_place_combination =b.third_place_cmbn_grp;
+--inserting into temp table
+Go
+insert into #third_placement (B1,C1,E1,F1)
+select B1,C1,E1,F1 from #round16_combination a inner join  third_place_cmbn_grp_view b on a.third_place_combination =b.third_place_cmbn_grp;
 
--- procedure for geenrating random thrid place
-CREATE or alter PROCEDURE RandomThirdPlaceGrp
-    @ThirdGroups NVARCHAR(100),
-	@GroupName VARCHAR(255) OUTPUT,
-	@Team varchar(255) OUTPUT
+--select * from  #third_placement
+Go
+CREATE OR ALTER PROCEDURE GetTeamAndGroup
+    @ColumnName NVARCHAR(50),
+    @ResultTeam NVARCHAR(100) OUTPUT,
+    @ResultGroupName NVARCHAR(100) OUTPUT
 AS
 BEGIN
-    -- Select the random third-place group based on the provided groups
-    IF EXISTS (SELECT 1 FROM #third_placement WHERE group_name IN (SELECT value FROM STRING_SPLIT(@ThirdGroups, ',')))
-    BEGIN
-        SELECT TOP 1 @GroupName = group_name
-		FROM #third_placement
-		WHERE group_name IN (SELECT value FROM STRING_SPLIT(@ThirdGroups, ','))
-		ORDER BY NEWID();
- 
-		select @Team = team from group_stage_third_placement_view where group_name = @GroupName
- 
-        -- Remove the selected group from #third_placement
-        DELETE FROM #third_placement WHERE group_name = @GroupName;
-    END
+    DECLARE @SqlQuery NVARCHAR(MAX);
+
+    -- Build the dynamic SQL query
+    SET @SqlQuery = N'
+        SELECT @TempTeam = team, @TempGroupName = group_name
+        FROM group_stage_third_placement_view
+        WHERE group_name = LEFT((SELECT ' + QUOTENAME(@ColumnName) + ' FROM #third_placement), 1);
+    ';
+
+    -- Execute the dynamic SQL query and store the result in variables
+    EXEC sp_executesql @SqlQuery, N'@TempTeam NVARCHAR(100) OUTPUT, @TempGroupName NVARCHAR(100) OUTPUT', @ResultTeam OUTPUT, @ResultGroupName OUTPUT;
 END;
 
-
------procdeure for r16 macthing and inserting ---
-CREATE or alter PROCEDURE RoundOf16MatchMaking
+---------------------
+Go
+CREATE or alter PROCEDURE RoundOf16Matches
 AS
 BEGIN
 	declare @RunnerUpGroupA varchar(255), 
@@ -281,14 +307,7 @@ BEGIN
 			@WinnerGroupD varchar(255),
 			@WinnerGroupE varchar(255),
 			@WinnerGroupF varchar(255);
- 
-	select top 2 @RunnerUpGroupA = team from grp_stage_top2_view where group_name = 'A';
-	select top 2 @RunnerUpGroupB = team from grp_stage_top2_view where group_name = 'B';
-	select top 2 @RunnerUpGroupC = team from grp_stage_top2_view where group_name = 'C';
-	select top 2 @RunnerUpGroupD = team from grp_stage_top2_view where group_name = 'D';
-	select top 2 @RunnerUpGroupE = team from grp_stage_top2_view where group_name = 'E';
-	select top 2 @RunnerUpGroupF = team from grp_stage_top2_view where group_name = 'F';
- 
+
 	select top 1 @WinnerGroupA = team from grp_stage_top2_view where group_name = 'A';
 	select top 1 @WinnerGroupB = team from grp_stage_top2_view where group_name = 'B';
 	select top 1 @WinnerGroupC = team from grp_stage_top2_view where group_name = 'C';
@@ -296,53 +315,45 @@ BEGIN
 	select top 1 @WinnerGroupE = team from grp_stage_top2_view where group_name = 'E';
 	select top 1 @WinnerGroupF = team from grp_stage_top2_view where group_name = 'F';
 
-	declare @OpponentGroupOfGroupC varchar(255), @OpponentTeamOfGroupC varchar(255)
-	exec RandomThirdPlaceGrp @ThirdGroups = 'D,E,F', @GroupName = @OpponentGroupOfGroupC output, @Team = @OpponentTeamOfGroupC output
-	select @OpponentGroupOfGroupC, @OpponentTeamOfGroupC;
-
-	declare @OpponentGroupOfGroupB varchar(255), @OpponentTeamOfGroupB varchar(255)
-	exec RandomThirdPlaceGrp @ThirdGroups = 'A,D,E,F', @GroupName = @OpponentGroupOfGroupB output, @Team = @OpponentTeamOfGroupB output
-	select @OpponentGroupOfGroupB, @OpponentTeamOfGroupB
-
-	declare @OpponentGroupOfGroupF varchar(255), @OpponentTeamOfGroupF varchar(255)
-	exec RandomThirdPlaceGrp @ThirdGroups = 'A,B,C', @GroupName = @OpponentGroupOfGroupF output, @Team = @OpponentTeamOfGroupF output
-	select @OpponentGroupOfGroupF, @OpponentTeamOfGroupF
- 
-	declare @OpponentGroupOfGroupE varchar(255), @OpponentTeamOfGroupE varchar(255)
-	exec RandomThirdPlaceGrp @ThirdGroups = 'A,B,C,D', @GroupName = @OpponentGroupOfGroupE output, @Team = @OpponentTeamOfGroupE output
-	select @OpponentGroupOfGroupE, @OpponentTeamOfGroupE
-
+	select top 2 @RunnerUpGroupA = team from grp_stage_top2_view where group_name = 'A';
+	select top 2 @RunnerUpGroupB = team from grp_stage_top2_view where group_name = 'B';
+	select top 2 @RunnerUpGroupC = team from grp_stage_top2_view where group_name = 'C';
+	select top 2 @RunnerUpGroupD = team from grp_stage_top2_view where group_name = 'D';
+	select top 2 @RunnerUpGroupE = team from grp_stage_top2_view where group_name = 'E';
+	select top 2 @RunnerUpGroupF = team from grp_stage_top2_view where group_name = 'F';
+	
+	declare @OpponentTeamOfWinnerB varchar(255), @OpponentGroupOfWinnerB varchar(255); 
+	EXEC GetTeamAndGroup @ColumnName = 'B1', @ResultTeam = @OpponentTeamOfWinnerB OUTPUT, @ResultGroupName = @OpponentGroupOfWinnerB OUTPUT;
+	
+	declare @OpponentTeamOfWinnerC varchar(255), @OpponentGroupOfWinnerC varchar(255); 
+	EXEC GetTeamAndGroup @ColumnName = 'C1', @ResultTeam = @OpponentTeamOfWinnerC OUTPUT, @ResultGroupName = @OpponentGroupOfWinnerC OUTPUT;
+	
+	declare @OpponentTeamOfWinnerE varchar(255), @OpponentGroupOfWinnerE varchar(255); 
+	EXEC GetTeamAndGroup @ColumnName = 'E1', @ResultTeam = @OpponentTeamOfWinnerE OUTPUT, @ResultGroupName = @OpponentGroupOfWinnerE OUTPUT;
+	
+	declare @OpponentTeamOfWinnerF varchar(255), @OpponentGroupOfWinnerF varchar(255); 
+	EXEC GetTeamAndGroup @ColumnName = 'F1', @ResultTeam = @OpponentTeamOfWinnerF OUTPUT, @ResultGroupName = @OpponentGroupOfWinnerF OUTPUT;
 
 	INSERT INTO matches (team1, team2, stage, team1_group, team2_group,id)
 	values 
 		   (@WinnerGroupA, @RunnerUpGroupC, 'RoundOf16', 'A', 'C','M37'),
 		   (@RunnerUpGroupA, @RunnerUpGroupB, 'RoundOf16', 'A', 'B','M38'),
-		    (@WinnerGroupB, @OpponentTeamOfGroupB, 'RoundOf16', 'B', @OpponentGroupOfGroupB,'M39'),
-		   (@WinnerGroupC, @OpponentTeamOfGroupC, 'RoundOf16', 'C', @OpponentGroupOfGroupC,'M40'),
-		   (@WinnerGroupF, @OpponentTeamOfGroupF, 'RoundOf16', 'F', @OpponentGroupOfGroupF,'M41'),
+		   (@WinnerGroupB, @OpponentTeamOfWinnerB, 'RoundOf16', 'B', @OpponentGroupOfWinnerB,'M39'),
+		   (@WinnerGroupC, @OpponentTeamOfWinnerC, 'RoundOf16', 'C', @OpponentGroupOfWinnerC,'M40'),
+		   (@WinnerGroupF, @OpponentTeamOfWinnerF, 'RoundOf16', 'F', @OpponentGroupOfWinnerF,'M41'),
 		   (@RunnerUpGroupD, @RunnerUpGroupE, 'RoundOf16', 'D', 'E','M42'),
-		   (@WinnerGroupE, @OpponentTeamOfGroupE, 'RoundOf16', 'E', @OpponentGroupOfGroupE,'M43'),
+		   (@WinnerGroupE, @OpponentTeamOfWinnerE, 'RoundOf16', 'E', @OpponentGroupOfWinnerE,'M43'),
 		   (@WinnerGroupD, @RunnerUpGroupF, 'RoundOf16', 'D', 'F','M44')
-
-
-
 END;
 
-execute RoundOf16MatchMaking
-
-
+Go
+execute RoundOf16Matches;
+Go
+--execute to update the goals for round of 16
 EXEC UpdateGoalsMatches @stage = 'RoundOf16';
 
---execute RandomGoalCalculation @Stage = 'RoundOf16', @Iterations = 8;
-select * from matches where stage='RoundOf16'
-
---select * from matches where stage='RoundOf16'
-
---select * from matches where gf1=gf2 and stage='RoundOf16'
-
- 
-
 --get winner from above r16
+Go
 CREATE OR ALTER PROCEDURE GetWinnerAboveGrpStg
     @Stage VARCHAR(255),
     @MatchId VARCHAR(20),
@@ -368,6 +379,7 @@ BEGIN
 END;
 
 ---procedure for insert the winner
+Go
 CREATE OR ALTER PROCEDURE ExecuteGetWinnerAboveGrpStgAndInsert
     @Stage VARCHAR(255),
     @MatchId1 VARCHAR(20),
@@ -385,11 +397,6 @@ BEGIN
                             @WinnerTeam = @WinnerTeamResult1 OUTPUT,
                             @WinnerTeamGroup = @WinnerTeamGroupResult1 OUTPUT;
 
-    SELECT @WinnerTeamResult1 AS WinnerTeam,
-           @WinnerTeamGroupResult1 AS WinnerTeamGroup,
-           @Stage AS Stage,
-           @MatchId1 AS MatchId;
-
     DECLARE @WinnerTeamResult2 VARCHAR(255);
     DECLARE @WinnerTeamGroupResult2 VARCHAR(255);
 
@@ -399,22 +406,20 @@ BEGIN
                             @WinnerTeam = @WinnerTeamResult2 OUTPUT,
                             @WinnerTeamGroup = @WinnerTeamGroupResult2 OUTPUT;
 
-
-
     -- Insert into another table (you can modify this part based on your requirements)
     INSERT INTO matches (team1, team2, team1_group, team2_group,stage,id)
     VALUES (@WinnerTeamResult1,@WinnerTeamResult2, @WinnerTeamGroupResult1,@WinnerTeamGroupResult2 ,@CurrentStage , @CurrentMatchId)
-
 END;
 
 ----quarter final
+Go
 EXEC ExecuteGetWinnerAboveGrpStgAndInsert @Stage = 'RoundOf16', @MatchId1 = 'M39', @MatchId2 = 'M37',@CurrentMatchId='M45', @CurrentStage='QuarterFinal';
 EXEC ExecuteGetWinnerAboveGrpStgAndInsert @Stage = 'RoundOf16', @MatchId1 = 'M41', @MatchId2 = 'M42',@CurrentMatchId='M46', @CurrentStage='QuarterFinal';
 EXEC ExecuteGetWinnerAboveGrpStgAndInsert @Stage = 'RoundOf16', @MatchId1 = 'M43', @MatchId2 = 'M44',@CurrentMatchId='M47', @CurrentStage='QuarterFinal';
 EXEC ExecuteGetWinnerAboveGrpStgAndInsert @Stage = 'RoundOf16', @MatchId1 = 'M40', @MatchId2 = 'M38',@CurrentMatchId='M48', @CurrentStage='QuarterFinal';
 
-select * from matches where stage='QuarterFinal'
 EXEC UpdateGoalsMatches @stage = 'QuarterFinal';
+--select * from matches where stage='QuarterFinal';
 
 
 --semi final----
@@ -422,14 +427,12 @@ EXEC ExecuteGetWinnerAboveGrpStgAndInsert @Stage = 'QuarterFinal', @MatchId1 = '
 EXEC ExecuteGetWinnerAboveGrpStgAndInsert @Stage = 'QuarterFinal', @MatchId1 = 'M47', @MatchId2 = 'M48',@CurrentMatchId='M50', @CurrentStage='SemiFinal';
 
 EXEC UpdateGoalsMatches @stage = 'SemiFinal';
-select * from matches where stage='SemiFinal'
-
+--select * from matches where stage='SemiFinal';
 
 --final---
 EXEC ExecuteGetWinnerAboveGrpStgAndInsert @Stage = 'SemiFinal', @MatchId1 = 'M49', @MatchId2 = 'M50',@CurrentMatchId='M51', @CurrentStage='Final';
 EXEC UpdateGoalsMatches @stage = 'Final';
-select * from matches where stage='Final'
-
-
-
---select * from matches
+--select * from matches where stage='Final';
+Go
+--select * from matches;
+--select * from  third_place_cmbn_grp_view;
