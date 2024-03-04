@@ -22,6 +22,7 @@ DROP TABLE IF EXISTS EuroGroupStage;
 DROP TABLE IF EXISTS EuroGroupStageDetail;
 DROP TABLE IF EXISTS ThirdPlaceCombi;
 DROP TABLE IF EXISTS QualifiersPlacement;
+DROP TABLE IF EXISTS EuroTournamentResults;
 
 -- COMMAND ----------
 
@@ -509,3 +510,11 @@ Select * from QualifiersPlacement where MatchStage="FIN"
 -- COMMAND ----------
 
 Select * from qualifiersplacement
+
+-- COMMAND ----------
+
+-- MAGIC %python
+-- MAGIC df_qualifiers_placement = spark.sql("SELECT * FROM qualifiersplacement")
+-- MAGIC
+-- MAGIC df_qualifiers_placement.show()
+-- MAGIC
