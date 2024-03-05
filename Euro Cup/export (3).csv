@@ -1,0 +1,17 @@
+L_Rank,L_Teams,L_Group,L_MP,L_W,L_D,L_L,L_GF,L_GA,L_GD,L_Pts,L_R16_Teams,L_R16_Score,L_QF_Teams,L_QF_Score,L_SF_Teams,L_SF_Score,L_Fin_Teams,L_Fin_Score,EuroCupWinner,R_Fin_Score,R_Fin_Teams,R_SF_Teams,R_SF_Score,R_QF_Teams,R_QF_Score,R_R16_Teams,R_R16_Score,R_Rank,R_Teams,R_Group,R_MP,R_W,R_D,R_L,R_GF,R_GA,R_GD,R_Pts
+1,Scotland,A,3,2,1,0,12,8,4,7,,,,,,,,,,,,,,,,,,1,Austria,D,3,2,1,0,10,6,4,7
+2,Hungary,A,3,2,0,1,14,12,2,6,Albania,4,,,,,,,,,,,,,,Slovakia,3,2,Netherlands,D,3,2,0,1,12,9,3,6
+3,Switzerland,A,3,1,1,1,9,11,-2,4,Switzerland,6,,,,,,,,,,,,,,Croatia,5,3,Finland,D,3,1,0,2,9,14,-5,3
+4,Germany,A,3,0,0,3,8,12,-4,0,,,,,,,,,,,,,,,,,,4,France,D,3,0,1,2,6,8,-2,1
+,,,,,,,,,,,,,Switzerland,1,,,,,,,,,,Croatia,2,,,,,,,,,,,,,
+1,Albania,B,3,2,0,1,13,9,4,6,Scotland,4,Scotland,2,,,,,,,,,,Türkiye,4,Austria,3,1,Slovakia,E,3,2,1,0,13,5,8,7
+2,Italy,B,3,2,0,1,12,11,1,6,Denmark,3,,,Scotland,4,,,,,,Türkiye,3,,,Türkiye,4,2,Ukraine,E,3,1,1,1,8,7,1,4
+3,Croatia,B,3,1,0,2,10,12,-2,3,,,,,,,,,Türkiye,,,,,,,,,3,Belgium,E,3,1,0,2,8,12,-4,3
+4,Spain,B,3,1,0,2,12,15,-3,3,,,,,,,Scotland,2,,3,Türkiye,,,,,,,4,Romania,E,3,1,0,2,8,13,-5,3
+,,,,,,,,,,,Czech,5,,,Czech,1,,,,,,Italy,1,,,Serbia,3,,,,,,,,,,,
+1,Serbia,C,3,1,2,0,8,5,3,5,Slovenia,4,Czech,5,,,,,,,,,,Greece,5,Greece,5,1,Czech,F,3,3,0,0,14,6,8,9
+2,Denmark,C,3,1,2,0,13,12,1,5,,,Ukraine,3,,,,,,,,,,Italy,6,,,2,Türkiye,F,3,2,0,1,11,7,4,6
+3,Slovenia,C,3,0,3,0,8,8,0,3,,,,,,,,,,,,,,,,,,3,Greece,F,3,1,0,2,12,15,-3,3
+4,England,C,3,0,1,2,5,9,-4,1,Netherlands,2,,,,,,,,,,,,,,Hungary,0,4,Portugal,F,3,0,0,3,6,15,-9,0
+NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,Ukraine,3,,,,,,,,,,,,,,Italy,2,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,,,,,,,,,,,,,,,,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
