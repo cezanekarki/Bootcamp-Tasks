@@ -1,0 +1,101 @@
+timestamp,message
+1709751817121,"INIT_START Runtime Version: python:3.12.v20	Runtime Version ARN: arn:aws:lambda:us-east-1::runtime:82aea00f37a44d68665730d559c81352fc95f22c9aa34a0722815a93f08e102b
+"
+1709751819935,"[INFO]	2024-03-06T19:03:39.935Z		Found credentials in environment variables.
+"
+1709751820056,"START RequestId: 34948e46-bedb-491e-a6bf-8d37066b5b6f Version: $LATEST
+"
+1709751820057,"[INFO]	2024-03-06T19:03:40.057Z	34948e46-bedb-491e-a6bf-8d37066b5b6f	This is version: 2024-02-05
+"
+1709751843130,"Successfully extracted and stored contents of upload/RxNorm_full_02052024.zip in 'unzipped' folder.
+"
+1709751843451,"Sheets in upload/RxNorm_Header.xlsx:
+"
+1709751843469,"List RXNCONSO_Headers created with values: ['RXCUI', 'LAT', 'TS', 'LUI', 'STT', 'SUI', 'ISPREF', 'RXAUI', 'SAUI', 'SCUI', 'SDUI', 'SAB', 'TTY', 'CODE', 'STR', 'SRL', 'SUPPRESS', 'CVF', 'Code set', 'Version Month']
+"
+1709751843528,"List RXNSAT_Headers created with values: ['RXCUI', 'LUI', 'SUI', 'RXAUI', 'STYPE', 'CODE', 'ATUI', 'SATUI', 'ATN', 'SAB', 'ATV', 'SUPPRESS', 'CVF', 'Code set', 'Version Month']
+"
+1709751843546,"List RXNDOC_Headers created with values: ['KEY', 'VALUE', 'TYPE', 'EXPL', 'Code set', 'Version Month']
+"
+1709751843563,"List RXNREL_Headers created with values: ['RXCUI1', 'RXAUI1', 'STYPE1', 'REL', 'RXCUI2', 'RXAUI2', 'STYPE2', 'RELA', 'RUI', 'SRUI', 'SAB', 'SL', 'RG', 'DIR', 'SUPPRESS', 'CVF', 'Code set', 'Version Month']
+"
+1709751843582,"List RXNSAB_Headers created with values: ['VCUI', 'RCUI', 'VSAB', 'RSAB', 'SON', 'SF', 'SVER', 'VSTART', 'VEND', 'IMETA', 'RMETA', 'SLC', 'SCC', 'SRL', 'TFR', 'CFR', 'CXTY', 'TTYL', 'ATNL', 'LAT', 'CENC', 'CURVER', 'SABIN', 'SSN', 'SCIT', 'Code set', 'Version Month']
+"
+1709751843599,"List RXNSTY_Headers created with values: ['RXCUI', 'TUI', 'STN', 'STY', 'ATUI', 'CVF', 'Code set', 'Version Month']
+"
+1709751843616,"List RXNATOMARCHIVE_Headers created with values: ['RXAUI', 'AUI', 'STR', 'ARCHIVE_TIMESTAMP', 'CREATED_TIMESTAMP', 'UPDATED_TIMESTAMP', 'CODE', 'IS_BRAND', 'LAT', 'LAST_RELEASED', 'SAUI', 'VSAB', 'RXCUI', 'SAB', 'TTY', 'MERGED_TO_RXCUI', 'Code set', 'Version Month']
+"
+1709751843634,"List RXNCUI_Headers created with values: ['CUI1', 'VER_START', 'VER_END', 'Cardinality', 'CUI2', 'Code set', 'Version Month']
+"
+1709751843652,"List RXNCUICHANGES_Headers created with values: ['RXAUI', 'CODE', 'SAB', 'TTY', 'STR', 'OLD_RXCUI', 'NEW_RXCUI', 'Code set', 'Version Month']
+"
+1709751860911,"CSV file 'RXNATOMARCHIVE.csv' uploaded to 'destination/' in S3.
+"
+1709751860911,"Records of RXNATOMARCHIVE.RRF before transformation: 371368
+"
+1709751860911,"Records of RXNATOMARCHIVE.RRF after transformation: 371368
+"
+1709751863257,"/var/task/lambda_function.py:144: DtypeWarning: Columns (9) have mixed types. Specify dtype option on import or set low_memory=False.
+"
+1709751863257,"df = pd.read_csv(response['Body'], sep='|', header=None)
+"
+1709751874322,"CSV file 'RXNCONSO.csv' uploaded to 'destination/' in S3.
+"
+1709751874322,"Records of RXNCONSO.RRF before transformation: 1133065
+"
+1709751874322,"Records of RXNCONSO.RRF after transformation: 1133065
+"
+1709751874635,"CSV file 'RXNCUI.csv' uploaded to 'destination/' in S3.
+"
+1709751874635,"Records of RXNCUI.RRF before transformation: 30046
+"
+1709751874635,"Records of RXNCUI.RRF after transformation: 30046
+"
+1709751874699,"CSV file 'RXNCUICHANGES.csv' uploaded to 'destination/' in S3.
+"
+1709751874699,"Records of RXNCUICHANGES.RRF before transformation: 153
+"
+1709751874699,"Records of RXNCUICHANGES.RRF after transformation: 153
+"
+1709751874885,"CSV file 'RXNDOC.csv' uploaded to 'destination/' in S3.
+"
+1709751874885,"Records of RXNDOC.RRF before transformation: 3445
+"
+1709751874885,"Records of RXNDOC.RRF after transformation: 3445
+"
+1709751882297,"/var/task/lambda_function.py:144: DtypeWarning: Columns (7) have mixed types. Specify dtype option on import or set low_memory=False.
+"
+1709751882297,"df = pd.read_csv(response['Body'], sep='|', header=None)
+"
+1709751948924,"CSV file 'RXNREL.csv' uploaded to 'destination/' in S3.
+"
+1709751948924,"Records of RXNREL.RRF before transformation: 7154306
+"
+1709751948924,"Records of RXNREL.RRF after transformation: 7154306
+"
+1709751949064,"CSV file 'RXNSAB.csv' uploaded to 'destination/' in S3.
+"
+1709751949064,"Records of RXNSAB.RRF before transformation: 13
+"
+1709751949064,"Records of RXNSAB.RRF after transformation: 13
+"
+1709751966035,"/var/task/lambda_function.py:144: DtypeWarning: Columns (6) have mixed types. Specify dtype option on import or set low_memory=False.
+"
+1709751966035,"df = pd.read_csv(response['Body'], sep='|', header=None)
+"
+1709752019152,"CSV file 'RXNSAT.csv' uploaded to 'destination/' in S3.
+"
+1709752019152,"Records of RXNSAT.RRF before transformation: 7222404
+"
+1709752019152,"Records of RXNSAT.RRF after transformation: 7222404
+"
+1709752021851,"CSV file 'RXNSTY.csv' uploaded to 'destination/' in S3.
+"
+1709752021851,"Records of RXNSTY.RRF before transformation: 461874
+"
+1709752021851,"Records of RXNSTY.RRF after transformation: 461874
+"
+1709752021852,"END RequestId: 34948e46-bedb-491e-a6bf-8d37066b5b6f
+"
+1709752021852,"REPORT RequestId: 34948e46-bedb-491e-a6bf-8d37066b5b6f	Duration: 201797.46 ms	Billed Duration: 201798 ms	Memory Size: 6024 MB	Max Memory Used: 5466 MB	Init Duration: 2933.54 ms	
+"
