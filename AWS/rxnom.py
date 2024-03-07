@@ -86,6 +86,8 @@ def rxnorm_transformation():
                     df.columns = df_dict
                     df['CODE_SET'] = ['RXNORM'] * df.shape[0]
                     format_dates(df)
+                    # print the first 2 rows from the evry file
+                    print(df.head(2))
                     after_conversion_dict[sheet_names[i]] = df.shape[0]
 
                     # Save DataFrame to a text file
