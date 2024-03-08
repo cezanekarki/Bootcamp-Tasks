@@ -1,0 +1,95 @@
+# Databricks notebook source
+import requests
+import json
+
+gitlab_url = "https://gitlab.com"
+repo_path = "gitlab-org/gitlab-docs"
+token = "glpat-UbkHJEe2zNgqotvLPc7E"
+
+api_url = f"{gitlab_url}/api/v4/projects/{repo_path.replace('/', '%2F')}/repository/tree?recursive=true"
+headers = {"PRIVATE-TOKEN": token}
+
+response = requests.get(api_url, headers=headers)
+
+if response.status_code == 200:
+    project_info = response.json()
+    formatted_json = json.dumps(project_info, indent=2)
+    print(formatted_json)
+else:
+    print(f"Error: {response.status_code} - {response.text}")
+
+
+# COMMAND ----------
+
+import requests
+import json
+from datetime import datetime
+ 
+repository_tree_url = 'https://gitlab.com/api/v4/projects/{project_id}/repository/tree?recursive=true'
+contributors_url = 'https://gitlab.com/api/v4/projects/{project_id}/repository/contributors'
+ 
+project_id = '1794617'
+ 
+access_token = 'glpat-UbkHJEe2zNgqotvLPc7E'
+ 
+params = {
+    'private_token': access_token,  
+}
+ 
+response = requests.get(contributors_url.format(project_id=project_id), params=params)
+contributors = []
+if response.status_code == 200:
+    contributors_data = response.json()
+    for contributor in contributors_data:
+        contributors.append({'name': contributor['name'], 'email': contributor['email']})
+else:
+    print('Failed to retrieve contributors:', response.status_code, response.text)
+ 
+response = requests.get(repository_tree_url.format(project_id=project_id), params=params)
+if response.status_code == 200:
+    repository_data = response.json()
+    files = []
+    folders = []
+    for item in repository_data:
+        if item['type'] == 'blob':
+            files.append({'file_name': item['name'], 'file_path': item['path'], 'file_mode': item['mode']})
+        elif item['type'] == 'tree':
+            folders.append({'folder_name': item['name'], 'folder_path': item['path'], 'folder_mode': item['mode']})
+else:
+    print('Failed to retrieve repository tree:', response.status_code, response.text)
+ 
+output = {
+    'id': project_id,
+    'name': 'gitlab-docs',
+    'contributors': contributors,
+    'contents': {
+        'meta': {
+            'folders_count': len(folders),
+            'files_count': len(files)
+        },
+        'folders': folders,
+        'files': files
+    }
+}
+ 
+timestamp = datetime.now().strftime('%Y%m%d%H%M%S')
+ 
+filename = f'repo-query-{timestamp}.json'
+ 
+with open(filename, 'w') as file:
+    json.dump(output, file, indent=4)
+ 
+print(f"Result saved to {filename}")
+
+# COMMAND ----------
+
+with open('repo-query-20240207060056.json', 'r') as f:
+    data = json.load(f)
+formatted_data = json.dumps(data, indent=2)
+print(formatted_data)
+
+
+
+# COMMAND ----------
+
+
