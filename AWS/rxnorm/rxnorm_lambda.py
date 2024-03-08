@@ -91,7 +91,6 @@ def rxnorm_transformation(zip_file_content, bucket, zip_key):
         # print("Before Conversion:", before_conversion_dict)
         # print("After Conversion:", after_conversion_dict)
 
-        # Your existing code to print the final table
         before_conversion_dict = {key.replace('.RRF', ''): value for key, value in before_conversion_dict.items()}
         # print(before_conversion_dict,"before")
         before_df = pd.DataFrame(list(before_conversion_dict.items()), columns=['File Name', 'Before Conversion'])
@@ -110,12 +109,10 @@ def rxnorm_transformation(zip_file_content, bucket, zip_key):
         raise e
 def handle_excel_upload(bucket, key):
     # Logic to handle .xlsx file upload
-    # You can update your state, database, or any mechanism to track the uploaded .xlsx file
     print(f".xlsx file uploaded: {key}")
     
 def handle_zip_upload(bucket, key):
     # Logic to handle .zip file upload
-    # You can update your state, database, or any mechanism to track the uploaded .zip file
     print(f".zip file uploaded: {key}")
 
 def find_file_in_bucket(bucket, file_name):
