@@ -1,0 +1,127 @@
+timestamp,message
+1709995105883,"INIT_START Runtime Version: python:3.12.v20	Runtime Version ARN: arn:aws:lambda:us-east-1::runtime:82aea00f37a44d68665730d559c81352fc95f22c9aa34a0722815a93f08e102b
+"
+1709995109339,"START RequestId: 719a0ccf-d6d1-4700-9617-f3ef05ea4319 Version: $LATEST
+"
+1709995109341,"The data for Version Month is: February 05, 2024
+"
+1709995109531,"The RXNATOMARCHIVE.RRF is read from zip file.
+"
+1709995110592,"The RXNATOMARCHIVE.RRF is relocated to extracted_files.
+"
+1709995110592,"The RXNCUI.RRF is read from zip file.
+"
+1709995110717,"The RXNCUI.RRF is relocated to extracted_files.
+"
+1709995110717,"The RXNCUICHANGES.RRF is read from zip file.
+"
+1709995110744,"The RXNCUICHANGES.RRF is relocated to extracted_files.
+"
+1709995110744,"The RXNDOC.RRF is read from zip file.
+"
+1709995110805,"The RXNDOC.RRF is relocated to extracted_files.
+"
+1709995110805,"The RXNSAB.RRF is read from zip file.
+"
+1709995110830,"The RXNSAB.RRF is relocated to extracted_files.
+"
+1709995110830,"The RXNSTY.RRF is read from zip file.
+"
+1709995111101,"The RXNSTY.RRF is relocated to extracted_files.
+"
+1709995111101,"The excel file RxNorm_Header.xls is read from S3
+"
+1709995111101,"The Sheet, RXNCONSO is read from RxNorm_Header.xlsx,for it's header ['RXCUI', 'LAT', 'TS', 'LUI', 'STT', 'SUI', 'ISPREF', 'RXAUI', 'SAUI', 'SCUI', 'SDUI', 'SAB', 'TTY', 'CODE', 'STR', 'SRL', 'SUPPRESS', 'CVF', 'Code set', 'Version Month']
+"
+1709995111101,"The Sheet, RXNSAT is read from RxNorm_Header.xlsx,for it's header ['RXCUI', 'LUI', 'SUI', 'RXAUI', 'STYPE', 'CODE', 'ATUI', 'SATUI', 'ATN', 'SAB', 'ATV', 'SUPPRESS', 'CVF', 'Code set', 'Version Month']
+"
+1709995111101,"The Sheet, RXNDOC is read from RxNorm_Header.xlsx,for it's header ['KEY', 'VALUE', 'TYPE', 'EXPL', 'Code set', 'Version Month']
+"
+1709995111101,"The Sheet, RXNREL is read from RxNorm_Header.xlsx,for it's header ['RXCUI1', 'RXAUI1', 'STYPE1', 'REL', 'RXCUI2', 'RXAUI2', 'STYPE2', 'RELA', 'RUI', 'SRUI', 'SAB', 'SL', 'RG', 'DIR', 'SUPPRESS', 'CVF', 'Code set', 'Version Month']
+"
+1709995111101,"The Sheet, RXNSAB is read from RxNorm_Header.xlsx,for it's header ['VCUI', 'RCUI', 'VSAB', 'RSAB', 'SON', 'SF', 'SVER', 'VSTART', 'VEND', 'IMETA', 'RMETA', 'SLC', 'SCC', 'SRL', 'TFR', 'CFR', 'CXTY', 'TTYL', 'ATNL', 'LAT', 'CENC', 'CURVER', 'SABIN', 'SSN', 'SCIT', 'Code set', 'Version Month']
+"
+1709995111101,"The Sheet, RXNSTY is read from RxNorm_Header.xlsx,for it's header ['RXCUI', 'TUI', 'STN', 'STY', 'ATUI', 'CVF', 'Code set', 'Version Month']
+"
+1709995111101,"The Sheet, RXNATOMARCHIVE is read from RxNorm_Header.xlsx,for it's header ['RXAUI', 'AUI', 'STR', 'ARCHIVE_TIMESTAMP', 'CREATED_TIMESTAMP', 'UPDATED_TIMESTAMP', 'CODE', 'IS_BRAND', 'LAT', 'LAST_RELEASED', 'SAUI', 'VSAB', 'RXCUI', 'SAB', 'TTY', 'MERGED_TO_RXCUI', 'Code set', 'Version Month']
+"
+1709995111101,"The Sheet, RXNCUI is read from RxNorm_Header.xlsx,for it's header ['CUI1', 'VER_START', 'VER_END', 'Cardinality', 'CUI2', 'Code set', 'Version Month']
+"
+1709995111101,"The Sheet, RXNCUICHANGES is read from RxNorm_Header.xlsx,for it's header ['RXAUI', 'CODE', 'SAB', 'TTY', 'STR', 'OLD_RXCUI', 'NEW_RXCUI', 'Code set', 'Version Month']
+"
+1709995111101,"The excel file RxNorm_Header.xls is read from S3
+"
+1709995111101,"The Sheet, RXNCONSO is read from RxNorm_Header.xlsx,for it's header ['RXCUI', 'LAT', 'TS', 'LUI', 'STT', 'SUI', 'ISPREF', 'RXAUI', 'SAUI', 'SCUI', 'SDUI', 'SAB', 'TTY', 'CODE', 'STR', 'SRL', 'SUPPRESS', 'CVF', 'Code set', 'Version Month']
+"
+1709995111101,"The Sheet, RXNSAT is read from RxNorm_Header.xlsx,for it's header ['RXCUI', 'LUI', 'SUI', 'RXAUI', 'STYPE', 'CODE', 'ATUI', 'SATUI', 'ATN', 'SAB', 'ATV', 'SUPPRESS', 'CVF', 'Code set', 'Version Month']
+"
+1709995111101,"The Sheet, RXNDOC is read from RxNorm_Header.xlsx,for it's header ['KEY', 'VALUE', 'TYPE', 'EXPL', 'Code set', 'Version Month']
+"
+1709995111101,"The Sheet, RXNREL is read from RxNorm_Header.xlsx,for it's header ['RXCUI1', 'RXAUI1', 'STYPE1', 'REL', 'RXCUI2', 'RXAUI2', 'STYPE2', 'RELA', 'RUI', 'SRUI', 'SAB', 'SL', 'RG', 'DIR', 'SUPPRESS', 'CVF', 'Code set', 'Version Month']
+"
+1709995111101,"The Sheet, RXNSAB is read from RxNorm_Header.xlsx,for it's header ['VCUI', 'RCUI', 'VSAB', 'RSAB', 'SON', 'SF', 'SVER', 'VSTART', 'VEND', 'IMETA', 'RMETA', 'SLC', 'SCC', 'SRL', 'TFR', 'CFR', 'CXTY', 'TTYL', 'ATNL', 'LAT', 'CENC', 'CURVER', 'SABIN', 'SSN', 'SCIT', 'Code set', 'Version Month']
+"
+1709995111101,"The Sheet, RXNSTY is read from RxNorm_Header.xlsx,for it's header ['RXCUI', 'TUI', 'STN', 'STY', 'ATUI', 'CVF', 'Code set', 'Version Month']
+"
+1709995111101,"The Sheet, RXNATOMARCHIVE is read from RxNorm_Header.xlsx,for it's header ['RXAUI', 'AUI', 'STR', 'ARCHIVE_TIMESTAMP', 'CREATED_TIMESTAMP', 'UPDATED_TIMESTAMP', 'CODE', 'IS_BRAND', 'LAT', 'LAST_RELEASED', 'SAUI', 'VSAB', 'RXCUI', 'SAB', 'TTY', 'MERGED_TO_RXCUI', 'Code set', 'Version Month']
+"
+1709995111101,"The Sheet, RXNCUI is read from RxNorm_Header.xlsx,for it's header ['CUI1', 'VER_START', 'VER_END', 'Cardinality', 'CUI2', 'Code set', 'Version Month']
+"
+1709995111101,"The Sheet, RXNCUICHANGES is read from RxNorm_Header.xlsx,for it's header ['RXAUI', 'CODE', 'SAB', 'TTY', 'STR', 'OLD_RXCUI', 'NEW_RXCUI', 'Code set', 'Version Month']
+"
+1709995111144,"Processing file: RXNATOMARCHIVE.RRF
+"
+1709995112945,"Updating the columns CREATED_TIMESTAMP,UPDATED_TIMESTAMP and LAST_RELEASED for RXNATOMARCHIVE.RRF....
+"
+1709995124937,"The count of RXNATOMARCHIVE.RRF before transformation is: 371368
+"
+1709995129866,"The RXNATOMARCHIVE.RRF is transformed into CSV and stored into transformed_files in S3
+"
+1709995130483,"The count of RXNATOMARCHIVE.RRF after transformation is: 371368
+"
+1709995130483,"Processing file: RXNCUI.RRF
+"
+1709995130601,"The count of RXNCUI.RRF before transformation is: 30046
+"
+1709995130839,"The RXNCUI.RRF is transformed into CSV and stored into transformed_files in S3
+"
+1709995130861,"The count of RXNCUI.RRF after transformation is: 30046
+"
+1709995130861,"Processing file: RXNCUICHANGES.RRF
+"
+1709995130884,"The count of RXNCUICHANGES.RRF before transformation is: 153
+"
+1709995130922,"The RXNCUICHANGES.RRF is transformed into CSV and stored into transformed_files in S3
+"
+1709995130923,"The count of RXNCUICHANGES.RRF after transformation is: 153
+"
+1709995130923,"Processing file: RXNDOC.RRF
+"
+1709995130954,"The count of RXNDOC.RRF before transformation is: 3445
+"
+1709995131053,"The RXNDOC.RRF is transformed into CSV and stored into transformed_files in S3
+"
+1709995131054,"The count of RXNDOC.RRF after transformation is: 3445
+"
+1709995131054,"Processing file: RXNSAB.RRF
+"
+1709995131086,"Updating the columns VSTART and VEND for RXNSAB.RRF....
+"
+1709995131087,"The count of RXNSAB.RRF before transformation is: 13
+"
+1709995131210,"The RXNSAB.RRF is transformed into CSV and stored into transformed_files in S3
+"
+1709995131210,"The count of RXNSAB.RRF after transformation is: 13
+"
+1709995131211,"Processing file: RXNSTY.RRF
+"
+1709995131530,"The count of RXNSTY.RRF before transformation is: 461874
+"
+1709995133445,"The RXNSTY.RRF is transformed into CSV and stored into transformed_files in S3
+"
+1709995133613,"The count of RXNSTY.RRF after transformation is: 461874
+"
+1709995133627,"END RequestId: 719a0ccf-d6d1-4700-9617-f3ef05ea4319
+"
+1709995133627,"REPORT RequestId: 719a0ccf-d6d1-4700-9617-f3ef05ea4319	Duration: 24288.28 ms	Billed Duration: 24289 ms	Memory Size: 6000 MB	Max Memory Used: 1057 MB	Init Duration: 3453.67 ms	
+"
