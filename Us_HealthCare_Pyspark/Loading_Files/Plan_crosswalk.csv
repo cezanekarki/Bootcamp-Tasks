@@ -1,0 +1,17 @@
+PLAN_ID,Plan Name,BENEFIT_TYPE,EFFECTIVE_DATE,TERMINATION_DATE
+0,Plan A,Medical,2018-01-01,2018-12-31
+1,Plan B,Medical and Dental,2018-01-01,2018-12-31
+2,Plan C,Medical and Vision,2018-01-01,2018-12-31
+3,Plan D,"Medical, Dental and Vision",2018-01-01,2018-12-31
+4,Plan E,Medical,2019-01-01,2019-12-31
+5,Plan F,Medical and Dental,2019-01-01,2019-12-31
+6,Plan G,Medical and Vision,2019-01-01,2019-12-31
+7,Plan H,"Medical, Dental and Vision",2019-01-01,2019-12-31
+8,Plan I,Medical,2020-01-01,2020-12-31
+9,Plan J,Medical and Dental,2020-01-01,2020-12-31
+10,Plan K,Medical and Vision,2020-01-01,2020-12-31
+11,Plan L,"Medical, Dental and Vision",2020-01-01,2020-12-31
+12,Plan M,Medical,2021-01-01,2021-12-31
+13,Plan N,Medical and Dental,2021-01-01,2021-12-31
+14,Plan O,Medical and Vision,2021-01-01,2021-12-31
+15,Plan P,"Medical, Dental and Vision",2021-01-01,2021-12-31
