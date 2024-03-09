@@ -1,0 +1,481 @@
+timestamp,message
+1.71E+12,"INIT_START Runtime Version: python:3.12.v20	Runtime Version ARN: arn:aws:lambda:us-east-1::runtime:82aea00f37a44d68665730d559c81352fc95f22c9aa34a0722815a93f08e102b
+"
+1.71E+12,"START RequestId: cc2b5c91-a1d9-42d3-ad6e-9b25d9025f6a Version: $LATEST
+"
+1.71E+12,"Zipper
+"
+1.71E+12,"Transformation Start
+"
+1.71E+12,"Sorted Files:  ['RXNATOMARCHIVE.RRF', 'RXNCONSO.RRF', 'RXNCUI.RRF', 'RXNCUICHANGES.RRF', 'RXNDOC.RRF', 'RXNREL.RRF', 'RXNSAB.RRF', 'RXNSAT.RRF', 'RXNSTY.RRF']
+"
+1.71E+12,"head/RxNorm_Header.xlsx
+"
+1.71E+12,"Reading RRF file: RXNATOMARCHIVE.RRF
+"
+1.71E+12,"Read RRF As CSV Successfully
+"
+1.71E+12,"Reading RRF file: RXNCONSO.RRF
+"
+1.71E+12,"Read RRF As CSV Successfully
+"
+1.71E+12,"Reading RRF file: RXNCUI.RRF
+"
+1.71E+12,"Read RRF As CSV Successfully
+"
+1.71E+12,"Reading RRF file: RXNCUICHANGES.RRF
+"
+1.71E+12,"Read RRF As CSV Successfully
+"
+1.71E+12,"Reading RRF file: RXNDOC.RRF
+"
+1.71E+12,"Read RRF As CSV Successfully
+"
+1.71E+12,"Reading RRF file: RXNREL.RRF
+"
+1.71E+12,"Read RRF As CSV Successfully
+"
+1.71E+12,"Reading RRF file: RXNSAB.RRF
+"
+1.71E+12,"Read RRF As CSV Successfully
+"
+1.71E+12,"Reading RRF file: RXNSAT.RRF
+"
+1.71E+12,"Read RRF As CSV Successfully
+"
+1.71E+12,"Reading RRF file: RXNSTY.RRF
+"
+1.71E+12,"Read RRF As CSV Successfully
+"
+1.71E+12,"Zip File Date:  02
+"
+1.71E+12,"['ATOM_ID', 'META_ATOM_ID', 'STRING', 'ARCHIVE_DATE', 'CREATE_DATE', 'UPDATE_DATE', 'CODE', 'BRAND_FLAG', 'LANGUAGE', 'RXNORM_TERM_DT', 'SOURCE_ATOM_ID', 'VERSION_SOURCE_ABB', 'CONCEPT_ID', 'CONCEPT_SOURCE_ABB', 'TERM_TYPE', 'NEW_RXCUI', 'CODE_SET', 'VERSION_MONTH'] Checking to list Function
+"
+1.71E+12,"['ATOM_ID', 'META_ATOM_ID', 'STRING', 'ARCHIVE_DATE', 'CREATE_DATE', 'UPDATE_DATE', 'CODE', 'BRAND_FLAG', 'LANGUAGE', 'RXNORM_TERM_DT', 'SOURCE_ATOM_ID', 'VERSION_SOURCE_ABB', 'CONCEPT_ID', 'CONCEPT_SOURCE_ABB', 'TERM_TYPE', 'NEW_RXCUI', 'CODE_SET', 'VERSION_MONTH']
+"
+1.71E+12,"Reading Excel File
+"
+1.71E+12,"RXNATOMARCHIVE
+"
+1.71E+12,"Row Count:  371368
+"
+1.71E+12,"Version Month Checkpoint
+"
+1.71E+12,"Column Equals Dict Check
+"
+1.71E+12,"Row Count:  371368
+"
+1.71E+12,"Code Set Checkpoint
+"
+1.71E+12,"['ATOM_ID', 'META_ATOM_ID', 'STRING', 'ARCHIVE_DATE', 'CREATE_DATE', 'UPDATE_DATE', 'CODE', 'BRAND_FLAG', 'LANGUAGE', 'RXNORM_TERM_DT', 'SOURCE_ATOM_ID', 'VERSION_SOURCE_ABB', 'CONCEPT_ID', 'CONCEPT_SOURCE_ABB', 'TERM_TYPE', 'NEW_RXCUI', 'CODE_SET', 'VERSION_MONTH'] df_dict
+"
+1.71E+12,"ATOM_ID META_ATOM_ID  ... CODE_SET VERSION_MONTH
+"
+1.71E+12,"0      947    A10335796  ...   RXNORM            02
+"
+1.71E+12,"1     1424    A10334758  ...   RXNORM            02
+"
+1.71E+12,"2     1684    A10334529  ...   RXNORM            02
+"
+1.71E+12,"3     2192    A16791816  ...   RXNORM            02
+"
+1.71E+12,"4     2265    A10334531  ...   RXNORM            02
+"
+1.71E+12,"[5 rows x 18 columns]
+"
+1.71E+12,"Row Count:  371368
+"
+1.71E+12,"['CONCEPT_ID', 'LANGUAGE', 'STATUS', 'TERM_ID', 'STRING_TYPE', 'STRING_ID', 'ATOM_STATUS', 'ATOM_ID', 'SOURCE_ATOM_ID', 'SOURCE_CONCEPT_ID', 'SOURCE_DESCRIPTOR_ID', 'CONCEPT_SOURCE_ABB', 'TERM_TYPE', 'CODE', 'STRING', 'RESTRICT_LVL', 'SUPPRESS', 'CONTENT_VIEW_FLAG', 'CODE_SET', 'VERSION_MONTH'] Checking to list Function
+"
+1.71E+12,"['CONCEPT_ID', 'LANGUAGE', 'STATUS', 'TERM_ID', 'STRING_TYPE', 'STRING_ID', 'ATOM_STATUS', 'ATOM_ID', 'SOURCE_ATOM_ID', 'SOURCE_CONCEPT_ID', 'SOURCE_DESCRIPTOR_ID', 'CONCEPT_SOURCE_ABB', 'TERM_TYPE', 'CODE', 'STRING', 'RESTRICT_LVL', 'SUPPRESS', 'CONTENT_VIEW_FLAG', 'CODE_SET', 'VERSION_MONTH']
+"
+1.71E+12,"Reading Excel File
+"
+1.71E+12,"RXNCONSO
+"
+1.71E+12,"Row Count:  1133065
+"
+1.71E+12,"Version Month Checkpoint
+"
+1.71E+12,"Column Equals Dict Check
+"
+1.71E+12,"Row Count:  1133065
+"
+1.71E+12,"Code Set Checkpoint
+"
+1.71E+12,"['CONCEPT_ID', 'LANGUAGE', 'STATUS', 'TERM_ID', 'STRING_TYPE', 'STRING_ID', 'ATOM_STATUS', 'ATOM_ID', 'SOURCE_ATOM_ID', 'SOURCE_CONCEPT_ID', 'SOURCE_DESCRIPTOR_ID', 'CONCEPT_SOURCE_ABB', 'TERM_TYPE', 'CODE', 'STRING', 'RESTRICT_LVL', 'SUPPRESS', 'CONTENT_VIEW_FLAG', 'CODE_SET', 'VERSION_MONTH'] df_dict
+"
+1.71E+12,"CONCEPT_ID LANGUAGE  STATUS  ...  CONTENT_VIEW_FLAG  CODE_SET  VERSION_MONTH
+"
+1.71E+12,"0           3      ENG     NaN  ...                NaN    RXNORM             02
+"
+1.71E+12,"1           3      ENG     NaN  ...                NaN    RXNORM             02
+"
+1.71E+12,"2           3      ENG     NaN  ...                NaN    RXNORM             02
+"
+1.71E+12,"3           3      ENG     NaN  ...                NaN    RXNORM             02
+"
+1.71E+12,"4          19      ENG     NaN  ...                NaN    RXNORM             02
+"
+1.71E+12,"[5 rows x 20 columns]
+"
+1.71E+12,"Row Count:  1133065
+"
+1.71E+12,"['TERM_CONCEPT_ID', 'VERSION_START', 'VERSION_TERM', 'CARDINALITY', 'SYNONYM_CONCEPT_ID', 'CODE_SET', 'VERSION_MONTH'] Checking to list Function
+"
+1.71E+12,"['TERM_CONCEPT_ID', 'VERSION_START', 'VERSION_TERM', 'CARDINALITY', 'SYNONYM_CONCEPT_ID', 'CODE_SET', 'VERSION_MONTH']
+"
+1.71E+12,"Reading Excel File
+"
+1.71E+12,"RXNCUI
+"
+1.71E+12,"Row Count:  30046
+"
+1.71E+12,"Version Month Checkpoint
+"
+1.71E+12,"Column Equals Dict Check
+"
+1.71E+12,"Row Count:  30046
+"
+1.71E+12,"Code Set Checkpoint
+"
+1.71E+12,"['TERM_CONCEPT_ID', 'VERSION_START', 'VERSION_TERM', 'CARDINALITY', 'SYNONYM_CONCEPT_ID', 'CODE_SET', 'VERSION_MONTH'] df_dict
+"
+1.71E+12,"TERM_CONCEPT_ID        VERSION_START  ... CODE_SET  VERSION_MONTH
+"
+1.71E+12,"0            89904  RXNORM_17AA_170905F  ...   RXNORM             02
+"
+1.71E+12,"1            91669  RXNORM_17AA_170905F  ...   RXNORM             02
+"
+1.71E+12,"2            91714  RXNORM_10AA_100802F  ...   RXNORM             02
+"
+1.71E+12,"3            91811  RXNORM_04AC_050210F  ...   RXNORM             02
+"
+1.71E+12,"4            91812  RXNORM_04AC_050210F  ...   RXNORM             02
+"
+1.71E+12,"[5 rows x 7 columns]
+"
+1.71E+12,"Row Count:  30046
+"
+1.71E+12,"['ATOM_ID', 'CODE', 'CONCEPT_SOURCE_ABB', 'TERM_TYPE', 'STRING', 'OLD_CONCEPT_ID', 'NEW_CONCEPT_ID', 'CODE_SET', 'VERSION_MONTH'] Checking to list Function
+"
+1.71E+12,"['ATOM_ID', 'CODE', 'CONCEPT_SOURCE_ABB', 'TERM_TYPE', 'STRING', 'OLD_CONCEPT_ID', 'NEW_CONCEPT_ID', 'CODE_SET', 'VERSION_MONTH']
+"
+1.71E+12,"Reading Excel File
+"
+1.71E+12,"RXNCUICHANGES
+"
+1.71E+12,"Row Count:  153
+"
+1.71E+12,"Version Month Checkpoint
+"
+1.71E+12,"Column Equals Dict Check
+"
+1.71E+12,"Row Count:  153
+"
+1.71E+12,"Code Set Checkpoint
+"
+1.71E+12,"['ATOM_ID', 'CODE', 'CONCEPT_SOURCE_ABB', 'TERM_TYPE', 'STRING', 'OLD_CONCEPT_ID', 'NEW_CONCEPT_ID', 'CODE_SET', 'VERSION_MONTH'] df_dict
+"
+1.71E+12,"ATOM_ID CODE CONCEPT_SOURCE_ABB  ... NEW_CONCEPT_ID CODE_SET  VERSION_MONTH
+"
+1.71E+12,"0      NaN  NaN             RXNORM  ...        2672916   RXNORM             02
+"
+1.71E+12,"1      NaN  NaN             RXNORM  ...        2672917   RXNORM             02
+"
+1.71E+12,"2      NaN  NaN             RXNORM  ...        2672352   RXNORM             02
+"
+1.71E+12,"3      NaN  NaN             RXNORM  ...        2673304   RXNORM             02
+"
+1.71E+12,"4      NaN  NaN             RXNORM  ...        2672353   RXNORM             02
+"
+1.71E+12,"[5 rows x 9 columns]
+"
+1.71E+12,"Row Count:  153
+"
+1.71E+12,"['ATTRIBUTE', 'ABB_VALUE', 'DESCRIPTION_TYPE', 'DESCRIPTION', 'CODE_SET', 'VERSION_MONTH'] Checking to list Function
+"
+1.71E+12,"['ATTRIBUTE', 'ABB_VALUE', 'DESCRIPTION_TYPE', 'DESCRIPTION', 'CODE_SET', 'VERSION_MONTH']
+"
+1.71E+12,"Reading Excel File
+"
+1.71E+12,"RXNDOC
+"
+1.71E+12,"Row Count:  3445
+"
+1.71E+12,"Version Month Checkpoint
+"
+1.71E+12,"Column Equals Dict Check
+"
+1.71E+12,"Row Count:  3445
+"
+1.71E+12,"Code Set Checkpoint
+"
+1.71E+12,"['ATTRIBUTE', 'ABB_VALUE', 'DESCRIPTION_TYPE', 'DESCRIPTION', 'CODE_SET', 'VERSION_MONTH'] df_dict
+"
+1.71E+12,"ATTRIBUTE                     ABB_VALUE  ... CODE_SET VERSION_MONTH
+"
+1.71E+12,"0       ATN                      AAL_TERM  ...   RXNORM            02
+"
+1.71E+12,"1       ATN               ACCEPTABILITYID  ...   RXNORM            02
+"
+1.71E+12,"2       ATN  ACCEPTED_THERAPEUTIC_USE_FOR  ...   RXNORM            02
+"
+1.71E+12,"3       ATN                        ACTIVE  ...   RXNORM            02
+"
+1.71E+12,"4       ATN                 ADDED_MEANING  ...   RXNORM            02
+"
+1.71E+12,"[5 rows x 6 columns]
+"
+1.71E+12,"Row Count:  3445
+"
+1.71E+12,"['CONCEPT_ID1', 'ATOM_ID1', 'ID_TYPE1', 'RELATION1', 'CONCEPT_ID2', 'ATOM_ID2', 'ID_TYPE2', 'RELATION2', 'RELATION_ID', 'SOURCE_RELATION_ID', 'REL_SOURCE_ABBR', 'REL_SOURCE_LBL', 'RG_INDICATOR', 'DIRECTION_FLAG', 'SUPPRESS', 'CONTENT_VIEW_FLAG', 'CODE_SET', 'VERSION_MONTH'] Checking to list Function
+"
+1.71E+12,"['CONCEPT_ID1', 'ATOM_ID1', 'ID_TYPE1', 'RELATION1', 'CONCEPT_ID2', 'ATOM_ID2', 'ID_TYPE2', 'RELATION2', 'RELATION_ID', 'SOURCE_RELATION_ID', 'REL_SOURCE_ABBR', 'REL_SOURCE_LBL', 'RG_INDICATOR', 'DIRECTION_FLAG', 'SUPPRESS', 'CONTENT_VIEW_FLAG', 'CODE_SET', 'VERSION_MONTH']
+"
+1.71E+12,"Reading Excel File
+"
+1.71E+12,"RXNREL
+"
+1.71E+12,"Row Count:  7154306
+"
+1.71E+12,"Version Month Checkpoint
+"
+1.71E+12,"Column Equals Dict Check
+"
+1.71E+12,"Row Count:  7154306
+"
+1.71E+12,"Code Set Checkpoint
+"
+1.71E+12,"['CONCEPT_ID1', 'ATOM_ID1', 'ID_TYPE1', 'RELATION1', 'CONCEPT_ID2', 'ATOM_ID2', 'ID_TYPE2', 'RELATION2', 'RELATION_ID', 'SOURCE_RELATION_ID', 'REL_SOURCE_ABBR', 'REL_SOURCE_LBL', 'RG_INDICATOR', 'DIRECTION_FLAG', 'SUPPRESS', 'CONTENT_VIEW_FLAG', 'CODE_SET', 'VERSION_MONTH'] df_dict
+"
+1.71E+12,"CONCEPT_ID1  ATOM_ID1 ID_TYPE1  ... CONTENT_VIEW_FLAG  CODE_SET  VERSION_MONTH
+"
+1.71E+12,"0          NaN     828.0      AUI  ...               NaN    RXNORM             02
+"
+1.71E+12,"1          NaN     828.0      AUI  ...               NaN    RXNORM             02
+"
+1.71E+12,"2          NaN     829.0      AUI  ...               NaN    RXNORM             02
+"
+1.71E+12,"3          NaN     945.0      AUI  ...               NaN    RXNORM             02
+"
+1.71E+12,"4          NaN     950.0      AUI  ...               NaN    RXNORM             02
+"
+1.71E+12,"[5 rows x 18 columns]
+"
+1.71E+12,"Row Count:  7154306
+"
+1.71E+12,"['VERSION_CONCEPT_ID', 'ROOT_CONCEPT_ID', 'VERSION_SOURCE_ABB', 'ROOT_SOURCE_ABB', 'SOURCE_NAME', 'SOURCE_FAMILY', 'SOURCE_VERSION', 'EFFT_DT', 'TERM_DT', 'INSERT_VERSION', 'TERMINATION_VERSION', 'SOURCE_LIC_CONTENT', 'SOURCE_CONTENT_CONTACT', 'SOURCE_RESTRICT_LVL', 'TERM_FREQ', 'CUI_FREQ', 'CONTXT_TYPE', 'TERM_TYPE_LIST', 'ATTRIBUTE_NAME_LIST', 'LANGUAGE', 'ENCODE', 'VERSION_FLAG', 'SUBSET_FLAG', 'SOURCE_SHORT_NAME', 'SOURCE_CITATION', 'CODE_SET', 'VERSION_MONTH'] Checking to list Function
+"
+1.71E+12,"['VERSION_CONCEPT_ID', 'ROOT_CONCEPT_ID', 'VERSION_SOURCE_ABB', 'ROOT_SOURCE_ABB', 'SOURCE_NAME', 'SOURCE_FAMILY', 'SOURCE_VERSION', 'EFFT_DT', 'TERM_DT', 'INSERT_VERSION', 'TERMINATION_VERSION', 'SOURCE_LIC_CONTENT', 'SOURCE_CONTENT_CONTACT', 'SOURCE_RESTRICT_LVL', 'TERM_FREQ', 'CUI_FREQ', 'CONTXT_TYPE', 'TERM_TYPE_LIST', 'ATTRIBUTE_NAME_LIST', 'LANGUAGE', 'ENCODE', 'VERSION_FLAG', 'SUBSET_FLAG', 'SOURCE_SHORT_NAME', 'SOURCE_CITATION', 'CODE_SET', 'VERSION_MONTH']
+"
+1.71E+12,"Reading Excel File
+"
+1.71E+12,"RXNSAB
+"
+1.71E+12,"Row Count:  13
+"
+1.71E+12,"Version Month Checkpoint
+"
+1.71E+12,"Column Equals Dict Check
+"
+1.71E+12,"Row Count:  13
+"
+1.71E+12,"Code Set Checkpoint
+"
+1.71E+12,"['VERSION_CONCEPT_ID', 'ROOT_CONCEPT_ID', 'VERSION_SOURCE_ABB', 'ROOT_SOURCE_ABB', 'SOURCE_NAME', 'SOURCE_FAMILY', 'SOURCE_VERSION', 'EFFT_DT', 'TERM_DT', 'INSERT_VERSION', 'TERMINATION_VERSION', 'SOURCE_LIC_CONTENT', 'SOURCE_CONTENT_CONTACT', 'SOURCE_RESTRICT_LVL', 'TERM_FREQ', 'CUI_FREQ', 'CONTXT_TYPE', 'TERM_TYPE_LIST', 'ATTRIBUTE_NAME_LIST', 'LANGUAGE', 'ENCODE', 'VERSION_FLAG', 'SUBSET_FLAG', 'SOURCE_SHORT_NAME', 'SOURCE_CITATION', 'CODE_SET', 'VERSION_MONTH'] df_dict
+"
+1.71E+12,"VERSION_CONCEPT_ID ROOT_CONCEPT_ID  ... CODE_SET VERSION_MONTH
+"
+1.71E+12,"0           C5233827        C1140218  ...   RXNORM            02
+"
+1.71E+12,"1           C5233830        C1140182  ...   RXNORM            02
+"
+1.71E+12,"2           C5233828        C1140261  ...   RXNORM            02
+"
+1.71E+12,"3           C5233835        C1140284  ...   RXNORM            02
+"
+1.71E+12,"4           C3531723        C2720507  ...   RXNORM            02
+"
+1.71E+12,"[5 rows x 27 columns]
+"
+1.71E+12,"Row Count:  13
+"
+1.71E+12,"['CONCEPT_ID', 'TERM_ID', 'STRING_ID', 'ATOM_ID', 'ID_TYPE', 'CODE', 'ATTRIBUTE_ID', 'SOURCE_ATTRIBUTE_ID', 'ATTRIBUTE_NAME', 'ATTRIBUTE_SOURCE_ABB', 'ATTRIBUTE_VALUE', 'SUPPRESS', 'CONTENT_VIEW_FLAG', 'CODE_SET', 'VERSION_MONTH'] Checking to list Function
+"
+1.71E+12,"['CONCEPT_ID', 'TERM_ID', 'STRING_ID', 'ATOM_ID', 'ID_TYPE', 'CODE', 'ATTRIBUTE_ID', 'SOURCE_ATTRIBUTE_ID', 'ATTRIBUTE_NAME', 'ATTRIBUTE_SOURCE_ABB', 'ATTRIBUTE_VALUE', 'SUPPRESS', 'CONTENT_VIEW_FLAG', 'CODE_SET', 'VERSION_MONTH']
+"
+1.71E+12,"Reading Excel File
+"
+1.71E+12,"RXNSAT
+"
+1.71E+12,"Row Count:  7222404
+"
+1.71E+12,"Version Month Checkpoint
+"
+1.71E+12,"Column Equals Dict Check
+"
+1.71E+12,"Row Count:  7222404
+"
+1.71E+12,"Code Set Checkpoint
+"
+1.71E+12,"['CONCEPT_ID', 'TERM_ID', 'STRING_ID', 'ATOM_ID', 'ID_TYPE', 'CODE', 'ATTRIBUTE_ID', 'SOURCE_ATTRIBUTE_ID', 'ATTRIBUTE_NAME', 'ATTRIBUTE_SOURCE_ABB', 'ATTRIBUTE_VALUE', 'SUPPRESS', 'CONTENT_VIEW_FLAG', 'CODE_SET', 'VERSION_MONTH'] df_dict
+"
+1.71E+12,"CONCEPT_ID  TERM_ID  STRING_ID  ...  CONTENT_VIEW_FLAG CODE_SET VERSION_MONTH
+"
+1.71E+12,"0          38      NaN        NaN  ...             4096.0   RXNORM            02
+"
+1.71E+12,"1          44      NaN        NaN  ...                NaN   RXNORM            02
+"
+1.71E+12,"2          44      NaN        NaN  ...             4096.0   RXNORM            02
+"
+1.71E+12,"3          44      NaN        NaN  ...             4096.0   RXNORM            02
+"
+1.71E+12,"4          44      NaN        NaN  ...             4096.0   RXNORM            02
+"
+1.71E+12,"[5 rows x 15 columns]
+"
+1.71E+12,"Row Count:  7222404
+"
+1.71E+12,"['CONCEPT_ID', 'SEMANTIC_ID', 'SEMANTIC_TREE_NUM', 'SEMANTIC_TYPE', 'ATTRIBUTE_ID', 'CONTENT_VIEW_FLAG', 'CODE_SET', 'VERSION_MONTH'] Checking to list Function
+"
+1.71E+12,"['CONCEPT_ID', 'SEMANTIC_ID', 'SEMANTIC_TREE_NUM', 'SEMANTIC_TYPE', 'ATTRIBUTE_ID', 'CONTENT_VIEW_FLAG', 'CODE_SET', 'VERSION_MONTH']
+"
+1.71E+12,"Reading Excel File
+"
+1.71E+12,"RXNSTY
+"
+1.71E+12,"Row Count:  461874
+"
+1.71E+12,"Version Month Checkpoint
+"
+1.71E+12,"Column Equals Dict Check
+"
+1.71E+12,"Row Count:  461874
+"
+1.71E+12,"Code Set Checkpoint
+"
+1.71E+12,"['CONCEPT_ID', 'SEMANTIC_ID', 'SEMANTIC_TREE_NUM', 'SEMANTIC_TYPE', 'ATTRIBUTE_ID', 'CONTENT_VIEW_FLAG', 'CODE_SET', 'VERSION_MONTH'] df_dict
+"
+1.71E+12,"CONCEPT_ID SEMANTIC_ID  ... CODE_SET VERSION_MONTH
+"
+1.71E+12,"0           3        T126  ...   RXNORM            02
+"
+1.71E+12,"1           3        T116  ...   RXNORM            02
+"
+1.71E+12,"2          19        T125  ...   RXNORM            02
+"
+1.71E+12,"3          19        T109  ...   RXNORM            02
+"
+1.71E+12,"4          21        T125  ...   RXNORM            02
+"
+1.71E+12,"[5 rows x 8 columns]
+"
+1.71E+12,"Row Count:  461874
+"
+1.71E+12,"Before Conversion: {'RXNATOMARCHIVE.RRF': 371368, 'RXNCONSO.RRF': 1133065, 'RXNCUI.RRF': 30046, 'RXNCUICHANGES.RRF': 153, 'RXNDOC.RRF': 3445, 'RXNREL.RRF': 7154306, 'RXNSAB.RRF': 13, 'RXNSAT.RRF': 7222404, 'RXNSTY.RRF': 461874}
+"
+1.71E+12,"After Conversion: {'RXNATOMARCHIVE': 371368, 'RXNCONSO': 1133065, 'RXNCUI': 30046, 'RXNCUICHANGES': 153, 'RXNDOC': 3445, 'RXNREL': 7154306, 'RXNSAB': 13, 'RXNSAT': 7222404, 'RXNSTY': 461874}
+"
+1.71E+12,"sheet_name:   RXNATOMARCHIVE
+"
+1.71E+12,"sheet_name:   RXNCONSO
+"
+1.71E+12,"sheet_name:   RXNCUI
+"
+1.71E+12,"sheet_name:   RXNCUICHANGES
+"
+1.71E+12,"sheet_name:   RXNDOC
+"
+1.71E+12,"sheet_name:   RXNREL
+"
+1.71E+12,"sheet_name:   RXNSAB
+"
+1.71E+12,"sheet_name:   RXNSAT
+"
+1.71E+12,"sheet_name:   RXNSTY
+"
+1.71E+12,"Transformation Completed
+"
+1.71E+12,"Transformed File List: ['transformed_files/RXNATOMARCHIVE.txt', 'transformed_files/RXNCONSO.txt', 'transformed_files/RXNCUI.txt', 'transformed_files/RXNCUICHANGES.txt', 'transformed_files/RXNDOC.txt', 'transformed_files/RXNREL.txt', 'transformed_files/RXNSAB.txt', 'transformed_files/RXNSAT.txt', 'transformed_files/RXNSTY.txt']
+"
+1.71E+12,"transformed_files/RXNATOMARCHIVE.txt file found
+"
+1.71E+12,"Successfully Read txt File: transformed_files/RXNATOMARCHIVE.txt
+"
+1.71E+12,"Row Count:  371369
+"
+1.71E+12,"transformed_files/RXNATOMARCHIVE.txt Row Count: 371369
+"
+1.71E+12,"transformed_files/RXNCONSO.txt file found
+"
+1.71E+12,"Successfully Read txt File: transformed_files/RXNCONSO.txt
+"
+1.71E+12,"Row Count:  1133066
+"
+1.71E+12,"transformed_files/RXNCONSO.txt Row Count: 1133066
+"
+1.71E+12,"transformed_files/RXNCUI.txt file found
+"
+1.71E+12,"Successfully Read txt File: transformed_files/RXNCUI.txt
+"
+1.71E+12,"Row Count:  30047
+"
+1.71E+12,"transformed_files/RXNCUI.txt Row Count: 30047
+"
+1.71E+12,"transformed_files/RXNCUICHANGES.txt file found
+"
+1.71E+12,"Successfully Read txt File: transformed_files/RXNCUICHANGES.txt
+"
+1.71E+12,"Row Count:  154
+"
+1.71E+12,"transformed_files/RXNCUICHANGES.txt Row Count: 154
+"
+1.71E+12,"transformed_files/RXNDOC.txt file found
+"
+1.71E+12,"Successfully Read txt File: transformed_files/RXNDOC.txt
+"
+1.71E+12,"Row Count:  3446
+"
+1.71E+12,"transformed_files/RXNDOC.txt Row Count: 3446
+"
+1.71E+12,"transformed_files/RXNREL.txt file found
+"
+1.71E+12,"Successfully Read txt File: transformed_files/RXNREL.txt
+"
+1.71E+12,"Row Count:  7154307
+"
+1.71E+12,"transformed_files/RXNREL.txt Row Count: 7154307
+"
+1.71E+12,"transformed_files/RXNSAB.txt file found
+"
+1.71E+12,"Successfully Read txt File: transformed_files/RXNSAB.txt
+"
+1.71E+12,"Row Count:  14
+"
+1.71E+12,"transformed_files/RXNSAB.txt Row Count: 14
+"
+1.71E+12,"transformed_files/RXNSAT.txt file found
+"
+1.71E+12,"Successfully Read txt File: transformed_files/RXNSAT.txt
+"
+1.71E+12,"Row Count:  7222405
+"
+1.71E+12,"transformed_files/RXNSAT.txt Row Count: 7222405
+"
+1.71E+12,"transformed_files/RXNSTY.txt file found
+"
+1.71E+12,"Successfully Read txt File: transformed_files/RXNSTY.txt
+"
+1.71E+12,"Row Count:  461875
+"
+1.71E+12,"transformed_files/RXNSTY.txt Row Count: 461875
+"
+1.71E+12,"transformed_files/RXNSTY.txt N/A
+"
+1.71E+12,"txt File Row Count: {'transformed_files/RXNATOMARCHIVE.txt': 371369, 'transformed_files/RXNCONSO.txt': 1133066, 'transformed_files/RXNCUI.txt': 30047, 'transformed_files/RXNCUICHANGES.txt': 154, 'transformed_files/RXNDOC.txt': 3446, 'transformed_files/RXNREL.txt': 7154307, 'transformed_files/RXNSAB.txt': 14, 'transformed_files/RXNSAT.txt': 7222405, 'transformed_files/RXNSTY.txt': 461875}
+"
+1.71E+12,"END RequestId: cc2b5c91-a1d9-42d3-ad6e-9b25d9025f6a
+"
+1.71E+12,"REPORT RequestId: cc2b5c91-a1d9-42d3-ad6e-9b25d9025f6a	Duration: 251593.49 ms	Billed Duration: 251594 ms	Memory Size: 8280 MB	Max Memory Used: 8053 MB	Init Duration: 2520.26 ms	
+"
