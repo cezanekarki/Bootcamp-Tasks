@@ -1,0 +1,137 @@
+timestamp,message
+1709991006526,"INIT_START Runtime Version: python:3.12.v20	Runtime Version ARN: arn:aws:lambda:us-east-1::runtime:82aea00f37a44d68665730d559c81352fc95f22c9aa34a0722815a93f08e102b
+"
+1709991009181,"START RequestId: c36c9bd6-7a41-4172-bc08-930f47d67e00 Version: $LATEST
+"
+1709991012681,"['rrf/RXNATOMARCHIVE.RRF', 'rrf/RXNCONSO.RRF', 'rrf/RXNCUI.RRF', 'rrf/RXNCUICHANGES.RRF', 'rrf/RXNDOC.RRF', 'rrf/RXNREL.RRF', 'rrf/RXNSAB.RRF', 'rrf/RXNSAT.RRF', 'rrf/RXNSTY.RRF']
+"
+1709991014719,"RRF file read sucessfully
+"
+1709991019298,"RRF file read sucessfully
+"
+1709991019345,"RRF file read sucessfully
+"
+1709991019415,"RRF file read sucessfully
+"
+1709991019421,"RRF file read sucessfully
+"
+1709991032892,"RRF file read sucessfully
+"
+1709991032894,"RRF file read sucessfully
+"
+1709991047168,"RRF file read sucessfully
+"
+1709991047485,"RRF file read sucessfully
+"
+1709991048030,"get excel sheet name ['RXNCONSO', 'RXNSAT', 'RXNDOC', 'RXNREL', 'RXNSAB', 'RXNSTY', 'RXNATOMARCHIVE', 'RXNCUI', 'RXNCUICHANGES']
+"
+1709991048030,"sheet_list ['RXNATOMARCHIVE', 'RXNCONSO', 'RXNCUI', 'RXNCUICHANGES', 'RXNDOC', 'RXNREL', 'RXNSAB', 'RXNSAT', 'RXNSTY']
+"
+1709991048030,"version_month 02
+"
+1709991048047,"Header file is read successfully
+"
+1709991049766,"Converting date columns of RXNATOMARCHIVE file
+"
+1709991055158,"Header file is read successfully
+"
+1709991059260,"Header file is read successfully
+"
+1709991059299,"Header file is read successfully
+"
+1709991059315,"Header file is read successfully
+"
+1709991059335,"Header file is read successfully
+"
+1709991071618,"Header file is read successfully
+"
+1709991071632,"Header file is read successfully
+"
+1709991086623,"Header file is read successfully
+"
+1709991086929,"Row count before transformation: {'rrf/RXNATOMARCHIVE.RRF': 371368, 'rrf/RXNCONSO.RRF': 1133065, 'rrf/RXNCUI.RRF': 30046, 'rrf/RXNCUICHANGES.RRF': 153, 'rrf/RXNDOC.RRF': 3445, 'rrf/RXNREL.RRF': 7154306, 'rrf/RXNSAB.RRF': 13, 'rrf/RXNSAT.RRF': 7222404, 'rrf/RXNSTY.RRF': 461874}
+"
+1709991086929,"Row count after transformation: {'RXNATOMARCHIVE': 371368, 'RXNCONSO': 1133065, 'RXNCUI': 30046, 'RXNCUICHANGES': 153, 'RXNDOC': 3445, 'RXNREL': 7154306, 'RXNSAB': 13, 'RXNSAT': 7222404, 'RXNSTY': 461874}
+"
+1709991091135,"Succesfully saved data in unzipped/RXNATOMARCHIVE.txt
+"
+1709991100850,"Succesfully saved data in unzipped/RXNCONSO.txt
+"
+1709991101046,"Succesfully saved data in unzipped/RXNCUI.txt
+"
+1709991101090,"Succesfully saved data in unzipped/RXNCUICHANGES.txt
+"
+1709991101131,"Succesfully saved data in unzipped/RXNDOC.txt
+"
+1709991158097,"Succesfully saved data in unzipped/RXNREL.txt
+"
+1709991158169,"Succesfully saved data in unzipped/RXNSAB.txt
+"
+1709991202478,"Succesfully saved data in unzipped/RXNSAT.txt
+"
+1709991204105,"Succesfully saved data in unzipped/RXNSTY.txt
+"
+1709991204127,"The list of obtained text files: ['unzipped/RXNATOMARCHIVE.txt', 'unzipped/RXNCONSO.txt', 'unzipped/RXNCUI.txt', 'unzipped/RXNCUICHANGES.txt', 'unzipped/RXNDOC.txt', 'unzipped/RXNREL.txt', 'unzipped/RXNSAB.txt', 'unzipped/RXNSAT.txt', 'unzipped/RXNSTY.txt']
+"
+1709991204127,"unzipped/RXNATOMARCHIVE.txt file found
+"
+1709991207356,"Successfully read txt file: unzipped/RXNATOMARCHIVE.txt
+"
+1709991207356,"unzipped/RXNATOMARCHIVE.txt row count is:371369
+"
+1709991207356,"unzipped/RXNCONSO.txt file found
+"
+1709991214235,"Successfully read txt file: unzipped/RXNCONSO.txt
+"
+1709991214235,"unzipped/RXNCONSO.txt row count is:1133066
+"
+1709991214235,"unzipped/RXNCUI.txt file found
+"
+1709991214497,"Successfully read txt file: unzipped/RXNCUI.txt
+"
+1709991214497,"unzipped/RXNCUI.txt row count is:30047
+"
+1709991214497,"unzipped/RXNCUICHANGES.txt file found
+"
+1709991214521,"Successfully read txt file: unzipped/RXNCUICHANGES.txt
+"
+1709991214521,"unzipped/RXNCUICHANGES.txt row count is:154
+"
+1709991214521,"unzipped/RXNDOC.txt file found
+"
+1709991214608,"Successfully read txt file: unzipped/RXNDOC.txt
+"
+1709991214608,"unzipped/RXNDOC.txt row count is:3446
+"
+1709991214608,"unzipped/RXNREL.txt file found
+"
+1709991243739,"Successfully read txt file: unzipped/RXNREL.txt
+"
+1709991243739,"unzipped/RXNREL.txt row count is:7154307
+"
+1709991243739,"unzipped/RXNSAB.txt file found
+"
+1709991244354,"Successfully read txt file: unzipped/RXNSAB.txt
+"
+1709991244354,"unzipped/RXNSAB.txt row count is:14
+"
+1709991244354,"unzipped/RXNSAT.txt file found
+"
+1709991264165,"Successfully read txt file: unzipped/RXNSAT.txt
+"
+1709991264165,"unzipped/RXNSAT.txt row count is:7222405
+"
+1709991264165,"unzipped/RXNSTY.txt file found
+"
+1709991265317,"Successfully read txt file: unzipped/RXNSTY.txt
+"
+1709991265317,"unzipped/RXNSTY.txt row count is:461875
+"
+1709991265317,"unzipped/RXNSTY.txt not found
+"
+1709991265317,"Text file row counts: {'unzipped/RXNATOMARCHIVE.txt': 371369, 'unzipped/RXNCONSO.txt': 1133066, 'unzipped/RXNCUI.txt': 30047, 'unzipped/RXNCUICHANGES.txt': 154, 'unzipped/RXNDOC.txt': 3446, 'unzipped/RXNREL.txt': 7154307, 'unzipped/RXNSAB.txt': 14, 'unzipped/RXNSAT.txt': 7222405, 'unzipped/RXNSTY.txt': 461875}
+"
+1709991265859,"END RequestId: c36c9bd6-7a41-4172-bc08-930f47d67e00
+"
+1709991265859,"REPORT RequestId: c36c9bd6-7a41-4172-bc08-930f47d67e00	Duration: 256677.61 ms	Billed Duration: 256678 ms	Memory Size: 8000 MB	Max Memory Used: 8000 MB	Init Duration: 2649.23 ms	
+"
