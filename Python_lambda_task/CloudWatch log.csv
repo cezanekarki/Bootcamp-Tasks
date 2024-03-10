@@ -1,0 +1,45 @@
+timestamp,message
+1710084478548,"INIT_START Runtime Version: python:3.12.v20	Runtime Version ARN: arn:aws:lambda:us-east-1::runtime:82aea00f37a44d68665730d559c81352fc95f22c9aa34a0722815a93f08e102b
+"
+1710084481529,"START RequestId: 9c4b7e8d-e6f0-4a89-a702-c0e10a430e76 Version: $LATEST
+"
+1710084482177,"Unzipping the zip file RxNorm_full_02052024_comp.zip......
+"
+1710084483278,"Unzipping zip file RxNorm_full_02052024_comp.zip successfully.
+"
+1710084483278,"Excel file loaded successfully. 
+"
+1710084483792,"Number of rows in RXNDOC initially: 3445
+"
+1710084483792,"Number of rows in RXNSAB initially: 13
+"
+1710084485745,"Number of rows in RXNATOMARCHIVE initially: 371368
+"
+1710084486107,"Number of rows in RXNSTY initially: 461874
+"
+1710084490713,"Number of rows in RXNCONSO initially: 1133065
+"
+1710084490736,"Number of rows in RXNCUI initially: 30046
+"
+1710084490740,"Number of rows in RXNCUICHANGES initially: 153
+"
+1710084490756,"Number of rows in RXNDOC after processing: 3445
+"
+1710084490758,"Number of rows in RXNSAB after processing: 13
+"
+1710084494284,"Number of rows in RXNATOMARCHIVE after processing: 371368
+"
+1710084495798,"Number of rows in RXNSTY after processing: 461874
+"
+1710084505380,"Number of rows in RXNCONSO after processing: 1133065
+"
+1710084505492,"Number of rows in RXNCUI after processing: 30046
+"
+1710084505494,"Number of rows in RXNCUICHANGES after processing: 153
+"
+1710084508228,"Processed .RRF files uploaded back to s3 successfully.
+"
+1710084508339,"END RequestId: 9c4b7e8d-e6f0-4a89-a702-c0e10a430e76
+"
+1710084508339,"REPORT RequestId: 9c4b7e8d-e6f0-4a89-a702-c0e10a430e76	Duration: 26808.23 ms	Billed Duration: 26809 ms	Memory Size: 3008 MB	Max Memory Used: 1400 MB	Init Duration: 2980.69 ms	
+"
