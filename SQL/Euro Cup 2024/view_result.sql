@@ -1,14 +1,16 @@
 --GroupStage_left_view
+go
 IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.VIEWS WHERE TABLE_NAME = 'GroupStage_left_view')
     DROP VIEW GroupStage_left_view;
 GO
- 
 CREATE VIEW GroupStage_left_view AS
 SELECT
     ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) AS RowNumber,
     * 
 FROM
     (
+		select 'Group Staging' as 'Rank', '' AS Team, CAST('' AS VARCHAR(10)) as PTS,CAST('' AS VARCHAR(10)) AS MP,CAST('' AS VARCHAR(10)) AS W,CAST('' AS VARCHAR(10)) AS L,CAST('' AS VARCHAR(10)) AS D,CAST('' AS VARCHAR(10)) AS GF,CAST('' AS VARCHAR(10)) AS GA,CAST('' AS VARCHAR(10)) AS GD FROM GroupStage WHERE team='Albania'
+		union all
         SELECT 'Group A' AS 'Rank','' AS Team, CAST('' AS VARCHAR(10)) as PTS,CAST('' AS VARCHAR(10)) AS MP,CAST('' AS VARCHAR(10)) AS W,CAST('' AS VARCHAR(10)) AS L,CAST('' AS VARCHAR(10)) AS D,CAST('' AS VARCHAR(10)) AS GF,CAST('' AS VARCHAR(10)) AS GA,CAST('' AS VARCHAR(10)) AS GD FROM GroupStage WHERE team='Albania' 
         UNION ALL
         SELECT 'Rank' ,'Team' AS Team, CAST('PTS' AS VARCHAR(10)) AS PTS,'MP' AS MP,'W' AS W,'L' AS L,'D' AS D,'GF' AS GF,'GA' AS GA,'GD' AS GD FROM GroupStage WHERE team='Albania' 
@@ -34,6 +36,7 @@ FROM
  
  
 -- GroupStage_right_view
+go
 IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.VIEWS WHERE TABLE_NAME = 'GroupStage_right_view')
     DROP VIEW GroupStage_right_view;
 GO 
@@ -43,6 +46,8 @@ SELECT
     * 
 FROM
     (
+select 'Group Staging' as 'Rank', '' AS Team, CAST('' AS VARCHAR(10)) as PTS,CAST('' AS VARCHAR(10)) AS MP,CAST('' AS VARCHAR(10)) AS W,CAST('' AS VARCHAR(10)) AS L,CAST('' AS VARCHAR(10)) AS D,CAST('' AS VARCHAR(10)) AS GF,CAST('' AS VARCHAR(10)) AS GA,CAST('' AS VARCHAR(10)) AS GD FROM GroupStage WHERE team='Albania'
+union all
 SELECT 'Group B' AS 'Rank','' AS Team,'' AS PTS,'' AS MP,'' AS W,'' AS L,'' AS D,'' AS GF,'' AS GA,'' AS GD FROM GroupStage where team='Albania' 
 UNION ALL
 SELECT 'Rank' ,'Team' AS Team,'PTS' AS PTS,'MP' AS MP,'W' AS W,'L' AS L,'D' AS D,'GF' AS GF,'GA' AS GA,'GD' AS GD FROM GroupStage where team='Albania' 
@@ -68,16 +73,18 @@ UNION ALL
  
 
 --round of 16 left view  ---
+go
 IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.VIEWS WHERE TABLE_NAME = 'r16_left_view')
     DROP VIEW r16_left_view;
 GO
- 
 CREATE VIEW r16_left_view AS
 SELECT
     ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) AS RowNumber,
     * 
 FROM
     (
+select top 1 'Round of 16' as 'Country Name', Cast('' as varchar(10)) as 'Goals'   FROM Round16Stage
+union all
 SELECT Top 4  '' as'Country Name',Cast('' as varchar(10)) as 'Goals'   FROM Round16Stage 
 union all
 select top 1 'Country Name'  as'Country Name',CAST('Goals' AS VARCHAR(10)) as 'Goals'  FROM Round16Stage where group_name = 'R1'
@@ -105,6 +112,7 @@ select  top 2 team as'Country Name',CAST(GF AS VARCHAR(10)) as 'Goals'  FROM Rou
 
 
 --round of 16 right view  ---
+go
 IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.VIEWS WHERE TABLE_NAME = 'r16_right_view')
     DROP VIEW r16_right_view;
 GO
@@ -114,7 +122,9 @@ SELECT
     * 
 FROM
     (
-SELECT Top 4  '' as'Country Name',Cast('' as varchar(10)) as 'Goals'   FROM Round16Stage 
+select top 1 'Round of 16' as 'Country Name', Cast('' as varchar(10)) as 'Goals'   FROM Round16Stage
+union all
+SELECT Top 3  '' as'Country Name',Cast('' as varchar(10)) as 'Goals'   FROM Round16Stage 
 union all
 select top 1 'Country Name'  as'Country Name',CAST('Goals' AS VARCHAR(10)) as 'Goals'  FROM Round16Stage where group_name = 'R1'
 union all
@@ -141,6 +151,7 @@ select  top 2 team as'Country Name',CAST(GF AS VARCHAR(10)) as 'Goals'  FROM Rou
 
 
 --quarter final left view  ---
+go
 IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.VIEWS WHERE TABLE_NAME = 'qf_left_view')
     DROP VIEW qf_left_view;
 GO
@@ -151,6 +162,9 @@ SELECT
     * 
 FROM
     (
+
+select top 1 'Quarter Final' as 'Country Name', Cast('' as varchar(10)) as 'Goals'   FROM QuarterFinalStage
+union all
 SELECT Top 7  '' as'Country Name',Cast('' as varchar(10)) as 'Goals'   FROM QuarterFinalStage
 union all
 select top 1 'Country Name'  as'Country Name',CAST('Goals' AS VARCHAR(10)) as 'Goals'  FROM QuarterFinalStage where group_name = 'QF1'
@@ -167,6 +181,7 @@ SELECT Top 7  '' as'Country Name',Cast('' as varchar(10)) as 'Goals'   FROM Quar
 ) as subquery;
  
 --quarter final right view  ---
+go
 IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.VIEWS WHERE TABLE_NAME = 'QF_right_view')
     DROP VIEW QF_right_view;
 GO
@@ -176,6 +191,8 @@ SELECT
     * 
 FROM
     (
+select top 1 'Quarter Final' as 'Country Name', Cast('' as varchar(10)) as 'Goals'   FROM QuarterFinalStage
+union all
 SELECT Top 7  '' as'Country Name',Cast('' as varchar(10)) as 'Goals'   FROM QuarterFinalStage 
 union all
 select top 1 'Country Name'  as'Country Name',CAST('Goals' AS VARCHAR(10)) as 'Goals'  FROM QuarterFinalStage where group_name = 'QF1'
@@ -193,16 +210,19 @@ SELECT Top 7  '' as'Country Name',Cast('' as varchar(10)) as 'Goals'   FROM Quar
  
 
 -- semi final left view
+go
 IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.VIEWS WHERE TABLE_NAME = 'sf_left_view')
     DROP VIEW sf_left_view;
 GO
- 
 CREATE VIEW sf_left_view AS
 SELECT
     ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) AS RowNumber,
     * 
 FROM
     (
+	
+select top 1 'Semifinal' as 'Country Name', Cast('' as varchar(10)) as 'Goals'   FROM SemiFinalStage
+union all
 SELECT Top 12  '' as'Country Name',Cast('' as varchar(10)) as 'Goals'   FROM GroupStage 
 union all
 select top 1 'Country Name'  as'Country Name',CAST('Goals' AS VARCHAR(10)) as 'Goals'  FROM SemiFinalStage where group_name = 'SF1'
@@ -214,6 +234,7 @@ SELECT Top 7  '' as'Country Name',Cast('' as varchar(10)) as 'Goals'   FROM Grou
  
 
 -- semi final right view
+go
 IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.VIEWS WHERE TABLE_NAME = 'SF_right_view')
     DROP VIEW SF_right_view;
 GO
@@ -223,6 +244,8 @@ SELECT
     * 
 FROM
     (
+select top 1 'Semifinal' as 'Country Name', Cast('' as varchar(10)) as 'Goals'   FROM SemiFinalStage
+union all
 SELECT Top 12  '' as'Country Name',Cast('' as varchar(10)) as 'Goals' FROM GroupStage 
 union all
 select top 1 'Country Name'  as'Country Name',CAST('Goals' AS VARCHAR(10)) as 'Goals'  FROM SemiFinalStage where group_name = 'SF1'
@@ -234,6 +257,7 @@ SELECT Top 7  '' as'Country Name',Cast('' as varchar(10)) as 'Goals'   FROM Grou
 
 
 --final view
+go
 IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.VIEWS WHERE TABLE_NAME = 'final_view')
     DROP VIEW final_view;
 GO
@@ -244,16 +268,19 @@ SELECT
     * 
 FROM
     (
+select top 1 'Final' as 'Country Name', Cast('' as varchar(10)) as 'Goals'   FROM FinalStage
+union all
 SELECT Top 12  '' as'Country Name',Cast('' as varchar(10)) as 'Goals' FROM GroupStage 
 union all
 select top 1 'Country Name'  as'Country Name',CAST('Goals' AS VARCHAR(10)) as 'Goals'  FROM FinalStage where group_name = 'F'
 union all
-select  top 1 team as'Country Name',CAST(GF AS VARCHAR(10)) as 'Goals'  FROM FinalStage where group_name = 'F'
+select top 2 team as'Country Name',CAST(GF AS VARCHAR(10)) as 'Goals'  FROM FinalStage where group_name = 'F'
 union all
 SELECT Top 8  '' as'Country Name',Cast('' as varchar(10)) as 'Goals'   FROM GroupStage 
 ) as subquery;
 
 --final euro cup view
+go
 select
 a.Rank,a.Team,a.PTS,a.MP,a.W,a.L,a.D,a.GF,a.GA,a.GD,
 ' ' AS N1,
