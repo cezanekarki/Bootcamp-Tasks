@@ -176,7 +176,7 @@ def read_and_relocate_rrf_files(s3, bucket, key):
         # Wrap the zip data in a BytesIO object
         zip_file = BytesIO(zip_data)
 
-        file_path = 'test_full_02052024/rrf'
+        file_path = 'rrf'
 
         with zipfile.ZipFile(zip_file, 'r') as zip_ref:
             for file_info in zip_ref.infolist():
@@ -189,7 +189,7 @@ def read_and_relocate_rrf_files(s3, bucket, key):
                         if file_content.endswith('|'):
                             file_content = file_content[:-1]
                         file_content_io = io.StringIO(file_content)
-                        rrf_df = pd.read_csv(file_content_io, delimiter='|', header=None)
+                        rrf_df = pd.read_csv(file_content_io, delimiter='|', header=None, low_memory=False)
                         rrf_df = rrf_df.iloc[:, :-1]
                         print(f"Row count before transformation: {rrf_df.shape[0]}")
 

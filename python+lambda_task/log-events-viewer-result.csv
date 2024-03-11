@@ -1,315 +1,401 @@
 timestamp,message
-1710135649166,"INIT_START Runtime Version: python:3.12.v20	Runtime Version ARN: arn:aws:lambda:us-east-1::runtime:82aea00f37a44d68665730d559c81352fc95f22c9aa34a0722815a93f08e102b
+1710149331708,"1    2024-02-05  
 "
-1710135651942,"START RequestId: fcda45da-ec15-4f11-907c-a692fc7ca418 Version: $LATEST
+1710149331708,"2    2024-02-05  
 "
-1710135652070,"Excel file downloaded to: /tmp/RxNorm_Header.xlsx
+1710149331708,"3    2024-02-05  
 "
-1710135652083,"Sheet names: ['RXNCONSO', 'RXNSAT', 'RXNDOC', 'RXNREL', 'RXNSAB', 'RXNSTY', 'RXNATOMARCHIVE', 'RXNCUI', 'RXNCUICHANGES']
+1710149331708,"4    2024-02-05  
 "
-1710135652101,"excel_headers dictionary for sheet RXNCONSO: ['RXCUI', 'LAT', 'TS', 'LUI', 'STT', 'SUI', 'ISPREF', 'RXAUI', 'SAUI', 'SCUI', 'SDUI', 'SAB', 'TTY', 'CODE', 'STR', 'SRL', 'SUPPRESS', 'CVF', 'Code set', 'Version Month']
+1710149334520,"Transformed data saved to: s3://rxnormfull2/transformation/RXNATOMARCHIVE.txt
 "
-1710135652261,"The RXNATOMARCHIVE.RRF is read from zip file.
+1710149335120,"Unzipped file saved to: s3://rxnormfull2/unzipped/RXNATOMARCHIVE.RRF
 "
-1710135654537,"Row count before transformation: 371368
+1710149335120,"The RXNCONSO.RRF is read from zip file.
 "
-1710135765712,"Version month: 2024-02-06
+1710149339331,"Row count before transformation: 1133065
 "
-1710135765716,"Row count of RXNATOMARCHIVE after transformation: 371368
+1710149339331,"Version month: 2024-02-05
 "
-1710135765724,"RXAUI        AUI                    STR ARCHIVE_TIMESTAMP  \
+1710149339340,"Row count of RXNCONSO after transformation: 1133065
 "
-1710135765724,"0    947  A10335796                  Mesna        2020-04-27   
+1710149339344,"RXCUI  LAT  TS  LUI  STT  SUI  ISPREF     RXAUI  SAUI       SCUI  SDUI  \
 "
-1710135765724,"1   1424  A10334758           beta-Alanine        2020-04-27   
+1710149339344,"0      3  ENG NaN  NaN  NaN  NaN     NaN   8717795   NaN   58488005   NaN   
 "
-1710135765724,"2   1684  A10334529    4-Aminobenzoic Acid        2020-04-27   
+1710149339344,"1      3  ENG NaN  NaN  NaN  NaN     NaN   8717796   NaN   58488005   NaN   
 "
-1710135765724,"3   2192  A16791816  Eicosapentaenoic Acid        2020-04-27   
+1710149339344,"2      3  ENG NaN  NaN  NaN  NaN     NaN   8717808   NaN   58488005   NaN   
 "
-1710135765724,"4   2265  A10334531    5-Hydroxytryptophan        2020-04-27   
+1710149339344,"3      3  ENG NaN  NaN  NaN  NaN     NaN   8718164   NaN   58488005   NaN   
 "
-1710135765724,"CREATED_TIMESTAMP UPDATED_TIMESTAMP  CODE  IS_BRAND  LAT LAST_RELEASED  \
+1710149339344,"4     19  ENG NaN  NaN  NaN  NaN     NaN  10794494   NaN  112116001   NaN   
 "
-1710135765724,"0        2005-03-10        2020-04-27    44       NaN  ENG    2020-04-06   
+1710149339344,"SAB TTY       CODE                                            STR  \
 "
-1710135765724,"1        2005-03-10        2020-04-27    61       NaN  ENG    2020-04-06   
+1710149339344,"0  SNOMEDCT_US  PT   58488005              1,4-alpha-Glucan branching enzyme   
 "
-1710135765724,"2        2005-03-10        2020-04-27    74       NaN  ENG    2020-04-06   
+1710149339344,"1  SNOMEDCT_US  FN   58488005  1,4-alpha-Glucan branching enzyme (substance)   
 "
-1710135765724,"3        2005-03-10        2020-04-27    90       NaN  ENG    2020-04-06   
+1710149339344,"2  SNOMEDCT_US  SY   58488005                 Amylo-(1,4,6)-transglycosylase   
 "
-1710135765724,"4        2005-03-10        2020-11-06    94       NaN  ENG    2020-04-06   
+1710149339344,"3  SNOMEDCT_US  SY   58488005                               Branching enzyme   
 "
-1710135765724,"SAUI                 VSAB  RXCUI     SAB  TTY  MERGED_TO_RXCUI Code Set  \
+1710149339344,"4  SNOMEDCT_US  SY  112116001                         17-hydrocorticosteroid   
 "
-1710135765724,"0   NaN  RXNORM_19AB_200406F     44  RXNORM   IN               44   RxNorm   
+1710149339344,"SRL SUPPRESS  CVF Code Set Version Month  
 "
-1710135765724,"1   NaN  RXNORM_19AB_200406F     61  RXNORM   IN               61   RxNorm   
+1710149339344,"0  NaN        N  NaN   RxNorm    2024-02-05  
 "
-1710135765724,"2   NaN  RXNORM_19AB_200406F     74  RXNORM   IN               74   RxNorm   
+1710149339344,"1  NaN        N  NaN   RxNorm    2024-02-05  
 "
-1710135765724,"3   NaN  RXNORM_19AB_200406F     90  RXNORM  PIN               90   RxNorm   
+1710149339344,"2  NaN        N  NaN   RxNorm    2024-02-05  
 "
-1710135765724,"4   NaN  RXNORM_19AB_200406F     94  RXNORM   IN               94   RxNorm   
+1710149339344,"3  NaN        N  NaN   RxNorm    2024-02-05  
 "
-1710135765724,"Version Month  
+1710149339344,"4  NaN        N  NaN   RxNorm    2024-02-05  
 "
-1710135765724,"0    2024-02-06  
+1710149346764,"Transformed data saved to: s3://rxnormfull2/transformation/RXNCONSO.txt
 "
-1710135765724,"1    2024-02-06  
+1710149348238,"Unzipped file saved to: s3://rxnormfull2/unzipped/RXNCONSO.RRF
 "
-1710135765724,"2    2024-02-06  
+1710149348238,"The RXNCUICHANGES.RRF is read from zip file.
 "
-1710135765724,"3    2024-02-06  
+1710149348319,"Row count before transformation: 153
 "
-1710135765724,"4    2024-02-06  
+1710149348319,"Version month: 2024-02-05
 "
-1710135769536,"Transformed data saved to: s3://rxnormfull/transformation/RXNATOMARCHIVE.txt
+1710149348320,"Row count of RXNCUICHANGES after transformation: 153
 "
-1710135770448,"Unzipped file saved to: s3://rxnormfull/unzipped/RXNATOMARCHIVE.RRF
+1710149348321,"RXAUI CODE     SAB  TTY  STR  OLD_RXCUI  NEW_RXCUI Code Set Version Month
 "
-1710135770448,"The RXNCUI.RRF is read from zip file.
+1710149348321,"0    NaN  NaN  RXNORM  NaN  NaN    1653118    2672916   RxNorm    2024-02-05
 "
-1710135770535,"Row count before transformation: 30046
+1710149348321,"1    NaN  NaN  RXNORM  NaN  NaN    1653119    2672917   RxNorm    2024-02-05
 "
-1710135770535,"Version month: 2024-02-06
+1710149348321,"2    NaN  NaN  RXNORM  NaN  NaN    1806685    2672352   RxNorm    2024-02-05
 "
-1710135770536,"Row count of RXNCUI after transformation: 30046
+1710149348321,"3    NaN  NaN  RXNORM  NaN  NaN    1806938    2673304   RxNorm    2024-02-05
 "
-1710135770538,"CUI1            VER_START              VER_END  Cardinality     CUI2  \
+1710149348321,"4    NaN  NaN  RXNORM  NaN  NaN    2647628    2672353   RxNorm    2024-02-05
 "
-1710135770538,"0  89904  RXNORM_17AA_170905F  RXNORM_20AA_221003F            1    89904   
+1710149348375,"Transformed data saved to: s3://rxnormfull2/transformation/RXNCUICHANGES.txt
 "
-1710135770538,"1  91669  RXNORM_17AA_170905F  RXNORM_18AB_181203F            1    91669   
+1710149348451,"Unzipped file saved to: s3://rxnormfull2/unzipped/RXNCUICHANGES.RRF
 "
-1710135770538,"2  91714  RXNORM_10AA_100802F  RXNORM_10AA_100802F            1  1000992   
+1710149348451,"The RXNCUI.RRF is read from zip file.
 "
-1710135770538,"3  91811  RXNORM_04AC_050210F  RXNORM_09AA_090706F            1   857082   
+1710149348471,"Row count before transformation: 30046
 "
-1710135770538,"4  91812  RXNORM_04AC_050210F  RXNORM_09AA_090706F            1   857087   
+1710149348472,"Version month: 2024-02-05
 "
-1710135770538,"Code Set Version Month  
+1710149348472,"Row count of RXNCUI after transformation: 30046
 "
-1710135770538,"0   RxNorm    2024-02-06  
+1710149348474,"CUI1            VER_START              VER_END  Cardinality     CUI2  \
 "
-1710135770538,"1   RxNorm    2024-02-06  
+1710149348474,"0  89904  RXNORM_17AA_170905F  RXNORM_20AA_221003F            1    89904   
 "
-1710135770538,"2   RxNorm    2024-02-06  
+1710149348474,"1  91669  RXNORM_17AA_170905F  RXNORM_18AB_181203F            1    91669   
 "
-1710135770538,"3   RxNorm    2024-02-06  
+1710149348474,"2  91714  RXNORM_10AA_100802F  RXNORM_10AA_100802F            1  1000992   
 "
-1710135770538,"4   RxNorm    2024-02-06  
+1710149348474,"3  91811  RXNORM_04AC_050210F  RXNORM_09AA_090706F            1   857082   
 "
-1710135770676,"Transformed data saved to: s3://rxnormfull/transformation/RXNCUI.txt
+1710149348474,"4  91812  RXNORM_04AC_050210F  RXNORM_09AA_090706F            1   857087   
 "
-1710135770798,"Unzipped file saved to: s3://rxnormfull/unzipped/RXNCUI.RRF
+1710149348474,"Code Set Version Month  
 "
-1710135770798,"The RXNCUICHANGES.RRF is read from zip file.
+1710149348474,"0   RxNorm    2024-02-05  
 "
-1710135770801,"Row count before transformation: 153
+1710149348474,"1   RxNorm    2024-02-05  
 "
-1710135770801,"Version month: 2024-02-06
+1710149348474,"2   RxNorm    2024-02-05  
 "
-1710135770807,"Row count of RXNCUICHANGES after transformation: 153
+1710149348474,"3   RxNorm    2024-02-05  
 "
-1710135770807,"RXAUI CODE     SAB  TTY  STR  OLD_RXCUI  NEW_RXCUI Code Set Version Month
+1710149348474,"4   RxNorm    2024-02-05  
 "
-1710135770807,"0    NaN  NaN  RXNORM  NaN  NaN    1653118    2672916   RxNorm    2024-02-06
+1710149348991,"Transformed data saved to: s3://rxnormfull2/transformation/RXNCUI.txt
 "
-1710135770807,"1    NaN  NaN  RXNORM  NaN  NaN    1653119    2672917   RxNorm    2024-02-06
+1710149349087,"Unzipped file saved to: s3://rxnormfull2/unzipped/RXNCUI.RRF
 "
-1710135770807,"2    NaN  NaN  RXNORM  NaN  NaN    1806685    2672352   RxNorm    2024-02-06
+1710149349087,"The RXNDOC.RRF is read from zip file.
 "
-1710135770807,"3    NaN  NaN  RXNORM  NaN  NaN    1806938    2673304   RxNorm    2024-02-06
+1710149349093,"Row count before transformation: 3445
 "
-1710135770807,"4    NaN  NaN  RXNORM  NaN  NaN    2647628    2672353   RxNorm    2024-02-06
+1710149349093,"Version month: 2024-02-05
 "
-1710135770881,"Transformed data saved to: s3://rxnormfull/transformation/RXNCUICHANGES.txt
+1710149349094,"Row count of RXNDOC after transformation: 3445
 "
-1710135770962,"Unzipped file saved to: s3://rxnormfull/unzipped/RXNCUICHANGES.RRF
+1710149349095,"KEY                         VALUE           TYPE  \
 "
-1710135770962,"The RXNDOC.RRF is read from zip file.
+1710149349095,"0  ATN                      AAL_TERM  expanded_form   
 "
-1710135770968,"Row count before transformation: 3445
+1710149349095,"1  ATN               ACCEPTABILITYID  expanded_form   
 "
-1710135770969,"Version month: 2024-02-06
+1710149349095,"2  ATN  ACCEPTED_THERAPEUTIC_USE_FOR  expanded_form   
 "
-1710135770969,"Row count of RXNDOC after transformation: 3445
+1710149349095,"3  ATN                        ACTIVE  expanded_form   
 "
-1710135770971,"KEY                         VALUE           TYPE  \
+1710149349095,"4  ATN                 ADDED_MEANING  expanded_form   
 "
-1710135770971,"0  ATN                      AAL_TERM  expanded_form   
+1710149349095,"EXPL Code Set Version Month  
 "
-1710135770971,"1  ATN               ACCEPTABILITYID  expanded_form   
+1710149349095,"0                            AAL term   RxNorm    2024-02-05  
 "
-1710135770971,"2  ATN  ACCEPTED_THERAPEUTIC_USE_FOR  expanded_form   
+1710149349095,"1                    Acceptability Id   RxNorm    2024-02-05  
 "
-1710135770971,"3  ATN                        ACTIVE  expanded_form   
+1710149349095,"2        Accepted therapeutic use for   RxNorm    2024-02-05  
 "
-1710135770971,"4  ATN                 ADDED_MEANING  expanded_form   
+1710149349095,"3                              Active   RxNorm    2024-02-05  
 "
-1710135770971,"EXPL Code Set Version Month  
+1710149349095,"4  Additional descriptive information   RxNorm    2024-02-05  
 "
-1710135770971,"0                            AAL term   RxNorm    2024-02-06  
+1710149349379,"Transformed data saved to: s3://rxnormfull2/transformation/RXNDOC.txt
 "
-1710135770971,"1                    Acceptability Id   RxNorm    2024-02-06  
+1710149349453,"Unzipped file saved to: s3://rxnormfull2/unzipped/RXNDOC.RRF
 "
-1710135770971,"2        Accepted therapeutic use for   RxNorm    2024-02-06  
+1710149349453,"The RXNREL.RRF is read from zip file.
 "
-1710135770971,"3                              Active   RxNorm    2024-02-06  
+1710149363167,"Row count before transformation: 7154306
 "
-1710135770971,"4  Additional descriptive information   RxNorm    2024-02-06  
+1710149363168,"Version month: 2024-02-05
 "
-1710135771119,"Transformed data saved to: s3://rxnormfull/transformation/RXNDOC.txt
+1710149363238,"Row count of RXNREL after transformation: 7154306
 "
-1710135771222,"Unzipped file saved to: s3://rxnormfull/unzipped/RXNDOC.RRF
+1710149363242,"RXCUI1  RXAUI1 STYPE1 REL  RXCUI2     RXAUI2 STYPE2  \
 "
-1710135771222,"The RXNSAB.RRF is read from zip file.
+1710149363242,"0     NaN   828.0    AUI  RO     NaN   788773.0    AUI   
 "
-1710135771225,"Row count before transformation: 13
+1710149363242,"1     NaN   828.0    AUI  RO     NaN   790716.0    AUI   
 "
-1710135771231,"Version month: 2024-02-06
+1710149363242,"2     NaN   829.0    AUI  SY     NaN      828.0    AUI   
 "
-1710135771231,"Row count of RXNSAB after transformation: 13
+1710149363242,"3     NaN   945.0    AUI  RO     NaN  2369805.0    AUI   
 "
-1710135771236,"VCUI      RCUI                    VSAB         RSAB  \
+1710149363242,"4     NaN   950.0    AUI  RO     NaN  9251787.0    AUI   
 "
-1710135771236,"0  C5233827  C1140218         MMSL_2024_01_01         MMSL   
+1710149363242,"RELA          RUI  SRUI          SAB  SL  RG  \
 "
-1710135771236,"1  C5233830  C1140182          MMX_2024_01_02          MMX   
+1710149363242,"0                   has_ingredient    5066189.0   NaN         MMSL NaN NaN   
 "
-1710135771236,"2  C5233828  C1140261         NDDF_2024_01_03         NDDF   
+1710149363242,"1                   has_ingredient    3823969.0   NaN         MMSL NaN NaN   
 "
-1710135771236,"3  C5233835  C1140284     RXNORM_20AA_240205F       RXNORM   
+1710149363242,"2                              NaN          NaN   NaN       RXNORM NaN NaN   
 "
-1710135771236,"4  C3531723  C2720507  SNOMEDCT_US_2023_06_30  SNOMEDCT_US   
+1710149363242,"3                   has_ingredient    4306227.0   NaN         MMSL NaN NaN   
 "
-1710135771236,"SON        SF  SVER      VSTART VEND  \
+1710149363242,"4  has_basis_of_strength_substance  116141227.0   NaN  SNOMEDCT_US NaN NaN   
 "
-1710135771236,"0              Multum MediSource Lexicon      MMSL  2024  2024-01-01  NaN   
+1710149363242,"DIR  SUPPRESS  CVF Code Set Version Month  
 "
-1710135771236,"1                    Micromedex RED BOOK       MMX  2024  2024-01-02  NaN   
+1710149363242,"0  NaN       NaN  NaN   RxNorm    2024-02-05  
 "
-1710135771236,"2  FDB MedKnowledge (formerly NDDF Plus)      NDDF  2024  2024-01-03  NaN   
+1710149363242,"1  NaN       NaN  NaN   RxNorm    2024-02-05  
 "
-1710135771236,"3                      RxNorm Vocabulary    RXNORM  2024  2024-02-05  NaN   
+1710149363242,"2  NaN       NaN  NaN   RxNorm    2024-02-05  
 "
-1710135771236,"4                US Edition of SNOMED CT  SNOMEDCT  2023  2023-06-30  NaN   
+1710149363242,"3  NaN       NaN  NaN   RxNorm    2024-02-05  
 "
-1710135771236,"IMETA   RMETA  SLC                                                SCC  \
+1710149363242,"4  NaN       NaN  NaN   RxNorm    2024-02-05  
 "
-1710135771236,"0    NaN  2020AA  NaN  ;;Multum Information Services;3200 Cherry Cree...   
+1710149407458,"Transformed data saved to: s3://rxnormfull2/transformation/RXNREL.txt
 "
-1710135771236,"1    NaN  2020AA  NaN  ;;Micromedex;6200 South Syracuse Way, Suite 30...   
+1710149413987,"Unzipped file saved to: s3://rxnormfull2/unzipped/RXNREL.RRF
 "
-1710135771236,"2    NaN  2020AA  NaN  ;;First Databank Customer Support;701 Gateway ...   
+1710149413987,"The RXNSAB.RRF is read from zip file.
 "
-1710135771236,"3    NaN  2020AA  NaN  RxNorm Customer Service;;U.S. National Library...   
+1710149414220,"Row count before transformation: 13
 "
-1710135771236,"4    NaN  2020AA  NaN  National Library Of Medicine;NLM is a Charter ...   
+1710149414227,"Version month: 2024-02-05
 "
-1710135771236,"SRL  TFR  CFR  CXTY  TTYL  \
+1710149414227,"Row count of RXNSAB after transformation: 13
 "
-1710135771236,"0  ;;Multum Information Services;3200 Cherry Cree...    1  NaN   NaN   NaN   
+1710149414232,"VCUI      RCUI                    VSAB         RSAB  \
 "
-1710135771236,"1                                                NaN    3  NaN   NaN   NaN   
+1710149414232,"0  C5233827  C1140218         MMSL_2024_01_01         MMSL   
 "
-1710135771236,"2  ;;First Databank Customer Support;701 Gateway ...    3  NaN   NaN   NaN   
+1710149414232,"1  C5233830  C1140182          MMX_2024_01_02          MMX   
 "
-1710135771236,"3  RxNorm Customer Service;;U.S. National Library...    0  NaN   NaN   NaN   
+1710149414232,"2  C5233828  C1140261         NDDF_2024_01_03         NDDF   
 "
-1710135771236,"4  National Library Of Medicine;NLM is a Charter ...    9  NaN   NaN   NaN   
+1710149414232,"3  C5233835  C1140284     RXNORM_20AA_240205F       RXNORM   
 "
-1710135771236,"ATNL  \
+1710149414232,"4  C3531723  C2720507  SNOMEDCT_US_2023_06_30  SNOMEDCT_US   
 "
-1710135771236,"0                    GN,MTH_RXN_BD,CD,IN,MS,SC,BD,BN   
+1710149414232,"SON        SF  SVER      VSTART VEND  \
 "
-1710135771236,"1                        MTH_RXN_CD,BD,CD,MTH_RXN_BD   
+1710149414232,"0              Multum MediSource Lexicon      MMSL  2024  2024-01-01  NaN   
 "
-1710135771236,"2                      CDC,CDA,CDD,IN,MTH_RXN_CDC,DF   
+1710149414232,"1                    Micromedex RED BOOK       MMX  2024  2024-01-02  NaN   
 "
-1710135771236,"3  SCDF,DFG,SBD,PIN,TMSY,BN,SBDC,MIN,SBDG,PSN,SCD...   
+1710149414232,"2  FDB MedKnowledge (formerly NDDF Plus)      NDDF  2024  2024-01-03  NaN   
 "
-1710135771236,"4                                 FN,SY,PT,PTGB,SYGB   
+1710149414232,"3                      RxNorm Vocabulary    RXNORM  2024  2024-02-05  NaN   
 "
-1710135771236,"LAT CENC CURVER SABIN SSN  \
+1710149414232,"4                US Edition of SNOMED CT  SNOMEDCT  2023  2023-06-30  NaN   
 "
-1710135771236,"0       DCSA,DDF,DDFA,DHJC,DPC,DRT,DRTA,DST,NDC,TYPE  ENG  UTF-8     Y   Y   
+1710149414232,"IMETA   RMETA  SLC                                                SCC  \
 "
-1710135771236,"1  DCSA,DDF,DESI_DESC,DRT,DST,LABELER,MMX_RXO,NDC...  ENG  UTF-8     Y   Y   
+1710149414232,"0    NaN  2020AA  NaN  ;;Multum Information Services;3200 Cherry Cree...   
 "
-1710135771236,"2                                                NDC  ENG  UTF-8     Y   Y   
+1710149414232,"1    NaN  2020AA  NaN  ;;Micromedex;6200 South Syracuse Way, Suite 30...   
 "
-1710135771236,"3  AMBIGUITY_FLAG,NDC,ORIG_CODE,ORIG_SOURCE,RXN_A...  ENG  UTF-8     Y   Y   
+1710149414232,"2    NaN  2020AA  NaN  ;;First Databank Customer Support;701 Gateway ...   
 "
-1710135771236,"4                                                NaN  ENG  UTF-8     Y   Y   
+1710149414232,"3    NaN  2020AA  NaN  RxNorm Customer Service;;U.S. National Library...   
 "
-1710135771236,"SCIT  \
+1710149414232,"4    NaN  2020AA  NaN  National Library Of Medicine;NLM is a Charter ...   
 "
-1710135771236,"0                                             Multum   
+1710149414232,"SRL  TFR  CFR  CXTY  TTYL  \
 "
-1710135771236,"1                                         Micromedex   
+1710149414232,"0  ;;Multum Information Services;3200 Cherry Cree...    1  NaN   NaN   NaN   
 "
-1710135771236,"2                                   FDB MedKnowledge   
+1710149414232,"1                                                NaN    3  NaN   NaN   NaN   
 "
-1710135771236,"3  RxNorm work done by the National Library of Me...   
+1710149414232,"2  ;;First Databank Customer Support;701 Gateway ...    3  NaN   NaN   NaN   
 "
-1710135771236,"4                            US Edition of SNOMED CT   
+1710149414232,"3  RxNorm Customer Service;;U.S. National Library...    0  NaN   NaN   NaN   
 "
-1710135771236,"Code set Code Set Version Month  
+1710149414232,"4  National Library Of Medicine;NLM is a Charter ...    9  NaN   NaN   NaN   
 "
-1710135771236,"0  ;;;;Medisource Lexicon;;;January 01, 2024;Denv...   RxNorm    2024-02-06  
+1710149414232,"ATNL  \
 "
-1710135771236,"1  ;;;;Micromedex RED BOOK;;;January 02, 2024;;;;...   RxNorm    2024-02-06  
+1710149414232,"0                    GN,MTH_RXN_BD,CD,IN,MS,SC,BD,BN   
 "
-1710135771236,"2  ;;;;FDB MedKnowledge (formerly NDDF Plus);;;Ja...   RxNorm    2024-02-06  
+1710149414232,"1                        MTH_RXN_CD,BD,CD,MTH_RXN_BD   
 "
-1710135771236,"3  ;;;;RxNorm;;;META2020AA Full Update 2024_02_05...   RxNorm    2024-02-06  
+1710149414232,"2                      CDC,CDA,CDD,IN,MTH_RXN_CDC,DF   
 "
-1710135771236,"4  ;;International Health Terminology Standards D...   RxNorm    2024-02-06  
+1710149414232,"3  SCDF,DFG,SBD,PIN,TMSY,BN,SBDC,MIN,SBDG,PSN,SCD...   
 "
-1710135771299,"Transformed data saved to: s3://rxnormfull/transformation/RXNSAB.txt
+1710149414232,"4                                 FN,SY,PT,PTGB,SYGB   
 "
-1710135771326,"Unzipped file saved to: s3://rxnormfull/unzipped/RXNSAB.RRF
+1710149414232,"LAT CENC CURVER SABIN SSN  \
 "
-1710135771326,"The RXNSTY.RRF is read from zip file.
+1710149414232,"0       DCSA,DDF,DDFA,DHJC,DPC,DRT,DRTA,DST,NDC,TYPE  ENG  UTF-8     Y   Y   
 "
-1710135771646,"Row count before transformation: 461874
+1710149414232,"1  DCSA,DDF,DESI_DESC,DRT,DST,LABELER,MMX_RXO,NDC...  ENG  UTF-8     Y   Y   
 "
-1710135771647,"Version month: 2024-02-06
+1710149414232,"2                                                NDC  ENG  UTF-8     Y   Y   
 "
-1710135771651,"Row count of RXNSTY after transformation: 461874
+1710149414232,"3  AMBIGUITY_FLAG,NDC,ORIG_CODE,ORIG_SOURCE,RXN_A...  ENG  UTF-8     Y   Y   
 "
-1710135771654,"RXCUI   TUI           STN                              STY  ATUI  CVF  \
+1710149414232,"4                                                NaN  ENG  UTF-8     Y   Y   
 "
-1710135771654,"0      3  T126  A1.4.1.1.3.3                           Enzyme   NaN  NaN   
+1710149414232,"SCIT  \
 "
-1710135771654,"1      3  T116  A1.4.1.2.1.7  Amino Acid, Peptide, or Protein   NaN  NaN   
+1710149414232,"0                                             Multum   
 "
-1710135771654,"2     19  T125  A1.4.1.1.3.2                          Hormone   NaN  NaN   
+1710149414232,"1                                         Micromedex   
 "
-1710135771654,"3     19  T109    A1.4.1.2.1                 Organic Chemical   NaN  NaN   
+1710149414232,"2                                   FDB MedKnowledge   
 "
-1710135771654,"4     21  T125  A1.4.1.1.3.2                          Hormone   NaN  NaN   
+1710149414232,"3  RxNorm work done by the National Library of Me...   
 "
-1710135771654,"Code Set Version Month  
+1710149414232,"4                            US Edition of SNOMED CT   
 "
-1710135771654,"0   RxNorm    2024-02-06  
+1710149414232,"Code set Code Set Version Month  
 "
-1710135771654,"1   RxNorm    2024-02-06  
+1710149414232,"0  ;;;;Medisource Lexicon;;;January 01, 2024;Denv...   RxNorm    2024-02-05  
 "
-1710135771654,"2   RxNorm    2024-02-06  
+1710149414232,"1  ;;;;Micromedex RED BOOK;;;January 02, 2024;;;;...   RxNorm    2024-02-05  
 "
-1710135771654,"3   RxNorm    2024-02-06  
+1710149414232,"2  ;;;;FDB MedKnowledge (formerly NDDF Plus);;;Ja...   RxNorm    2024-02-05  
 "
-1710135771654,"4   RxNorm    2024-02-06  
+1710149414232,"3  ;;;;RxNorm;;;META2020AA Full Update 2024_02_05...   RxNorm    2024-02-05  
 "
-1710135773267,"Transformed data saved to: s3://rxnormfull/transformation/RXNSTY.txt
+1710149414232,"4  ;;International Health Terminology Standards D...   RxNorm    2024-02-05  
 "
-1710135773507,"Unzipped file saved to: s3://rxnormfull/unzipped/RXNSTY.RRF
+1710149414320,"Transformed data saved to: s3://rxnormfull2/transformation/RXNSAB.txt
 "
-1710135773520,"END RequestId: fcda45da-ec15-4f11-907c-a692fc7ca418
+1710149414374,"Unzipped file saved to: s3://rxnormfull2/unzipped/RXNSAB.RRF
 "
-1710135773520,"REPORT RequestId: fcda45da-ec15-4f11-907c-a692fc7ca418	Duration: 121578.12 ms	Billed Duration: 121579 ms	Memory Size: 10240 MB	Max Memory Used: 1279 MB	Init Duration: 2773.90 ms	
+1710149414374,"The RXNSAT.RRF is read from zip file.
+"
+1710149429051,"Row count before transformation: 7222404
+"
+1710149429051,"Version month: 2024-02-05
+"
+1710149429124,"Row count of RXNSAT after transformation: 7222404
+"
+1710149429127,"RXCUI  LUI  SUI    RXAUI STYPE        CODE ATUI  SATUI                 ATN  \
+"
+1710149429127,"0     38  NaN  NaN      829   AUI          38  NaN    NaN  RXN_BN_CARDINALITY   
+"
+1710149429127,"1     44  NaN  NaN      955   AUI      d01411  NaN    NaN                 DPC   
+"
+1710149429127,"2     44  NaN  NaN  2798745   AUI  NR7O1405Q9  NaN    NaN          SPL_SET_ID   
+"
+1710149429127,"3     44  NaN  NaN  2982613   AUI  NR7O1405Q9  NaN    NaN          SPL_SET_ID   
+"
+1710149429127,"4     44  NaN  NaN  2982613   AUI  NR7O1405Q9  NaN    NaN          SPL_SET_ID   
+"
+1710149429127,"SAB                                   ATV SUPPRESS     CVF Code Set  \
+"
+1710149429127,"0  RXNORM                                single        N  4096.0   RxNorm   
+"
+1710149429127,"1    MMSL                                     N        N     NaN   RxNorm   
+"
+1710149429127,"2  MTHSPL  2a2a526f-636b-7920-4261-6c626f612a2a        N  4096.0   RxNorm   
+"
+1710149429127,"3  MTHSPL  2e8eebc3-ea75-4c57-bfe1-2c5dc2c37806        N  4096.0   RxNorm   
+"
+1710149429127,"4  MTHSPL  49fdfbc3-69f8-4706-9d11-bf60e4e7811b        N  4096.0   RxNorm   
+"
+1710149429127,"Version Month  
+"
+1710149429127,"0    2024-02-05  
+"
+1710149429127,"1    2024-02-05  
+"
+1710149429127,"2    2024-02-05  
+"
+1710149429127,"3    2024-02-05  
+"
+1710149429127,"4    2024-02-05  
+"
+1710149463955,"Transformed data saved to: s3://rxnormfull2/transformation/RXNSAT.txt
+"
+1710149470618,"Unzipped file saved to: s3://rxnormfull2/unzipped/RXNSAT.RRF
+"
+1710149470618,"The RXNSTY.RRF is read from zip file.
+"
+1710149471245,"Row count before transformation: 461874
+"
+1710149471245,"Version month: 2024-02-05
+"
+1710149471249,"Row count of RXNSTY after transformation: 461874
+"
+1710149471251,"RXCUI   TUI           STN                              STY  ATUI  CVF  \
+"
+1710149471251,"0      3  T126  A1.4.1.1.3.3                           Enzyme   NaN  NaN   
+"
+1710149471251,"1      3  T116  A1.4.1.2.1.7  Amino Acid, Peptide, or Protein   NaN  NaN   
+"
+1710149471251,"2     19  T125  A1.4.1.1.3.2                          Hormone   NaN  NaN   
+"
+1710149471251,"3     19  T109    A1.4.1.2.1                 Organic Chemical   NaN  NaN   
+"
+1710149471251,"4     21  T125  A1.4.1.1.3.2                          Hormone   NaN  NaN   
+"
+1710149471251,"Code Set Version Month  
+"
+1710149471251,"0   RxNorm    2024-02-05  
+"
+1710149471251,"1   RxNorm    2024-02-05  
+"
+1710149471251,"2   RxNorm    2024-02-05  
+"
+1710149471251,"3   RxNorm    2024-02-05  
+"
+1710149471251,"4   RxNorm    2024-02-05  
+"
+1710149472513,"Transformed data saved to: s3://rxnormfull2/transformation/RXNSTY.txt
+"
+1710149472762,"Unzipped file saved to: s3://rxnormfull2/unzipped/RXNSTY.RRF
+"
+1710149472781,"END RequestId: d2aa560b-933c-4ebc-9064-9e7097948b7f
+"
+1710149472781,"REPORT RequestId: d2aa560b-933c-4ebc-9064-9e7097948b7f	Duration: 239370.72 ms	Billed Duration: 239371 ms	Memory Size: 10000 MB	Max Memory Used: 7672 MB	Init Duration: 2880.26 ms	
 "
