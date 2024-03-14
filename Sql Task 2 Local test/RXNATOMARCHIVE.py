@@ -25,6 +25,5 @@ df['UPDATE_DATE'] = pd.to_datetime(df['UPDATE_DATE'], format='%m/%d/%Y %I:%M:%S 
 # Convert mixed-format date columns to YYYY-MM-DD HH:MM:SS format
 df['RXNORM_TERM_DT'] = pd.to_datetime(df['RXNORM_TERM_DT'], format='%d/%m/%Y %I:%M:%S %p', errors='coerce').dt.strftime('%Y-%m-%d %I:%M:%S %p')
 
-# Save to CSV with explicit date formatting
-output_csv_path = r"C:\Users\upsal\Downloads\RXNORM\rrf\rxnconso_processed.csv"
-df.to_csv(output_csv_path, index=False, date_format='%Y-%m-%d %I:%M:%S %p')  # Add this parameter to specify the date format
+output_txt_path = r"C:\Users\upsal\Downloads\RXNORM\rrf\rxnconso_processed.txt"
+df.to_csv(output_txt_path, index=False, sep=',', date_format='%Y-%m-%d %I:%M:%S %p')
