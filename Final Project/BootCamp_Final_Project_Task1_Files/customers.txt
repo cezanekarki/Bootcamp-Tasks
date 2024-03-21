@@ -1,0 +1,21 @@
+customer_id	name	email	phone
+1	Customer 1	customer1@example.com	123-456-0001
+2	Customer 2	customer2@example.com	123-456-0002
+3	Customer 3	customer3@example.com	123-456-0003
+4	Customer 4	customer4@example.com	123-456-0004
+5	Customer 5	customer5@example.com	123-456-0005
+6	Customer 6	customer6@example.com	123-456-0006
+7	Customer 7	customer7@example.com	123-456-0007
+8	Customer 8	customer8@example.com	123-456-0008
+9	Customer 9	customer9@example.com	123-456-0009
+10	Customer 10	customer10@example.com	123-456-0010
+11	Customer 11	customer11@example.com	123-456-0011
+12	Customer 12	customer12@example.com	123-456-0012
+13	Customer 13	customer13@example.com	123-456-0013
+14	Customer 14	customer14@example.com	123-456-0014
+15	Customer 15	customer15@example.com	123-456-0015
+16	Customer 16	customer16@example.com	123-456-0016
+17	Customer 17	customer17@example.com	123-456-0017
+18	Customer 18	customer18@example.com	123-456-0018
+19	Customer 19	customer19@example.com	123-456-0019
+20	Customer 20	customer20@example.com	123-456-0020

@@ -1,0 +1,35 @@
+Please carry out below steps on this dataset.
+
+1.	Create Dataframes from the sheets in the attached excel.
+2.	Merge customer information with sales transactions by identifying the required joining keys.
+3.	Join product details with sales transactions by identifying the required joining keys.
+4.	Calculate total sales amount per product and per customer.
+5.	Determine top-selling products and highest-performing employees.
+6.	Aggregate sales data to analyze monthly and yearly trends.
+7.	Implement all the above requirements using both pyspark and SQL.
+
+
+8.      Create visually appealing dashboards and reports to present key findings and recommendations from this dataset.
+(Utilize visualization libraries like Matplotlib or Seaborn for creating visualizations. consider using reporting tools  Jupyter Notebooks for creating comprehensive reports.)
+
+
+
+top selling products
+ - by revenue
+ - by quant
+most valuable customers
+peak business period in a year
+best performing employees
+best performing departmnets
+
+lowest performing employees
+how much % of sales is covered by a particular product
+category wise product sales
+
+
+
+monthly sales --> line chart with values
+category wise sales --> pie chart
+top 5 most valueable customers -- bar graph
+products by sales quantity     -- bar graph
+most valueable customers 

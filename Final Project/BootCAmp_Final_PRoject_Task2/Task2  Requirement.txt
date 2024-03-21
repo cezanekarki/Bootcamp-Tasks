@@ -1,0 +1,18 @@
+
+Sumedh : 
+1.	Find the average trip distance for each month of the year.
+2.	Identify the top 3 vendors with the highest average tip amount per trip.
+3.	Calculate the cumulative total fare amount over time, ordered by pickup datetime.
+4.	Determine the average fare amount per passenger count for trips with a congestion surcharge.
+5.	Identify the top 5 pickup and drop-off location pairs with the highest average fare amount.
+
+
+Sumedh & Amol:
+1.	Calculate the average trip distance for each day of the week, considering only trips longer than 5 miles.
+2.	Find the average fare amount per trip type (e.g., street-hail, dispatch) for trips longer than 10 miles, excluding trips with zero fare.
+
+Visualization Task : Visualize the distribution of trip distances for each day of the week.
+Expected steps:
+•	Aggregate data to calculate the total trip distance for each day of the week.
+•	Normalize the trip distances for each day of the week.
+•	Plot the normalized trip distances for each day of the week as a line chart

@@ -1,0 +1,11 @@
+product_id	product_name	category	price	stock_quantity
+1	Product 1	Category 1	232	37
+2	Product 2	Category 1	185	74
+3	Product 3	Category 3	171	72
+4	Product 4	Category 3	154	43
+5	Product 5	Category 2	207	96
+6	Product 6	Category 3	496	37
+7	Product 7	Category 1	166	23
+8	Product 8	Category 1	205	81
+9	Product 9	Category 3	303	13
+10	Product 10	Category 1	447	95
