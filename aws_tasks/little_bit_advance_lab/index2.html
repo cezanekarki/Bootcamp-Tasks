@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the default form submission
+      
+      // Get form data
+      const formData = new FormData(event.target);
+      const formDataJson = {};
+      formData.forEach((value, key) => {
+        formDataJson[key] = value;
+      });
+
+      // Make POST request to API Gateway endpoint
+      fetch('https://8jcrb9xjj8.execute-api.us-east-1.amazonaws.com/proxy-stage/{proxy-resource+}', {
+        method: 'POST',
+        body: JSON.stringify(formDataJson),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data => {
+        console.log('Success:', data);
+        // Handle success response as needed
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        // Handle error as needed
+      });
+    });
+  </script>
+</body>
+</html>
