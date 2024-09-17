@@ -1,0 +1,100 @@
+MEMBER_ID,EMPLOYEE_ID,FIRST_NAME,LAST_NAME,MIDDLE_NAME,GENDER,DOB,RELATIONSHIP,PERSON_CODE,RACE,ETHNICITY,ADDRESS_1,ADDRESS_2,CITY,STATE,COUNTY,ZIP
+173400,160951,Freya,Lynn,Marlys,0,1988-02-23,S,02,white,nonhispanic,771 Kirlin Haven,,Attleboro,Massachusetts,Bristol County,02703
+83300,160951,Candice,Padilla,,0,1964-12-10,F,03,white,nonhispanic,182 Trantow Mission Unit 20,,Bellingham,Massachusetts,Norfolk County,
+106800,111325,Leanne,Swanson,,0,2015-05-28,D2,16,white,nonhispanic,686 Shields Dam,,Easthampton,Massachusetts,Hampshire County,
+52900,114177,Millicent,Byrne,,0,1948-04-22,N,13,white,nonhispanic,1009 DuBuque Ville Unit 54,,Springfield,Massachusetts,Hampden County,01106
+97600,117067,Charley,Lynn,,0,1976-01-12,A1,11,white,nonhispanic,114 Cummerata Parade,,West Tisbury,Massachusetts,Dukes County,
+22000,12745,Flynn,Morrison,,0,1989-03-30,M,04,white,nonhispanic,164 Stokes Lodge Apt 34,,Winchendon,Massachusetts,Worcester County,01475
+22900,13466,Pauline,Knight,,0,2019-05-09,N,13,white,nonhispanic,376 Skiles Forge Suite 48,,Westminster,Massachusetts,Worcester County,
+122500,135688,Elspeth,Gonzalez,Marliss,0,2014-09-09,C2,06,asian,hispanic,570 Nikolaus Wynd,,Cambridge,Massachusetts,Middlesex County,02139
+21800,13587,Amelie,Harmon,,0,1984-04-08,D2,16,other,nonhispanic,958 Robel Run Unit 83,,Carver,Massachusetts,Plymouth County,
+145000,138507,Laura,Montoya,,0,2010-03-29,F,03,white,nonhispanic,1094 Keebler Grove,,Gardner,Massachusetts,Worcester County,01440
+150400,151731,Jayden,Kane,,0,2019-07-08,F,03,white,hispanic,1054 Price Glen,,Haverhill,Massachusetts,Essex County,01835
+114100,152105,Safa,Kelly,,0,1991-08-21,G3,09,white,hispanic,765 Russel Pathway Unit 82,,Spencer,Massachusetts,Worcester County,01562
+201500,153303,Anika,Washington,Merla,0,2002-03-08,F,03,black,nonhispanic,815 Rau Ramp,,Boston,Massachusetts,Suffolk County,02109
+215600,158915,Inayah,Evans,,0,1988-06-28,G3,09,white,nonhispanic,282 Roberts Brook Suite 29,,Dartmouth,Massachusetts,Bristol County,
+216900,160951,Aurora,Lawson,,0,2012-10-04,E,01,white,nonhispanic,194 Robel Skyway,,Boston,Massachusetts,Suffolk County,02124
+207000,166936,Robyn,Stewart,,0,1957-10-19,D1,15,white,nonhispanic,306 Aufderhar Grove Unit 79,,Palmer,Massachusetts,Hampden County,
+124700,168886,Lena,Pearce,,0,1961-06-22,A1,11,white,nonhispanic,610 Harber Rapid Unit 87,,Greenfield,Massachusetts,Franklin County,
+222700,170319,Kane,Hardin,,0,2016-01-29,E,01,asian,hispanic,971 Balistreri Vale Unit 75,,Southborough,Massachusetts,Worcester County,
+190000,170319,Noor,Merritt,Melody,0,1954-02-18,A2,12,white,nonhispanic,970 Johnston Drive Apt 25,,Worcester,Massachusetts,Worcester County,01583
+182000,170319,Khadijah,Johnston,,0,2003-06-09,D2,16,white,nonhispanic,252 Heller Manor Suite 56,,Attleboro,Massachusetts,Bristol County,02861
+139000,170319,Katy,Dalton,,0,1983-10-07,A1,11,white,nonhispanic,999 Kuhn Forge,,Lowell,Massachusetts,Middlesex County,01851
+157100,170319,Aminah,Wall,,0,2007-09-19,G4,10,white,hispanic,984 Kuhic Bay Apt 19,,Agawam,Massachusetts,Hampden County,01030
+110800,209109,Hollie,Eaton,,0,1997-09-20,M,04,white,nonhispanic,652 Kovacek Trailer Suite 29,,Lenox,Massachusetts,Berkshire County,01240
+158600,213741,Siobhan,Lin,,0,2008-01-24,A2,12,white,nonhispanic,611 Williamson Loaf Apt 44,,Somerville,Massachusetts,Middlesex County,02138
+190600,215316,Marley,Zamora,,0,1950-06-05,A2,12,black,hispanic,289 Brown Glen Unit 6,,Revere,Massachusetts,Suffolk County,02151
+21700,22190,Alessia,Romero,Mariel,0,1967-07-12,G4,10,white,nonhispanic,913 Schiller Well Apt 80,,Burlington,Massachusetts,Middlesex County,01803
+216300,223770,Adrian,Collins,,0,1952-05-10,C2,06,white,hispanic,217 Will Well Unit 1,,Boston,Massachusetts,Suffolk County,02110
+218500,226237,Belle,O'Gallagher,,0,1994-05-05,C1,05,white,nonhispanic,900 Paucek Way,,Newton,Massachusetts,Middlesex County,
+37600,226967,Chelsea,Whitehead,,0,2016-03-22,F,03,white,nonhispanic,255 Ondricka Common,,Deerfield,Massachusetts,Franklin County,
+93800,27570,Maeve,Tucker,Manuela,0,1981-09-08,M,04,white,nonhispanic,836 Willms Flat Suite 54,,Watertown,Massachusetts,Middlesex County,
+33500,29764,Lenny,Coleman,,0,1975-09-26,N,13,white,nonhispanic,820 Willms Mews,,Stow,Massachusetts,Middlesex County,
+58800,29931,Meredith,Lewis,,0,1957-06-24,D2,16,white,hispanic,451 Buckridge Harbor,,Attleboro,Massachusetts,Bristol County,
+106900,33500,Stella,Franklin,,0,1970-04-18,G1,07,white,nonhispanic,818 Bogan Ville,,Westport,Massachusetts,Bristol County,
+93100,3975,Cecilia,Mayer,,0,1969-01-18,C1,05,white,nonhispanic,419 Beatty Gardens,,Boston,Massachusetts,Suffolk County,02111
+17200,39986,Georgiana,Livingston,,0,2003-09-21,G4,10,white,nonhispanic,814 Blick Avenue Unit 22,,Wayland,Massachusetts,Middlesex County,
+32700,41842,Maya,Townsend,Merilyn,0,1960-12-30,G2,08,white,nonhispanic,763 Smitham Rue,,Worthington,Massachusetts,Hampshire County,
+22700,44147,Emelia,Hobbs,,0,2020-05-22,E,01,white,hispanic,810 Pfannerstill Underpass,,Springfield,Massachusetts,Hampden County,
+46700,44147,Lana,Mckenzie,Milissa,0,2014-04-03,A2,12,white,nonhispanic,1014 Hilpert Skyway Apt 68,,North Brookfield,Massachusetts,Worcester County,01535
+27400,44147,Rio,Blair,,0,2011-07-22,D1,15,white,nonhispanic,422 Farrell Path Unit 69,,Somerville,Massachusetts,Middlesex County,02143
+14000,44147,Demi-Leigh,Sanders,Myrtle,0,2021-01-14,C1,05,white,hispanic,746 Weissnat Landing,,Boston,Massachusetts,Suffolk County,02203
+36400,49044,Jenny,Wells,,0,2011-09-22,F,03,white,nonhispanic,574 Kunze Grove Apt 45,,Lowell,Massachusetts,Middlesex County,
+44800,5185,Wade,Mills,,0,1983-02-04,C1,05,white,nonhispanic,137 Miller Meadow,,Boston,Massachusetts,Suffolk County,02126
+203300,68739,Savanna,Cannon,,0,1974-09-20,C2,06,white,nonhispanic,954 Marvin Ferry,,Marlborough,Massachusetts,Middlesex County,01752
+90300,76014,Jemima,Wagner,,0,2012-12-14,G4,10,white,nonhispanic,818 Rau Fort,,Boston,Massachusetts,Suffolk County,02115
+90500,76100,Kye,Henderson,,0,1961-07-19,C2,06,white,nonhispanic,1080 Sawayn Gateway Suite 9,,Framingham,Massachusetts,Middlesex County,01701
+112400,83026,Briony,Hampton,Marylou,0,1974-10-03,A2,12,white,nonhispanic,923 Boyle Dale Apt 44,,Boston,Massachusetts,Suffolk County,02113
+160400,84379,Isabel,Ballard,,0,1960-04-10,N,13,asian,nonhispanic,330 Hermiston Trafficway,,Westborough,Massachusetts,Worcester County,
+74800,85789,Ebony,Mcmahon,,0,1954-01-14,G2,08,white,nonhispanic,358 Mann Junction Suite 98,,Holliston,Massachusetts,Middlesex County,
+55900,90659,Lydia,Watson,,0,1986-12-06,A2,12,white,nonhispanic,234 McLaughlin Station Suite 21,,Boston,Massachusetts,Suffolk County,02134
+65100,92762,Sallie,Aguilar,,0,2003-05-26,G3,09,white,nonhispanic,1031 Rempel Parade,,Sandwich,Massachusetts,Barnstable County,
+75800,92943,Dora,Curtis,,0,1999-09-25,D2,16,asian,nonhispanic,864 Legros Alley,,Holliston,Massachusetts,Middlesex County,
+66200,94524,Scarlet,Wright,,0,2015-01-06,F,03,white,nonhispanic,370 Grant Park,,Somerset,Massachusetts,Bristol County,
+39900,10538,Casey,Marsh,,1,1973-05-06,G2,08,white,nonhispanic,892 Dibbert Port Suite 41,,Norwood,Massachusetts,Norfolk County,
+91400,11338,Lucas,Winters,Javier,1,2001-01-18,D2,16,white,nonhispanic,1072 Hagenes Crossing,,Woburn,Massachusetts,Middlesex County,
+52200,113830,Lewys,Maddox,,1,2008-01-18,D1,15,white,nonhispanic,214 Hane Course Unit 68,,Westford,Massachusetts,Middlesex County,
+49100,115963,Zac,Suarez,,1,1979-09-24,N,13,white,nonhispanic,128 Stiedemann Gardens Apt 64,,Needham,Massachusetts,Norfolk County,02494
+102200,121160,Mohammad,Cox,,1,1994-09-30,F,03,white,nonhispanic,755 Hirthe Underpass,,Milford,Massachusetts,Worcester County,
+133600,137952,Rehan,Hatfield,,1,1990-09-07,D1,15,white,nonhispanic,937 Ryan Neck,,Haverhill,Massachusetts,Essex County,01832
+193900,145520,Francesco,Rivera,Kristopher,1,1994-11-04,M,04,white,nonhispanic,837 Mills Dam,,Somerville,Massachusetts,Middlesex County,02140
+126500,147036,Calvin,Cabrera,,1,1977-11-12,F,03,white,nonhispanic,528 Lowe Lodge,,Lowell,Massachusetts,Middlesex County,01854
+208500,147970,Faith,Donnelly,,1,2016-05-30,M,04,white,nonhispanic,164 Stokes Lodge Apt 34,,Winchendon,Massachusetts,Worcester County,01475
+176200,150505,Damon,Taylor,,1,1960-02-06,M,04,black,nonhispanic,975 Murphy Tunnel Apt 27,,Plymouth,Massachusetts,Plymouth County,02360
+25500,15352,Pablo,Livingston,,1,1999-05-28,M,04,white,nonhispanic,566 Williamson Run Suite 85,,Swansea,Massachusetts,Bristol County,
+153300,162576,Raees,Tucker,Kyler,1,1988-04-24,N,13,native,nonhispanic,471 Mayert Flat Unit 54,,Peabody,Massachusetts,Essex County,
+206200,192974,Harley,Salas,,1,2009-09-19,F,03,white,nonhispanic,1056 Harris Lane Suite 70,,Chicopee,Massachusetts,Hampden County,01020
+224200,192974,Silas,Bush,,1,1983-01-01,C1,05,white,nonhispanic,482 McGlynn Extension Apt 8,,Chicopee,Massachusetts,Hampden County,01022
+171200,192974,Wojciech,Sanders,,1,1970-08-06,C2,06,black,nonhispanic,577 Kshlerin Parade,,Swansea,Massachusetts,Bristol County,
+185200,192974,Karim,Hawkins,Junior,1,2014-04-28,N,13,white,nonhispanic,898 Grant Overpass Unit 18,,Hingham,Massachusetts,Plymouth County,02043
+185400,192974,Stella,Franco,,1,2008-08-13,E,01,white,nonhispanic,757 Jenkins Crossroad,,Wakefield,Massachusetts,Middlesex County,
+210200,195288,Mark,Armstrong,,1,2020-03-05,G4,10,white,nonhispanic,730 Bogan Row,,Danvers,Massachusetts,Essex County,
+205400,198559,Sonny,Brewer,Jagger,1,1973-04-02,C1,05,white,nonhispanic,494 Ondricka Vista Unit 61,,Provincetown,Massachusetts,Barnstable County,02657
+178000,199072,Keziah,Flynn,,1,1988-03-07,M,04,white,nonhispanic,314 Haag Orchard Suite 76,,Weymouth,Massachusetts,Norfolk County,02190
+144400,200118,Courtney,Cuevas,,1,1950-11-09,F,03,white,nonhispanic,159 Treutel Hollow,,Winchester,Massachusetts,Middlesex County,
+181900,200665,Zain,Webb,,1,2004-10-18,N,13,black,nonhispanic,203 Sporer Esplanade Unit 14,,Oxford,Massachusetts,Worcester County,
+213300,203702,Andre,Jackson,,1,1969-10-29,G4,10,white,nonhispanic,954 Marvin Ferry,,Marlborough,Massachusetts,Middlesex County,01752
+156400,205773,Gavin,Bernard,,1,2004-06-28,S,02,white,nonhispanic,465 Crist Crossroad Unit 86,,Quincy,Massachusetts,Norfolk County,02170
+100000,206682,Fergus,Matthews,,1,1990-10-14,A2,12,black,nonhispanic,503 Carter Light Apt 12,,Auburn,Massachusetts,Worcester County,
+201100,217633,Armaan,Moody,Ker,1,2007-04-30,D2,16,white,nonhispanic,578 Welch Trace Unit 19,,Bridgewater,Massachusetts,Plymouth County,
+201400,217770,Robyn,Mcgowan,,1,2003-12-28,E,01,white,nonhispanic,379 Bernhard Station,,Newburyport,Massachusetts,Essex County,
+130400,218479,Neo,Aguirre,,1,1993-03-16,C1,05,white,nonhispanic,489 Nienow Rue,,Fall River,Massachusetts,Bristol County,02790
+142600,219363,Dillon,Roach,,1,2009-05-05,G2,08,white,nonhispanic,741 Stracke Landing Apt 68,,Walpole,Massachusetts,Norfolk County,02081
+152200,221967,Evan,Moore,,1,1944-08-14,M,04,white,nonhispanic,1045 Gibson Vista,,Attleboro,Massachusetts,Bristol County,02703
+152200,221967,Marcel,Randolph,Jirkar,1,1944-08-14,F,03,white,nonhispanic,1045 Gibson Vista,,Attleboro,Massachusetts,Bristol County,02703
+197900,222628,Eesa,Carpenter,,1,1989-10-01,G3,09,white,hispanic,764 Feil Route,,Boston,Massachusetts,Suffolk County,02108
+62900,23532,Drew,Friedman,,1,1936-03-30,C1,05,white,nonhispanic,911 Rodriguez Forge,,Orange,Massachusetts,Franklin County,01364
+147700,30696,Kaan,Mckee,,1,1965-06-25,G1,07,white,nonhispanic,480 Jast Ramp Apt 20,,Dennis,Massachusetts,Barnstable County,02638
+86400,30696,Malakai,Malone,,1,2011-06-20,E,01,white,nonhispanic,964 Schroeder Branch Apt 20,,Spencer,Massachusetts,Worcester County,
+18200,38256,Aarav,Kent,,1,1943-01-01,M,04,black,nonhispanic,718 Hamill Club,,Easthampton,Massachusetts,Hampshire County,
+18200,38256,Steffan,Figueroa,Kippar,1,1943-01-01,E,01,black,nonhispanic,718 Hamill Club,,Easthampton,Massachusetts,Hampshire County,
+18200,38256,Derek,Santos,,1,1943-01-01,C1,05,black,nonhispanic,718 Hamill Club,,Easthampton,Massachusetts,Hampshire County,
+109600,59066,Cole,Turner,,1,2008-03-28,N,13,white,nonhispanic,454 Crooks Divide Unit 13,,Plymouth,Massachusetts,Plymouth County,
+94700,62804,Roosevelt,Silva,,1,2005-12-03,N,13,white,nonhispanic,461 Lindgren Plaza,,Quincy,Massachusetts,Norfolk County,02169
+105800,64702,Erin,Huff,Kester,1,1999-12-12,G2,08,white,nonhispanic,147 Rippin Lane,,Boston,Massachusetts,Suffolk County,02116
+210000,38256,Dale,Dale,,1,1961-01-12,D1,15,black,nonhispanic,976 Lowe Branch,,Boston,Massachusetts,Suffolk County,02115
+1900,38256,Ameer,Mcmahon,,1,2011-04-23,F,03,white,hispanic,1032 Koch Gardens,,Sharon,Massachusetts,Norfolk County,
+2700,38256,Keeley,Preston,,1,1956-03-29,D2,16,white,nonhispanic,333 Hilpert Route,,Ware,Massachusetts,Hampshire County,
+2800,95182,Ted,Summers,,1,1990-08-25,D2,16,white,nonhispanic,410 Homenick Lane,,Duxbury,Massachusetts,Plymouth County,02332
+117100,95182,Jaydon,Richard,,1,1950-10-22,G3,09,white,nonhispanic,322 Marks Rue Suite 15,,Fitchburg,Massachusetts,Worcester County,01420
+77900,95182,Kristen,Gillespie,,1,2004-02-16,E,01,white,nonhispanic,230 Murphy Camp Unit 83,,Burlington,Massachusetts,Middlesex County,01803

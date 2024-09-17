@@ -1,0 +1,18 @@
+Please find attached excel with the data for this assignment.
+
+Please carry out below steps on this dataset.
+
+1.	 Create Dataframes from the sheets in the attached excel.
+2.	Merge customer information with sales transactions by identifying the required joining keys.
+3.	Join product details with sales transactions by identifying the required joining keys.
+4.	Calculate total sales amount per product and per customer.
+5.	Determine top-selling products and highest-performing employees.
+6.	Aggregate sales data to analyze monthly and yearly trends.
+7.	Implement all the above requirements using both pyspark and SQL.
+8.	Create visually appealing dashboards and reports to present key findings and recommendations from this dataset.
+(Utilize visualization libraries like Matplotlib or Seaborn for creating visualizations. consider using reporting tools  Jupyter Notebooks for creating comprehensive reports.)
+
+You can work as a team on this task and can divide the work between the team.
+You can use the free version for pyspark/python implementation, so that you can use spark sql for your SQL queries.
+
+Please work on this and try to provide a solution with a small presentation by Monday Next week (18-03-2024)
